@@ -14,8 +14,8 @@ class NormalizeInterpolator(val min: Float, val max: Float) : Interpolator {
     }
 }
 
-class ReverseLineaInterpolator() : Interpolator {
-    override fun getInterpolation(input: Float): Float = 1f - input
+class ReverseInterpolator(private val interpolator: Interpolator) : Interpolator {
+    override fun getInterpolation(input: Float): Float = 1f - interpolator.getInterpolation(input)
 }
 
 class ThresholdInterpolator(val min: Float, val max: Float) : Interpolator {

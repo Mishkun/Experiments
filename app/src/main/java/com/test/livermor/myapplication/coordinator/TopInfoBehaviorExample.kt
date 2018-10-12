@@ -7,10 +7,12 @@ import android.view.View
 import com.test.livermor.myapplication.R
 import com.test.livermor.myapplication.coordinator.behavior.OffsetView
 import com.test.livermor.myapplication.coordinator.behavior.Rule
+import com.test.livermor.myapplication.coordinator.behavior.ThresholdInterpolator
 import com.test.livermor.myapplication.coordinator.behavior.TopInfoBehavior
 import com.test.livermor.myapplication.utils.getStatusBarHeight
 import com.test.livermor.myapplication.utils.pixels
 import kotlinx.android.synthetic.main.activity_scrolling.view.*
+import kotlinx.android.synthetic.main.top_info.view.*
 
 /**
  * @author dumchev on 12/10/2018.
@@ -42,7 +44,15 @@ class TopInfoBehaviorExample(
                     view = tvTopDetails,
                     rules = listOf(
                             Rule.Alpha(min = 0.6f, max = 1f),
-                            Rule.X(min = R.dimen.zero, max = R.dimen.mar)
+                            Rule.X(min = R.dimen.zero, max = R.dimen.mar),
+                            Rule.Appearance(0.1f)
+                    )
+            ),
+            OffsetView(
+                    view = tvCollapsedTop,
+                    rules = listOf(
+                            Rule.X(min = R.dimen.zero, max = R.dimen.mar),
+                            Rule.Appearance(0.1f, reverse = true)
                     )
             ),
             OffsetView(

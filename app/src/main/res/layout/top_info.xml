@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:translationZ="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/ivTop"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tvTopDetails"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_toRightOf="@+id/ivTop"
+        android:gravity="center_vertical"
+        android:text="AppToolbar and second line\nonly when non-collapsed"
+        android:textSize="@dimen/base_text_size"
+        android:visibility="visible"
+        />
+
+    <TextView
+        android:id="@+id/tvCollapsedTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/ivTop"
+        android:text="Toolbar without second line"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTopDetails"
+        android:background="@android:color/holo_orange_dark"
+        android:paddingLeft="8dp"
+        android:text="this will fade out on collapse"
+        />
+
+    <TextView
+        android:id="@+id/tvTop2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTop"
+        android:background="@android:color/holo_blue_light"
+        android:paddingLeft="8dp"
+        android:text="this can disappear on click and fade out on collapse"
+        />
+</RelativeLayout>

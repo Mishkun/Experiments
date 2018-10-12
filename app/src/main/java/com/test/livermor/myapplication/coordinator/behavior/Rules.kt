@@ -99,10 +99,15 @@ abstract class Rule {
         }
     }
 
-    class Appearance(appearOnValue: Float) : Rule() {
+    class Appearance(
+            appearOnValue: Float,
+            reverse: Boolean = false
+    ) : Rule() {
         override val min: Float = appearOnValue
         override val max: Float = appearOnValue
-        override val interpolator: Interpolator = ThresholdInterpolator(min = min, max = max)
+        override val interpolator: Interpolator = ThresholdInterpolator(min = min, max = max).run {
+            if (reverse) ReverseInterpolator(this) else this
+        }
 
         override fun manage(ratio: Float, details: InitialViewDetails, view: View) = with(view) {
             val shouldAppear = ratio != 0f
@@ -110,23 +115,24 @@ abstract class Rule {
             animateAppearance(shouldAppear)
         }
 
-        private fun View.animateAppearance(isVisible: Boolean) {
-            clearAnimation()
-            val alpha = if (isVisible) 1f else 0f
-            if (this.alpha == alpha) {
-                Log.w("TopInfoBehavior", "animateAppearance: view.alpha = ${this.alpha}, alpha ${alpha}")
-                return
-            }
-            animate().alpha(alpha).setDuration(ANIMATION_DURATION).setListener(object : AnimatorListenerAdapter() {
-                override fun onAnimationStart(animation: Animator?) {
-                    if (isVisible) isEnabled = true
-                }
+    }
 
-                override fun onAnimationEnd(animation: Animator?) {
-                    if (isVisible.not()) isEnabled = false
-                }
-            })
+    protected fun View.animateAppearance(isVisible: Boolean) {
+        clearAnimation()
+        val alpha = if (isVisible) 1f else 0f
+        if (this.alpha == alpha) {
+            Log.w("TopInfoBehavior", "animateAppearance: view.alpha = ${this.alpha}, alpha ${alpha}")
+            return
         }
+        animate().alpha(alpha).setDuration(ANIMATION_DURATION).setListener(object : AnimatorListenerAdapter() {
+            override fun onAnimationStart(animation: Animator?) {
+                if (isVisible) isEnabled = true
+            }
+
+            override fun onAnimationEnd(animation: Animator?) {
+                if (isVisible.not()) isEnabled = false
+            }
+        })
     }
 }
 
