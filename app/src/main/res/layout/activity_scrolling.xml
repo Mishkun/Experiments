@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:background="@android:color/white"
+                android:translationZ="0dp"
+                app:layout_collapseMode="pin"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/llTopDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationZ="5dp"
+        app:layout_behavior="com.test.livermor.myapplication.coordinator.behavior.TopInfoBehaviorExample"
+        >
+
+        <ImageView
+            android:id="@+id/ivTop"
+            android:layout_width="@dimen/toolbar_height"
+            android:layout_height="@dimen/toolbar_height"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tvTopDetails"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_toRightOf="@+id/ivTop"
+            android:gravity="center_vertical"
+            android:text="AppToolbar and second line\nonly when non-collapsed"
+            android:textSize="@dimen/base_text_size"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/tvTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTopDetails"
+            android:background="@android:color/holo_orange_dark"
+            android:paddingLeft="8dp"
+            android:text="this will fade out on collapse"
+            />
+
+        <TextView
+            android:id="@+id/tvTop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTop"
+            android:background="@android:color/holo_blue_light"
+            android:paddingLeft="8dp"
+            android:text="this can disappear on click and fade out on collapse"
+            />
+
+    </RelativeLayout>
+
+
+    <!--app:layout_behavior="com.test.livermor.myapplication.coordinator.behavior.TopInfoBehavior"-->
+    <!--    app:layout_behavior="com.test.livermor.myapplication.coordinator.MyBehavior"-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nesteScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:context=".ScrollingActivity"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/large_text"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/nesteScroll"
+        app:layout_anchorGravity="right"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

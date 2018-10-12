@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.livermor.myapplication.SecondActivity">
+
+    <View
+        android:layout_width="410dp"
+        android:layout_height="745dp"
+        android:background="@color/common_back_black_half_transparent"/>
+
+    <View
+        android:layout_width="315dp"
+        android:layout_height="505dp"
+        android:background="@android:color/holo_green_light"
+        />
+
+</android.support.constraint.ConstraintLayout>
