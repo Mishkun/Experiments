@@ -4,11 +4,9 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.support.annotation.DimenRes
 import android.util.Log
-import android.util.TypedValue
 import android.view.View
 import android.view.animation.Interpolator
 import android.view.animation.LinearInterpolator
-import android.widget.TextView
 import com.test.livermor.myapplication.utils.pixels
 import com.test.livermor.myapplication.utils.transformInRange
 
@@ -40,19 +38,29 @@ abstract class Rule {
 
     abstract fun manage(ratio: Float, details: InitialViewDetails, view: View)
 
-    class TextSize(
-            @DimenRes override val min: Int,
-            @DimenRes override val max: Int,
+    //
+    class Scale(
+            override val min: Float,
+            override val max: Float,
             override val interpolator: Interpolator = LinearInterpolator()
     ) : Rule() {
 
         override fun manage(ratio: Float, details: InitialViewDetails, view: View) = with(view) {
             val size = transformInRange(
                     oldValue = ratio,
-                    newMax = pixels(max),
-                    newMin = pixels(min)
+                    newMax = max,
+                    newMin = min
             )
-            (this as TextView).setTextSize(TypedValue.COMPLEX_UNIT_PX, size)
+            Log.w("Scale", "manage: ratio $ratio min = $min, max = $max, size = $size ")
+            // (this as TextView).setTextSize(TypedValue.COMPLEX_UNIT_PX, size)
+            this.setScale(size)
+        }
+
+        private fun View.setScale(scale: Float) {
+            scaleX = scale
+            scaleY = scale
+            pivotX = 0f
+            pivotY = 0f
         }
     }
 

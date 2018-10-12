@@ -4,7 +4,6 @@ import android.content.Context
 import android.support.design.widget.AppBarLayout
 import android.support.design.widget.CoordinatorLayout
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import com.test.livermor.myapplication.utils.setHeight
@@ -30,7 +29,6 @@ abstract class TopInfoBehavior(
         firstInit(child, dependency)
 
         val progress = calcProgress(parent)
-
         views.forEach { performRules(offsetView = it, percent = progress) }
         return true
     }
@@ -54,7 +52,11 @@ abstract class TopInfoBehavior(
         val app_bar = parent.provideAppbar()
         val scrollRange = app_bar.totalScrollRange.toFloat()
         val scrollY = Math.abs(app_bar.y)
-        return 1 - scrollY / scrollRange
+        val scroll = 1 - scrollY / scrollRange
+        if (scroll.isNaN()) {
+            return 1f
+        }
+        return scroll
     }
 
     private fun setUpAppbarHeight(child: View, parent: ViewGroup) {
@@ -83,7 +85,6 @@ abstract class TopInfoBehavior(
         val details = initialViewDetails[offsetView]!!
         offsetView.rules.forEach { rule ->
             val ratio = rule.interpolator.getInterpolation(percent)
-            Log.w("TopInfoBehavior", "performRules: ratio = $ratio")
             rule.manage(ratio, details, view)
         }
     }

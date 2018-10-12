@@ -4,10 +4,11 @@ import android.content.Context
 import android.support.design.widget.AppBarLayout
 import android.util.AttributeSet
 import android.view.View
+import android.view.animation.LinearInterpolator
 import com.test.livermor.myapplication.R
 import com.test.livermor.myapplication.coordinator.behavior.OffsetView
+import com.test.livermor.myapplication.coordinator.behavior.ReverseInterpolator
 import com.test.livermor.myapplication.coordinator.behavior.Rule
-import com.test.livermor.myapplication.coordinator.behavior.ThresholdInterpolator
 import com.test.livermor.myapplication.coordinator.behavior.TopInfoBehavior
 import com.test.livermor.myapplication.utils.getStatusBarHeight
 import com.test.livermor.myapplication.utils.pixels
@@ -45,7 +46,12 @@ class TopInfoBehaviorExample(
                     rules = listOf(
                             Rule.Alpha(min = 0.6f, max = 1f),
                             Rule.X(min = R.dimen.zero, max = R.dimen.mar),
-                            Rule.Appearance(0.1f)
+                            Rule.Y(
+                                    min = R.dimen.zero, max = R.dimen.dialog_padding,
+                                    interpolator = ReverseInterpolator(LinearInterpolator())
+                            ),
+                            Rule.Appearance(0.1f),
+                            Rule.Scale(min = 0.8f, max = 1f)
                     )
             ),
             OffsetView(
