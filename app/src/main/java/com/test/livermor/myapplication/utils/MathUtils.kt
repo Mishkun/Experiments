@@ -1,4 +1,4 @@
-package com.test.livermor.myapplication.coordinator.behavior
+package com.test.livermor.myapplication.utils
 
 /**
  * Affine transform range [a, b] into range [c, d], saving relative relations

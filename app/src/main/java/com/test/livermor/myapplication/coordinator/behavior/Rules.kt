@@ -10,6 +10,7 @@ import android.view.animation.Interpolator
 import android.view.animation.LinearInterpolator
 import android.widget.TextView
 import com.test.livermor.myapplication.utils.pixels
+import com.test.livermor.myapplication.utils.transformInRange
 
 /**
  * @author dumchev on 12/10/2018.

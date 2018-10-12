@@ -1,6 +1,7 @@
 package com.test.livermor.myapplication.coordinator.behavior
 
 import android.view.animation.Interpolator
+import com.test.livermor.myapplication.utils.transformInRange
 
 // if you don't know, how this works, check http://inloop.github.io/interpolator/
 

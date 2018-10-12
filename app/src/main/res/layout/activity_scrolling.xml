@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:translationZ="5dp"
-        app:layout_behavior="com.test.livermor.myapplication.coordinator.behavior.TopInfoBehaviorExample"
+        app:layout_behavior="com.test.livermor.myapplication.coordinator.TopInfoBehaviorExample"
         >
 
         <ImageView
