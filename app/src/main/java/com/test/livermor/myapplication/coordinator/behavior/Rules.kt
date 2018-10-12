@@ -3,7 +3,6 @@ package com.test.livermor.myapplication.coordinator.behavior
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.support.annotation.DimenRes
-import android.util.Log
 import android.view.View
 import android.view.animation.Interpolator
 import android.view.animation.LinearInterpolator
@@ -38,7 +37,6 @@ abstract class Rule {
 
     abstract fun manage(ratio: Float, details: InitialViewDetails, view: View)
 
-    //
     class Scale(
             override val min: Float,
             override val max: Float,
@@ -51,7 +49,6 @@ abstract class Rule {
                     newMax = max,
                     newMin = min
             )
-            Log.w("Scale", "manage: ratio $ratio min = $min, max = $max, size = $size ")
             // (this as TextView).setTextSize(TypedValue.COMPLEX_UNIT_PX, size)
             this.setScale(size)
         }
@@ -71,7 +68,6 @@ abstract class Rule {
     ) : Rule() {
         override fun manage(ratio: Float, details: InitialViewDetails, view: View) = with(view) {
             val alpha = transformInRange(oldValue = ratio, newMin = min, newMax = max)
-            Log.w("TopInfoBehavior", "performRules: alpha = $alpha")
             this.alpha = alpha
         }
     }
@@ -102,7 +98,6 @@ abstract class Rule {
                     newMin = pixels(min),
                     newMax = pixels(max)
             )
-            Log.w("TopInfoBehavior", "performRules: x = $x")
             this.x = details.x + x
         }
     }
@@ -119,7 +114,6 @@ abstract class Rule {
 
         override fun manage(ratio: Float, details: InitialViewDetails, view: View) = with(view) {
             val shouldAppear = ratio != 0f
-            Log.w("TopInfoBehavior", "performRules: shouldAppear = $shouldAppear")
             animateAppearance(shouldAppear)
         }
 
@@ -128,10 +122,6 @@ abstract class Rule {
     protected fun View.animateAppearance(isVisible: Boolean) {
         clearAnimation()
         val alpha = if (isVisible) 1f else 0f
-        if (this.alpha == alpha) {
-            Log.w("TopInfoBehavior", "animateAppearance: view.alpha = ${this.alpha}, alpha ${alpha}")
-            return
-        }
         animate().alpha(alpha).setDuration(ANIMATION_DURATION).setListener(object : AnimatorListenerAdapter() {
             override fun onAnimationStart(animation: Animator?) {
                 if (isVisible) isEnabled = true

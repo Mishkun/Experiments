@@ -4,6 +4,7 @@ import android.content.Context
 import android.support.design.widget.AppBarLayout
 import android.support.design.widget.CoordinatorLayout
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import com.test.livermor.myapplication.utils.setHeight
@@ -21,6 +22,8 @@ abstract class TopInfoBehavior(
     private var lastChildHeight = -1
     private val initialViewDetails: MutableMap<OffsetView, InitialViewDetails> = HashMap()
 
+    private var needToUpdateHeight: Boolean = true
+
     override fun layoutDependsOn(parent: CoordinatorLayout, child: View, dependency: View): Boolean {
         return dependency is AppBarLayout
     }
@@ -34,12 +37,18 @@ abstract class TopInfoBehavior(
     }
 
     override fun onMeasureChild(parent: CoordinatorLayout, child: View, parentWidthMeasureSpec: Int, widthUsed: Int, parentHeightMeasureSpec: Int, heightUsed: Int): Boolean {
-        parent.post {
-            val newChildHeight = child.height
-            if (newChildHeight != lastChildHeight) {
-                lastChildHeight = newChildHeight
-                setUpAppbarHeight(child, parent)
+
+        val canUpdateHeight = canUpdateHeight(calcProgress(parent))
+        if (canUpdateHeight) {
+            parent.post {
+                val newChildHeight = child.height
+                if (newChildHeight != lastChildHeight) {
+                    lastChildHeight = newChildHeight
+                    setUpAppbarHeight(child, parent)
+                }
             }
+        } else {
+            needToUpdateHeight = true
         }
         return super.onMeasureChild(parent, child, parentWidthMeasureSpec, widthUsed, parentHeightMeasureSpec, heightUsed)
     }
@@ -47,6 +56,7 @@ abstract class TopInfoBehavior(
     protected abstract fun calcAppbarHeight(child: View): Int
     protected abstract fun View.setUpViews(): List<OffsetView>
     protected abstract fun View.provideAppbar(): AppBarLayout
+    protected open fun canUpdateHeight(progress: Float): Boolean = true
 
     private fun calcProgress(parent: CoordinatorLayout): Float {
         val app_bar = parent.provideAppbar()
@@ -64,8 +74,12 @@ abstract class TopInfoBehavior(
     }
 
     private fun firstInit(child: View, dependency: View) {
-        if (views.isEmpty()) { // todo: clear condition
+        if (needToUpdateHeight) {
             setUpAppbarHeight(child, dependency as ViewGroup)
+            needToUpdateHeight = false
+        }
+
+        if (views.isEmpty()) { // todo: clear condition
             views = child.setUpViews()
             views.forEach { it ->
                 initialViewDetails.put(

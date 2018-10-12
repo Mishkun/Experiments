@@ -26,11 +26,15 @@ class TopInfoBehaviorExample(
 
     override fun calcAppbarHeight(child: View): Int {
         val childHeight = child.height
-        val statusBarHeight = child.getStatusBarHeight()
+        val statusBarHeight = 0 //child.getStatusBarHeight()
         return (childHeight + child.pixels(R.dimen.toolbar_height) + statusBarHeight).toInt()
     }
 
     override fun View.provideAppbar(): AppBarLayout = app_bar
+
+    override fun canUpdateHeight(progress: Float): Boolean {
+        return progress >= TopInfoBehaviorExample.GONE_VIEW_THRESHOLD
+    }
 
     override fun View.setUpViews(): List<OffsetView> = listOf(
             OffsetView(
@@ -67,7 +71,11 @@ class TopInfoBehaviorExample(
             ),
             OffsetView(
                     view = tvTop2,
-                    rules = listOf(Rule.Appearance(appearOnValue = 0.8f))
+                    rules = listOf(Rule.Appearance(appearOnValue = GONE_VIEW_THRESHOLD))
             )
     )
+
+    companion object {
+        const val GONE_VIEW_THRESHOLD = 0.8f
+    }
 }
