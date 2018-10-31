@@ -1,0 +1,1000 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist timestamp="1540805541875"></Blacklist>
+  <Whitelist timestamp="1540805709995">
+    <ID>CollapsibleIfStatements:CustomLinkify.kt$CustomLinkify$if (m == null || m !is LinkMovementMethod) { if (t.linksClickable) { t.movementMethod = LinkMovementMethod.getInstance() } }</ID>
+    <ID>CollapsibleIfStatements:ExtraScreen.kt$ExtraScreen.Builder$if (screenField.isDivider()) { if ((index &lt; this.size - 1 &amp;&amp; this[index + 1].isSection()) || index == this.size - 1) { return@mapIndexed listOf&lt;ScreenField&gt;() } }</ID>
+    <ID>CollapsibleIfStatements:RequestCallBlockAdapter.kt$RequestCallBlockAdapter$if (event.action == MotionEvent.ACTION_DOWN) { if (view.tvInput.isVisible() || view.tvInput.hasFocus()) { (view.tvInput.parent as View?)?.getGlobalVisibleRect(rect) if (!rect.contains(event.rawX.toInt(), event.rawY.toInt())) { view.tvInput.hideKeyboard() view.tvInput.clearFocus() } } }</ID>
+    <ID>ComplexCondition:AutoRuWebChromeClient.kt$AutoRuWebChromeClient$resultCode != Activity.RESULT_OK || requestCode != FilePickerConst.REQUEST_CODE_PHOTO || isFileUploadCallbacksNotSet()</ID>
+    <ID>ComplexCondition:AutoUpdateFieldsStrategy.kt$AutoUpdateFieldsStrategy$field is SegmentDynamicField &amp;&amp; field.isDefault &amp;&amp; !field.isDisabled</ID>
+    <ID>ComplexCondition:CollapsedModelsDescriptionStrategy.kt$CollapsedModelsDescriptionStrategy$models.isNotEmpty() &amp;&amp; !hasAllModels &amp;&amp; !hasAllGenerations</ID>
+    <ID>ComplexCondition:DateConverter.kt$DateConverter$year == null || year == 0 || month == null || month &lt; 1</ID>
+    <ID>ComplexCondition:DraftPresenter.kt$DraftPresenter$code == DRAFT_NOT_FOUND || code == OFFER_NOT_FOUND || code == NO_AUTH</ID>
+    <ID>ComplexCondition:EvaluateFieldsStrategy.kt$EvaluateFieldsStrategy$field is SegmentDynamicField &amp;&amp; field.isDefault &amp;&amp; !field.isDisabled</ID>
+    <ID>ComplexCondition:ExtraFilterPresenter.kt$ExtraFilterPresenter$(NON_QUERY_FIELD_TYPES.contains(it.value.type) || !QUERY_VALUES.contains(it.value.stringValue)) &amp;&amp; it.value !is MultiSelectState</ID>
+    <ID>ComplexCondition:ExtraScreen.kt$ExtraScreen$oldValue is Boolean &amp;&amp; newValue is Boolean &amp;&amp; oldValue == newValue || oldValue is InlineMultiSelectValue &amp;&amp; newValue is InlineMultiSelectValue &amp;&amp; oldValue.checked == newValue.checked</ID>
+    <ID>ComplexCondition:ExtraScreen.kt$ExtraScreen.Builder$(index &lt; this.size - 1 &amp;&amp; this[index + 1].isSection()) || index == this.size - 1</ID>
+    <ID>ComplexCondition:FadingEdgeTextViewDelegate.kt$FadingEdgeTextViewDelegate$isFadingEnabled &amp;&amp; (canvasView == null || changed)</ID>
+    <ID>ComplexCondition:FadingEdgeTextViewDelegate.kt$FadingEdgeTextViewDelegate$isFadingEnabled &amp;&amp; isEllipsized() &amp;&amp; bitmap != null</ID>
+    <ID>ComplexCondition:FullDraftPresenter.kt$FullDraftPresenter$code == DRAFT_NOT_FOUND || code == OFFER_NOT_FOUND || code == NO_AUTH</ID>
+    <ID>ComplexCondition:GeoSelectSuggestsPresenter.kt$GeoSelectSuggestsPresenter$item != null &amp;&amp; !(onlyCities &amp;&amp; item.childItems.isNotEmpty())</ID>
+    <ID>ComplexCondition:KeyboardViewController.kt$KeyboardViewController$value == null || value == field?.defaultValue || value.toString() == ""</ID>
+    <ID>ComplexCondition:LicenceNumberViewController.kt$LicenceNumberViewController$value == null || value == field?.defaultValue || value.toString() == ""</ID>
+    <ID>ComplexCondition:MarksInteractor.kt$MarksInteractor$input.isNotEmpty() || showPopular.not() || marks.size &lt;= MIN_COUNT_TO_SHOW_POPULAR</ID>
+    <ID>ComplexCondition:NoteAdapter.kt$NoteAdapter$(event != null &amp;&amp; (event.keyCode == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)</ID>
+    <ID>ComplexCondition:NoteAdapter.kt$NoteAdapter$event.action == MotionEvent.ACTION_DOWN &amp;&amp; (view.edit_note.isVisible() || view.edit_note.hasFocus())</ID>
+    <ID>ComplexCondition:NumberFormattingTextWatcher.kt$NumberFormattingTextWatcher$after == 0 &amp;&amp; count == 1 &amp;&amp; start &gt; 0</ID>
+    <ID>ComplexCondition:OfferDetailsModel.kt$OfferDetailsModel$info == null || info.phone.isBlank() || info.title.isBlank()</ID>
+    <ID>ComplexCondition:OfferDetailsPresenter.kt$OfferDetailsPresenter$offer.isSold() || offer.isBanned() || offer.isRemoved()</ID>
+    <ID>ComplexCondition:OfferPriceDecoration.kt$OfferPriceDecoration$(item is DiscountPriceViewModel || item is PriceInfoViewModel) &amp;&amp; next !is CommonListButton&lt;*&gt;</ID>
+    <ID>ComplexCondition:PhoneFormatter.kt$PhoneFormatter$firstSpaceId == -1 || firstSpaceId == s.length - 1 || firstSpaceId == s.indexOf(" (")</ID>
+    <ID>ComplexCondition:PhoneFormatter.kt$PhoneFormatter$s.isNotEmpty() &amp;&amp; !s.startsWith('8') &amp;&amp; !s.startsWith('+')</ID>
+    <ID>ComplexCondition:PhoneFormatter.kt$PhoneFormatter$secondSpaceId == -1 || secondSpaceId == s.length - 1 || secondSpaceId - 1 == s.indexOf(") ")</ID>
+    <ID>ComplexCondition:PromoVASModel.kt$PromoVASModel$(TURBO_AND_COMPOSITES == screenType || TURBO_AND_COMPOSITES_WITH_FRESH == screenType) &amp;&amp; compositeInfo.isNotEmpty()</ID>
+    <ID>ComplexCondition:PromoVASPresenter.kt$PromoVASPresenter$model.turboVAS != null &amp;&amp; model.turboVAS?.isDiscountActive == true &amp;&amp; screenType == PromoVasScreenType.TURBO_PUSH</ID>
+    <ID>ComplexCondition:RadioBtnField.kt$RadioBtnField$isHidden &amp;&amp; !isNested || ignored</ID>
+    <ID>ComplexCondition:SelectField.kt$SelectField$value == null || (value.key == null &amp;&amp; value.value == null)</ID>
+    <ID>ComplexCondition:ServicePriceConverter.kt$ServicePriceConverter$BuildConfig.DEBUG &amp;&amp; src.prolongation_allowed &amp;&amp; src.auto_prolong_price == null</ID>
+    <ID>ComplexCondition:ServicesInteractor.kt$ServicesInteractor$rid == null || rid.isBlank() || rid == DEFAULT_RID</ID>
+    <ID>ComplexCondition:ShadowLayout.kt$ShadowLayout$w &gt; 0 &amp;&amp; h &gt; 0 &amp;&amp; shouldInvalidateShadow()</ID>
+    <ID>ComplexCondition:ShowVideoCommand.kt$ShowVideoCommand$isYoutubePlayerAvailable(activity) &amp;&amp; isYoutubeEnabled() &amp;&amp; youtubeId != null</ID>
+    <ID>ComplexCondition:SwipeMenuContainer.kt$SwipeMenuContainer$isDragging || (dx &gt; dy &amp;&amp; dx &gt; touchSlope)</ID>
+    <ID>ComplexCondition:TextDamageAdapter.kt$TextDamageAdapter$ellipsizeCount == 0 || endIndex &lt;= 0 || endIndex &gt;= text.length</ID>
+    <ID>ComplexCondition:TextExt.kt$&lt;no name provided&gt;$!url.startsWith("https://") &amp;&amp; !url.startsWith("http://") &amp;&amp; !url.startsWith("autoru://")</ID>
+    <ID>ComplexCondition:TextExt.kt$token == null || Utils.isEmpty(token) || Utils.isEmpty(s)</ID>
+    <ID>ComplexCondition:ToolbarViewHolder.kt$ToolbarViewHolder$actionId == EditorInfo.IME_ACTION_NEXT &amp;&amp; (event == null || event.action == KeyEvent.ACTION_DOWN)</ID>
+    <ID>ComplexCondition:UserOffersViewState.kt$UserOffersViewState$!isConnectionErrorShowing &amp;&amp; !isLoadingFooterShowing &amp;&amp; offers.isNotEmpty()</ID>
+    <ID>ComplexCondition:VehicleSearchExtractor.kt$VehicleSearchExtractor$isNewCar || isNotNewMoto || isNotNewTruck</ID>
+    <ID>ComplexCondition:ViewsBarChart.kt$ViewsBarChart$e == null || entryIndex &gt; set.entryCount * mAnimator.phaseX || !mViewPortHandler.isInBounds(highlight.drawX, highlight.drawY)</ID>
+    <ID>ComplexCondition:ViewsBarChart.kt$ViewsBarChart$mMarker == null || !isDrawMarkersEnabled || !valuesToHighlight()</ID>
+    <ID>ComplexCondition:ZenController.kt$ZenController$visibleItems.any { it is GalleryViewModel &amp;&amp; it.items.firstOrNull() is ZenGalleryPageViewModel } &amp;&amp; !isTeaserShownEventLogged</ID>
+    <ID>EmptyClassBlock:EvaluateResultView.kt$EvaluateResultView : LoadableListView</ID>
+    <ID>EmptyClassBlock:IServiceModel.kt$IServiceModel</ID>
+    <ID>EmptyClassBlock:ModelItemAdapter.kt$ModelItemAdapter</ID>
+    <ID>EmptyClassBlock:OffersListing.kt$OffersListing</ID>
+    <ID>EmptyClassBlock:RequestRefundException.kt$RequestRefundException : Exception</ID>
+    <ID>EmptyDefaultConstructor:BaseUserOfferAdapter.kt$BaseUserOfferAdapter$()</ID>
+    <ID>EmptySecondaryConstructor:HeadersImageDownloader.kt$HeadersImageDownloader${}</ID>
+    <ID>EmptySecondaryConstructor:InlineMultiSelectValue.kt$InlineMultiSelectValue${ }</ID>
+    <ID>EmptySecondaryConstructor:InlineSelectValue.kt$InlineSelectValue${ }</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter${ return (src.state?.mileage ?: -1).toLong() }</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter${ return convertNotNull(src.additional?.creationDate, "creationDate") }</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter${ return convertNotNull(src.documents?.year, "year") }</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter${ return convertNotNull(src.status, "status") }</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter${ return src.priceHistory.map { OfferBasePriceInfo(it.price, it.currency) }.toTypedArray() }</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter${ return src.section }</ID>
+    <ID>ExpressionBodySyntax:AbstractExtendedOfferAdapter.kt$AbstractExtendedOfferAdapter${ return (items[position] as? OfferViewModel)?.isExtended ?: false }</ID>
+    <ID>ExpressionBodySyntax:AbstractOfferAdapter.kt$AbstractOfferAdapter${ return if (item.isViewed) R.color.common_light_gray else R.color.common_back_black }</ID>
+    <ID>ExpressionBodySyntax:AddAdvertFragment.kt$AddAdvertFragment${ return inflater.inflate(R.layout.fragment_add_advert, container, false) }</ID>
+    <ID>ExpressionBodySyntax:AddPhoneModule.kt$AddPhoneModule${ return AddPhonePresenter(viewState, router, analytics, authErrorFactory, phoneInteractor, componentManager, eventId, stringsProvider) }</ID>
+    <ID>ExpressionBodySyntax:AddPhoneModule.kt$AddPhoneModule${ return AddPhoneViewState() }</ID>
+    <ID>ExpressionBodySyntax:AddPhoneModule.kt$AddPhoneModule${ return AuthErrorFactory(stringsProvides) }</ID>
+    <ID>ExpressionBodySyntax:ApiModule.kt$ApiModule${ return NetworkLoggerFactory().createLogger() }</ID>
+    <ID>ExpressionBodySyntax:ApiModule.kt$ApiModule${ return XivaClientFactory(httpLoggerInterceptor).create() }</ID>
+    <ID>ExpressionBodySyntax:AppMetricaPushReceiver.kt$AppMetricaPushReceiver${ return remoteMessage.data.containsKey(APPMETRIKA_KEY) }</ID>
+    <ID>ExpressionBodySyntax:AuthErrorFactory.kt$AuthErrorFactory${ return if (Utils.isEmpty(value)) messageIfEmpty else messageIfWrong }</ID>
+    <ID>ExpressionBodySyntax:AuthInteractor.kt$AuthInteractor${ return codeTimerRepository.observeCodeTimerSec(phone) }</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule${ return AuthErrorFactory(stringsProvides) }</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule${ return OkAuthViewController(stringsProvider, socialAuthInteractor) }</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule${ return PhoneAuthViewState() }</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule${ return SocialAuthImageViewFactory() }</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule${ return SocialAuthInteractor(authRepository, authCompatibilityInteractor) }</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule${ return VkAuthRepository() }</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule${ return VkAuthViewController(vkAuthRepository, socialAuthInteractor) }</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule${ return YaAuthViewController(yaLoginSdk, socialAuthInteractor) }</ID>
+    <ID>ExpressionBodySyntax:AutoPublishComplectationScreen.kt$AutoPublishComplectationScreen${ return field.value?.key ?: throw IllegalStateException("field ${field.id} has no value!") }</ID>
+    <ID>ExpressionBodySyntax:BaseCachedRepository.kt$BaseCachedRepository${ return if (this.id == id) get() else null }</ID>
+    <ID>ExpressionBodySyntax:BaseDraftFieldViewController.kt$BaseDraftFieldViewController${ return super.getField() }</ID>
+    <ID>ExpressionBodySyntax:BaseFilterFieldViewController.kt$BaseFilterFieldViewController${ return super.getField() }</ID>
+    <ID>ExpressionBodySyntax:BaseUniqueCachedRepository.kt$BaseUniqueCachedRepository${ return if (cache.hasValue()) cache.first().toSingle() else null }</ID>
+    <ID>ExpressionBodySyntax:BaseUserOfferAdapter.kt$BaseUserOfferAdapter${ return items[position] is UserOffer }</ID>
+    <ID>ExpressionBodySyntax:BasicField.kt$BasicField${ return if (super.getValue() != null) super.getValue() else super.getDefaultValue() }</ID>
+    <ID>ExpressionBodySyntax:BlockGalleryAdapter.kt$DeviceIndependentOneItem${ return (screenWidth - sidePadding * MULTIPLIER_ONE).toInt() / ITEMS_ON_PAGE_ONE }</ID>
+    <ID>ExpressionBodySyntax:BlockGalleryAdapter.kt$DeviceIndependentTwoItems${ return (screenWidth - sidePadding * MULTIPLIER_TWO).toInt() / ITEMS_ON_PAGE_TWO }</ID>
+    <ID>ExpressionBodySyntax:BodyTypeStepViewModel.kt$BodyTypeStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:CallBlockAdapter.kt$CallBlockAdapter${ return R.layout.item_services_call }</ID>
+    <ID>ExpressionBodySyntax:CallBlockAdapter.kt$CallBlockAdapter${ return items[position] is CallBlockViewModel }</ID>
+    <ID>ExpressionBodySyntax:CatalogOptionsProvider.kt$CatalogOptionsProvider${ return items?.map { item -&gt; toOption(item) } ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:ChatMessageReciever.kt$ChatMessageReciever${ return remoteMessage.data[URL]?.contains(CHAT_PATH) ?: false }</ID>
+    <ID>ExpressionBodySyntax:ChatPhoneListenerProvider.kt$ChatPhoneListenerProvider.Companion${ return ChatPhoneListenerProvider(messagesContext, title, onPhoneClick as Serializable) }</ID>
+    <ID>ExpressionBodySyntax:CheckBoxAdapter.kt$CheckBoxAdapter${ return items[position] is CheckBoxViewModel }</ID>
+    <ID>ExpressionBodySyntax:ChildRectIgnoringScrollingBehavior.kt$ChildRectIgnoringScrollingBehavior${ return false }</ID>
+    <ID>ExpressionBodySyntax:ChosenComplectationProvider.kt$ChosenComplectationProvider${ return currentSuggest?.complectations?.firstOrNull()?.equipment ?: mapOf() }</ID>
+    <ID>ExpressionBodySyntax:CodeTimerRepository.kt$CodeTimerRepository.Timer${ return "Timer(timeSec=$timeSec, timer=$timer, timerSubscription=$timerSubscription)" }</ID>
+    <ID>ExpressionBodySyntax:ColorAdapter.kt$ColorAdapter${ return items[position] is ColorListItem }</ID>
+    <ID>ExpressionBodySyntax:ColorStepViewModel.kt$ColorStepViewModel${ return colors.map { ColorListItem(it, isSelected = offer.color?.id == it.id) } }</ID>
+    <ID>ExpressionBodySyntax:ColorStepViewModel.kt$ColorStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:CommonMessageReceiver.kt$CommonMessageReceiver${ return remoteMessage.data.containsKey(EXTRA_URL) }</ID>
+    <ID>ExpressionBodySyntax:CommonWebLinkParser.kt$CommonWebLinkParser${ return uri?.run { scheme == SCHEME_AUTORU &amp;&amp; host == PREFIX_WEB } ?: false }</ID>
+    <ID>ExpressionBodySyntax:Complectation.kt$Complectation${ return name }</ID>
+    <ID>ExpressionBodySyntax:ComplectationInteractor.kt$ComplectationInteractor${ return repo.groups() }</ID>
+    <ID>ExpressionBodySyntax:CompositeVASHeaderAdapter.kt$CompositeVASHeaderAdapter${ return items[position] is CompositeVASHeader }</ID>
+    <ID>ExpressionBodySyntax:CompositeVASItemAdapter.kt$CompositeVASItemAdapter${ return items[position] is CompositeVASItem }</ID>
+    <ID>ExpressionBodySyntax:ConfirmExitDialog.kt$ConfirmExitDialog${ return buildDialog() }</ID>
+    <ID>ExpressionBodySyntax:ConnectionErrorAdapter.kt$ConnectionErrorAdapter${ return R.layout.item_connection_error }</ID>
+    <ID>ExpressionBodySyntax:ConnectionErrorAdapter.kt$ConnectionErrorAdapter${ return items[position] is ConnectionErrorModel }</ID>
+    <ID>ExpressionBodySyntax:ConnectionHelper.kt$ConnectionHelper${ return ContextUtils.isOnline(AppHelper.appContext()) }</ID>
+    <ID>ExpressionBodySyntax:ContextExt.kt${ return theme.getAttrDimen(attrId, default) }</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt${ return ConvertException("Field '$fieldName' must not be null") }</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt${ return convertNullable(item, converter) ?: throw createConvertException(fieldName) }</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt${ return convertNullable(items, converter) ?: throw createConvertException(fieldName) }</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt${ return item ?: throw createConvertException(fieldName) }</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt${ return item?.let { f -&gt; additional?.let { s -&gt; converter(f, s) } } }</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt${ return item?.let(converter) }</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt${ return items?.map(converter) }</ID>
+    <ID>ExpressionBodySyntax:CreateOfferAdapter.kt$CreateOfferAdapter${ return AddAdvertViewHolder.create(parent, clickListener) }</ID>
+    <ID>ExpressionBodySyntax:CreateOfferAdapter.kt$CreateOfferAdapter${ return items[position] is CreateOfferHeader }</ID>
+    <ID>ExpressionBodySyntax:CreateOfferHeader.kt$CreateOfferHeader${ return id }</ID>
+    <ID>ExpressionBodySyntax:CreditAdConverter.kt$CreditAdConverter${ return "${nwAd.title} ${String.format("%,d", payment).replace(",", " ")} ${stringsProvider[R.string.monthly_payment]}" }</ID>
+    <ID>ExpressionBodySyntax:DamagesField.kt$DamagesField${ return mutableListOf() }</ID>
+    <ID>ExpressionBodySyntax:DateConverter.kt$DateConverter${ return DateInfo(year = src.year, month = src.month, day = src.day) }</ID>
+    <ID>ExpressionBodySyntax:DateValue.kt$DateValue${ return 0 }</ID>
+    <ID>ExpressionBodySyntax:DateValue.kt$DateValue.CREATOR${ return arrayOfNulls(size) }</ID>
+    <ID>ExpressionBodySyntax:DealerFeedModule.kt$DealerFeedModule${ return NavigatorHolder() }</ID>
+    <ID>ExpressionBodySyntax:DeleteDialog.kt$DeleteDialog${ return buildDialog(savedInstanceState) }</ID>
+    <ID>ExpressionBodySyntax:DocumentsConverter.kt$DocumentsConverter${ // server do not recognize empty strings return if (this.isBlank()) null else this }</ID>
+    <ID>ExpressionBodySyntax:DraftColorOptionsProvider.kt$DraftColorOptionsProvider${ return get("whatever").firstOrNull { item -&gt; item.id == id } }</ID>
+    <ID>ExpressionBodySyntax:DraftModule.kt$DraftModule${ return PhotoUploadRepository(api, category) }</ID>
+    <ID>ExpressionBodySyntax:DraftModule.kt$DraftModule${ return catalogOptionsProvider }</ID>
+    <ID>ExpressionBodySyntax:DraftModule.kt$DraftModule${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:DraftScreenExt.kt${ return (maxLength + DIGITS_PER_SPACE - 1) / DIGITS_PER_SPACE - 1 + maxLength }</ID>
+    <ID>ExpressionBodySyntax:EmptyDelegateAdapter.kt$EmptyDelegateAdapter${ return R.layout.item_no_results }</ID>
+    <ID>ExpressionBodySyntax:EmptyDelegateAdapter.kt$EmptyDelegateAdapter${ return items[position] is EmptyModel }</ID>
+    <ID>ExpressionBodySyntax:EmptyModel.kt$EmptyModel${ return EmptyModel::class.java.simpleName }</ID>
+    <ID>ExpressionBodySyntax:EmptyVendorRepository.kt$EmptyVendorRepository${ return Single.just(emptyList()) }</ID>
+    <ID>ExpressionBodySyntax:EngineStepViewModel.kt$EngineStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:EquipmentsConverter.kt$EquipmentsConverter${ return src.mapKeys { it.key.id } }</ID>
+    <ID>ExpressionBodySyntax:ErrorDelegateAdapter.kt$ErrorDelegateAdapter${ return R.layout.view_load_error }</ID>
+    <ID>ExpressionBodySyntax:ErrorDelegateAdapter.kt$ErrorDelegateAdapter${ return items[position] is ErrorModel }</ID>
+    <ID>ExpressionBodySyntax:ErrorModel.kt$ErrorModel${ return this }</ID>
+    <ID>ExpressionBodySyntax:ErrorModel.kt$ErrorModel${ return title }</ID>
+    <ID>ExpressionBodySyntax:EvaluateDraftRepository.kt$EvaluateDraftRepository${ return draft?.let { Single.just(it) } ?: Single.error(NotFoundException()) }</ID>
+    <ID>ExpressionBodySyntax:EvaluateInfoFragment.kt$EvaluateInfoFragment${ return inflater.inflate(R.layout.fragment_evaluate_info, container, false) }</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule${ return DraftRepository(publishOfferId, api, dictionaryRepository, category = category, anonymous = true) }</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule${ return PhotoUploadRepository(api, category) }</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule${ return catalogOptionsProvider }</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:EvaluateResultFragment.kt$EvaluateResultFragment${ return false }</ID>
+    <ID>ExpressionBodySyntax:EvenPartsAdapter.kt$EvenPartsAdapter${ return R.layout.view_parts_even }</ID>
+    <ID>ExpressionBodySyntax:EvenPartsAdapter.kt$EvenPartsAdapter${ return super.isForViewType(items, position) &amp;&amp; position % 2 == 0 &amp;&amp; position &lt; items.size - 1 }</ID>
+    <ID>ExpressionBodySyntax:FeedViewModel.kt$FeedViewModel${ return feedItems.find { it.id() == id } }</ID>
+    <ID>ExpressionBodySyntax:FilterFeedPresenter.kt$FilterFeedPresenter${ return feedViewModel }</ID>
+    <ID>ExpressionBodySyntax:FrescoPlugin.kt$FrescoPlugin${ return "FrescoPlugin" }</ID>
+    <ID>ExpressionBodySyntax:FullDraftModule.kt$FullDraftModule${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:FullDraftPriceViewController.kt$FullDraftPriceViewController${ return DialogItemSelectedEvent(field?.id, SerializablePair.create(newText, Currency.RUR)) }</ID>
+    <ID>ExpressionBodySyntax:FullScreenLoadingDelegateAdapter.kt$FullScreenLoadingDelegateAdapter${ return items[position] is FullScreenLoadingModel }</ID>
+    <ID>ExpressionBodySyntax:FullScreenLoadingModel.kt$FullScreenLoadingModel${ return FullScreenLoadingModel::class.java.simpleName }</ID>
+    <ID>ExpressionBodySyntax:GalleryStatEvent.kt$GalleryStatEvent${ return mapOf(StatEvent.GALLERY_GOOGLE_PHOTO to StatEvent.GALLERY_LOCAL_PHOTO) }</ID>
+    <ID>ExpressionBodySyntax:GalleryStatEvent.kt$GalleryStatEvent${ return mapOf(StatEvent.GALLERY_GOOGLE_PHOTO to StatEvent.GALLERY_REMOTE_PHOTO) }</ID>
+    <ID>ExpressionBodySyntax:GearStepViewModel.kt$GearStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:GenerationDynamicField.kt$GenerationDynamicField${ return GenerationsCatalogFragment.createScreen(generationsProvider.generations) }</ID>
+    <ID>ExpressionBodySyntax:GenerationInfo.kt$GenerationInfo${ return name?.let { if (it.isNullOrBlank()) "$from-$to" else it } ?: "$from-$to" }</ID>
+    <ID>ExpressionBodySyntax:GenerationStepViewModel.kt$GenerationStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:GenerationsCatalogFragment.kt$GenerationsCatalogFragment${ return listOf(CommonImageItemDelegateAdapter(presenter::onItemClicked)) }</ID>
+    <ID>ExpressionBodySyntax:GenerationsCatalogModule.kt$GenerationsCatalogModule${ return NavigatorHolder() }</ID>
+    <ID>ExpressionBodySyntax:GenerationsCatalogModule.kt$GenerationsCatalogModule${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:GeoCatalogItem.kt$GeoCatalogItem${ return name }</ID>
+    <ID>ExpressionBodySyntax:GeoPointConverter.kt$GeoPointConverter${ return let2(src.latitude, src.longitude) { (lat, lon) -&gt; GeoPoint(lat, lon) } }</ID>
+    <ID>ExpressionBodySyntax:GeoSelectSuggestDialog.kt$GeoSelectSuggestDialog${ return inflater.inflate(R.layout.fragment_callback_group_form, container, false) }</ID>
+    <ID>ExpressionBodySyntax:GroupViewController.kt$GroupViewController${ return field.getCommonTitle() ?: getFillText(field) }</ID>
+    <ID>ExpressionBodySyntax:HeaderWithButtonDelegateAdapter.kt$HeaderWithButtonDelegateAdapter${ return R.layout.item_title_with_button }</ID>
+    <ID>ExpressionBodySyntax:HeaderWithButtonDelegateAdapter.kt$HeaderWithButtonDelegateAdapter${ return items[position] is HeaderWithButtonViewModel }</ID>
+    <ID>ExpressionBodySyntax:HelloPlugin.kt$HelloPlugin${ return super.work().mergeWith(authCompletable()).subscribeOn(AutoSchedulers.network()) }</ID>
+    <ID>ExpressionBodySyntax:ImagePickerModule.kt$ImagePickerModule${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:InactiveOfferAdapter.kt$InactiveOfferAdapter${ return model.offer.isInactive() }</ID>
+    <ID>ExpressionBodySyntax:IndicatorDrawerItem.kt$IndicatorDrawerItem.ItemFactory${ return IndicatorDrawerItem.ViewHolder(v) }</ID>
+    <ID>ExpressionBodySyntax:InfinitePagerAdapterDecorator.kt$InfinitePagerAdapterDecorator${ return adapter.getItemPosition(obj) }</ID>
+    <ID>ExpressionBodySyntax:InfinitePagerAdapterDecorator.kt$InfinitePagerAdapterDecorator${ return adapter.getPageWidth(position) }</ID>
+    <ID>ExpressionBodySyntax:InfinitePagerAdapterDecorator.kt$InfinitePagerAdapterDecorator${ return adapter.isViewFromObject(view, obj) }</ID>
+    <ID>ExpressionBodySyntax:InfinitePagerAdapterDecorator.kt$InfinitePagerAdapterDecorator${ return adapter.saveState() }</ID>
+    <ID>ExpressionBodySyntax:KeyboardViewController.kt$KeyboardViewController${ // todo: side effects? return environment.context.findViewById(android.R.id.content) }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt${ return let2(p1, p2) { (r1, r2) -&gt; let2(p3, p4) { (r3, r4) -&gt; block(Tuple4(r1, r2, r3, r4)) } } }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt${ return let3(p1, p2, p3) { first -&gt; let2(p4, p5) { second -&gt; block((first to second).toTuple()) } } }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt${ return let3(p1, p2, p3) { first -&gt; let3(p4, p5, p6) { second -&gt; block((first to second).toTuple()) } } }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt${ return p1?.let { v1 -&gt; p2?.let { v2 -&gt; block(v1 to v2) } } }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt${ return p1?.let { v1 -&gt; p2?.let { v2 -&gt; p3?.let { v3 -&gt; block(Triple(v1, v2, v3)) } } } }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt${ return { then(this(it)) } }</ID>
+    <ID>ExpressionBodySyntax:LastPartsAdapter.kt$LastPartsAdapter${ return R.layout.view_parts_last }</ID>
+    <ID>ExpressionBodySyntax:LastPartsAdapter.kt$LastPartsAdapter${ return super.isForViewType(items, position) &amp;&amp; position == items.size - 1 }</ID>
+    <ID>ExpressionBodySyntax:LastSearchInteractor.kt$LastSearchInteractor${ return itemsRepo.get().flatMapCompletable { items -&gt; saveLastSearchSingle(items, search) } }</ID>
+    <ID>ExpressionBodySyntax:LicenceNumberViewController.kt$LicenceNumberViewController${ return environment.context.findViewById(android.R.id.content) }</ID>
+    <ID>ExpressionBodySyntax:LoadingProgressModel.kt$LoadingProgressModel${ return comparableId ?: LoadingProgressModel::class.java }</ID>
+    <ID>ExpressionBodySyntax:LocationAdapter.kt$LocationAdapter${ return items[position] is LocationItem }</ID>
+    <ID>ExpressionBodySyntax:MainSegmentModule.kt$MainSegmentModule${ return MainViewState() }</ID>
+    <ID>ExpressionBodySyntax:MarkStepViewModel.kt$MarkStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:MarksCatalogModule.kt$MarksCatalogModule${ return NavigatorHolder() }</ID>
+    <ID>ExpressionBodySyntax:MarksCatalogModule.kt$MarksCatalogModule${ return if (shouldShowVendors) VendorRepository(assetStorage) else EmptyVendorRepository() }</ID>
+    <ID>ExpressionBodySyntax:MarksCatalogModule.kt$MarksCatalogModule${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:MarksViewModel.kt$MarksViewModel${ return getExpandedItemIds(checkedItemId, items, mutableSetOf()) }</ID>
+    <ID>ExpressionBodySyntax:MessagesListActivity.kt$MessagesListActivity${ return provideToolbar().setupAsSecondLevel().applyDefaultBackBehavior() }</ID>
+    <ID>ExpressionBodySyntax:MessagesListFragment.kt$MessagesListFragment${ return inflater?.inflate(R.layout.fragment_messages_list, container, false) }</ID>
+    <ID>ExpressionBodySyntax:MessagesRepository.kt$MessagesRepository${ return (throwable as? ApiException)?.errorCode == "FORBIDDEN_REQUEST" }</ID>
+    <ID>ExpressionBodySyntax:MetroLineConverter.kt$MetroLineConverter${ return NWMetroLine(src.color) }</ID>
+    <ID>ExpressionBodySyntax:MetroLineConverter.kt$MetroLineConverter${ return src.color?.let { MetroLine(it) } }</ID>
+    <ID>ExpressionBodySyntax:MigrationRepository.kt$MigrationRepository${ return subject }</ID>
+    <ID>ExpressionBodySyntax:ModelCatalogItem.kt$ModelCatalogItem${ return name }</ID>
+    <ID>ExpressionBodySyntax:ModelStepViewModel.kt$ModelStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:ModelsCatalogModule.kt$ModelsCatalogModule${ return NavigatorHolder() }</ID>
+    <ID>ExpressionBodySyntax:ModelsCatalogModule.kt$ModelsCatalogModule${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:ModificationStepViewModel.kt$ModificationStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:MultiGeoFragment.kt$MultiGeoFragment.Companion${ return screen(context, MultiGeoFragment::class.java) }</ID>
+    <ID>ExpressionBodySyntax:MultiGeoHistoryViewModel.kt$MultiGeoHistoryViewModel${ return checkedItems.contains(item.id) }</ID>
+    <ID>ExpressionBodySyntax:MultiGeoModule.kt$MultiGeoModule${ return GeoErrorFactory(stringsProvider) }</ID>
+    <ID>ExpressionBodySyntax:MultiGeoPresenter.kt$MultiGeoPresenter${ return filterNot { element -&gt; element.id == itemId } }</ID>
+    <ID>ExpressionBodySyntax:MultiGeoValue.kt$MultiGeoValue.Companion${ return MultiGeoValue(items.sortedBy { it.name + it.parentName }, selectedRadius) }</ID>
+    <ID>ExpressionBodySyntax:MultiGeoViewController.kt$MultiGeoViewController${ return view.btn_clear }</ID>
+    <ID>ExpressionBodySyntax:MultiGeoViewModel.kt$MultiGeoViewModel${ return checkedItems.contains(item.id) }</ID>
+    <ID>ExpressionBodySyntax:MultiModelFilterFragment.kt$MultiModelFilterFragment.Companion${ return screen(context, MultiModelFilterFragment::class.java) }</ID>
+    <ID>ExpressionBodySyntax:MultiModelFragment.kt$MultiModelFragment.Companion${ return screen(context, MultiModelFragment::class.java) }</ID>
+    <ID>ExpressionBodySyntax:MultiModelPresenter.kt$MultiModelPresenter${ return filterNot { element -&gt; element.id == nameplateId } }</ID>
+    <ID>ExpressionBodySyntax:MultiModelsViewModel.kt$MultiModelsViewModel${ return checkedItems[item.id]?.nameplates?.isEmpty() ?: false }</ID>
+    <ID>ExpressionBodySyntax:MultiModelsViewModel.kt$MultiModelsViewModel${ return checkedItems[model.id]?.run { nameplates.isEmpty() || nameplates.any { it.id == nameplate.code } } ?: false }</ID>
+    <ID>ExpressionBodySyntax:Network.kt$Network${ //TODO replace with OffersRepository.getCount() /*val cachedCount = countCache.get(params.toSet()) return if (!forceLoad &amp;&amp; cachedCount != null) { Single.just(CountModel(cachedCount)) } else { val category = ParamsUtils.getCategory(params) val trueParams = paramsExtractor.getParams(category, params) client.count(ServerClientUtils.convertToQueryValues(trueParams)) .doOnSuccess { countCache.put(params.toSet(), it.count) } }*/ return Single.just(CountModel(0)) }</ID>
+    <ID>ExpressionBodySyntax:NodeApiSearchParamsExtractor.kt$NodeApiSearchParamsExtractor${ return params.map(this::mapVendorIds) }</ID>
+    <ID>ExpressionBodySyntax:NonSwipeableViewPager.kt$NonSwipeableViewPager${ // Never allow swiping to switch between pages return false }</ID>
+    <ID>ExpressionBodySyntax:Note.kt$Note${ return offerId.hashCode() }</ID>
+    <ID>ExpressionBodySyntax:NoteInteractor.kt$NoteInteractor${ return repository.getNotes().map { it[offerId] ?: throw NotFoundException() } }</ID>
+    <ID>ExpressionBodySyntax:NumberUtils.kt$NumberUtils${ //http://stackoverflow.com/a/30838379/483603 return !isEmpty(str) &amp;&amp; str.matches("^(?:(?:-)?\\d+(?:\\.\\d+)?)$".toRegex()) }</ID>
+    <ID>ExpressionBodySyntax:OddPartsAdapter.kt$OddPartsAdapter${ return R.layout.view_parts_odd }</ID>
+    <ID>ExpressionBodySyntax:OddPartsAdapter.kt$OddPartsAdapter${ return super.isForViewType(items, position) &amp;&amp; position % 2 == 1 &amp;&amp; position &lt; items.size - 1 }</ID>
+    <ID>ExpressionBodySyntax:Offer.kt$Offer${ return carInfo?.equipment ?: motoInfo?.equipment ?: truckInfo?.equipment }</ID>
+    <ID>ExpressionBodySyntax:Offer.kt$Offer${ return certInfo?.status?.let { status -&gt; status == CertStatus.ACTIVE } == true }</ID>
+    <ID>ExpressionBodySyntax:OfferAdapter.kt$OfferAdapter${ return items[position] is OfferViewModel }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsErrorFactory.kt$OfferDetailsErrorFactory${ return getErrorString(throwable) ?: super.createSnackError(throwable, defaultMessage) }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsFragment.kt$OfferDetailsFragment${ return listOf(OfferDetailDecoration()) }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule${ return AutoServicesInteractor(AutoServicesRepository(api)) }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule${ return CardInteractor(videosRepository) }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule${ return CreditAdInteractor(CreditAdRepository(nativeAdsFactory, CreditAdConverter(gson, stringsProvider))) }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule${ return NavigatorHolder() }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule${ return OfferDetailsViewState() }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule${ return RelatedOffersInteractor(RelatedOffersRepository(api, dictionaryRepository), geoRepo) }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule${ return SpecialOffersInteractor(SpecialOffersRepository(api, dictionaryRepository), geoRepo) }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:OfferExt.kt${ return listOfNotNull(this.getShortTitle(), documents?.year).joinToString(separator = ", ") }</ID>
+    <ID>ExpressionBodySyntax:OfferPhoneListenerProvider.kt$OfferPhoneListenerProvider.Companion${ return OfferPhoneListenerProvider(hashCode, onPhoneClick as Serializable) }</ID>
+    <ID>ExpressionBodySyntax:OffersRepository.kt$OffersRepository${ return api.getUserOffer(category, offerId).flatMap { it.offer?.let { createOffer(it) } } }</ID>
+    <ID>ExpressionBodySyntax:OptionalConverter.kt$OptionalConverter${ return convertNullable(item, converter) ?: throw createConvertException(fieldName) }</ID>
+    <ID>ExpressionBodySyntax:OptionalConverter.kt$OptionalConverter${ return convertNullable(items, converter) ?: throw createConvertException(fieldName) }</ID>
+    <ID>ExpressionBodySyntax:OptionalConverter.kt$OptionalConverter${ return item ?: throw createConvertException(fieldName) }</ID>
+    <ID>ExpressionBodySyntax:OptionalConverter.kt$OptionalConverter${ return items?.mapNotNull { convertNullable(it, converter) } }</ID>
+    <ID>ExpressionBodySyntax:OwnersStepViewModel.kt$OwnersStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:PartsAdapter.kt$PartsAdapter${ return items[position] is PartsItem }</ID>
+    <ID>ExpressionBodySyntax:PartsItem.kt$PartsItem${ return parts.title }</ID>
+    <ID>ExpressionBodySyntax:PartsItem.kt$PartsItem${ return this }</ID>
+    <ID>ExpressionBodySyntax:PhoneInfo.kt$PhoneInfo${ return 0 }</ID>
+    <ID>ExpressionBodySyntax:PhoneInfo.kt$PhoneInfo.CREATOR${ return arrayOfNulls(size) }</ID>
+    <ID>ExpressionBodySyntax:PhoneInteractor.kt$PhoneInteractor${ return repository.getPhones(category, offerId) }</ID>
+    <ID>ExpressionBodySyntax:PhoneRepository.kt$PhoneRepository${ return phones.mapNotNull { PersistentPhoneConverter.fromNetwork(it) } }</ID>
+    <ID>ExpressionBodySyntax:PhonesRepository.kt$PhonesRepository${ return Network.offerPhones(getCategory(category), offerId).toSingle().map { it.map { it.phone } } }</ID>
+    <ID>ExpressionBodySyntax:PhotoModule.kt$PhotoModule${ return NavigatorHolder() }</ID>
+    <ID>ExpressionBodySyntax:PhotoUploadRepository.kt$PhotoUploadRepository${ return api.deletePhoto(offerId, photoId, category).toCompletable() }</ID>
+    <ID>ExpressionBodySyntax:PhotoVideoField.kt$PhotoVideoField${ return super.getValue() ?: defaultValue }</ID>
+    <ID>ExpressionBodySyntax:PresetToSearchMapper.kt$PresetToSearchMapper${ return categoryId?.let { FilterTagFactory.fromCategory(categoryId) } }</ID>
+    <ID>ExpressionBodySyntax:PresetToSearchMapper.kt$PresetToSearchMapper${ return preset?.convertToSearch() }</ID>
+    <ID>ExpressionBodySyntax:PresetsProvider.kt$PresetsProvider${ return presetService.obtainPresets(presetGroup).toSingle() }</ID>
+    <ID>ExpressionBodySyntax:PriceFormatter.kt$PriceFormatter${ return getRURFormatted(NumberHelper.digit(priceRUR)) }</ID>
+    <ID>ExpressionBodySyntax:ProlongationTextsFactory.kt$ProlongationTextsFactory${ return buildTitle(vasName, days, Money(price.toLong(), Currency.RUR)) }</ID>
+    <ID>ExpressionBodySyntax:PromoVASFragment.kt$PromoVASFragment${ return super.getItemDecorations() + vasDecoration }</ID>
+    <ID>ExpressionBodySyntax:PromoVASModule.kt$PromoVASModule${ return NavigatorHolder() }</ID>
+    <ID>ExpressionBodySyntax:PromoVASModule.kt$PromoVASModule${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:PtsStepViewModel.kt$PtsStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:RadiusEvent.kt$RadiusEvent${ return 0 }</ID>
+    <ID>ExpressionBodySyntax:RadiusEvent.kt$RadiusEvent.CREATOR${ return RadiusEvent(parcel) }</ID>
+    <ID>ExpressionBodySyntax:RadiusEvent.kt$RadiusEvent.CREATOR${ return arrayOfNulls(size) }</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar${ return a.getColor(R.styleable.RangeSeekBar_rsb_trackColor, defaultValue) }</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar${ return a.getColor(R.styleable.RangeSeekBar_rsb_trackSelectedColor, defaultValue) }</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar${ return a.getDimensionPixelSize(R.styleable.RangeSeekBar_rsb_touchRadius, defaultValue) }</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar${ return a.getDimensionPixelSize(R.styleable.RangeSeekBar_rsb_trackSelectedThickness, defaultValue) }</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar${ return a.getDimensionPixelSize(R.styleable.RangeSeekBar_rsb_trackThickness, defaultValue) }</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar${ return a.getInteger(R.styleable.RangeSeekBar_rsb_max, 100) }</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar${ return a.getInteger(R.styleable.RangeSeekBar_rsb_minRange, 1) }</ID>
+    <ID>ExpressionBodySyntax:RequestCallInteractor.kt$RequestCallInteractor.RequestApiHelper${ return Network.requestCall(callRequest) }</ID>
+    <ID>ExpressionBodySyntax:ReviewCommentsAdapter.kt$ReviewCommentsAdapter${ return items[position] is ReviewComment }</ID>
+    <ID>ExpressionBodySyntax:ReviewFeedAdapter.kt$ReviewFeedAdapter${ return items[position] is Review }</ID>
+    <ID>ExpressionBodySyntax:ReviewSnippetFragment.kt$ReviewSnippetFragment${ return vpItems.getChildAt(vpItems.currentItem) as RecyclerView? }</ID>
+    <ID>ExpressionBodySyntax:RxExt.kt${ return Single.zip(first, second, zipFunction).flatMap { it } }</ID>
+    <ID>ExpressionBodySyntax:RxExt.kt${ return subscribe({ action() }, { L.e(tag, it) }) }</ID>
+    <ID>ExpressionBodySyntax:RxExt.kt${ return subscribe({ action(it) }, { L.e(tag, it) }) }</ID>
+    <ID>ExpressionBodySyntax:RxExt.kt${ return this?.let { !it.isUnsubscribed } ?: false }</ID>
+    <ID>ExpressionBodySyntax:SavedFeedModule.kt$SavedFeedModule${ return FeedErrorFactory(stringsProvider) }</ID>
+    <ID>ExpressionBodySyntax:SavedFeedModule.kt$SavedFeedModule${ return FilterRepository(filterScreenFactory, screenToFilterMapper, formStateMapper, geoStateProvider) }</ID>
+    <ID>ExpressionBodySyntax:SavedFeedModule.kt$SavedFeedModule${ return MiniFilterInteractor(filterScreenFactory, filterChangedListener, screenSerializer, geoStateProvider) }</ID>
+    <ID>ExpressionBodySyntax:SavedFeedPresenter.kt$SavedFeedPresenter${ return super.offersRequest().map { it.copy(savedSearchId = getFilterContext().savedSearchId) } }</ID>
+    <ID>ExpressionBodySyntax:SavedFiltersModule.kt$SavedFiltersModule${ return NavigatorHolder() }</ID>
+    <ID>ExpressionBodySyntax:SavedSearchMessageReceiver.kt$SavedSearchMessageReceiver${ return remoteMessage.data.containsKey(SUBSCRIPTION_ID) }</ID>
+    <ID>ExpressionBodySyntax:SearchAdvertDeeplinkParser.kt$SearchAdvertDeeplinkParser${ return Consts.CITY_MOSCOW == alias || Consts.CITY_SPB == alias }</ID>
+    <ID>ExpressionBodySyntax:SearchFeedPresenter.kt$SearchFeedPresenter.SearchFeedEvent${ return 0 }</ID>
+    <ID>ExpressionBodySyntax:SearchFeedPresenter.kt$SearchFeedPresenter.SearchFeedEvent.CREATOR${ return SearchFeedEvent(parcel) }</ID>
+    <ID>ExpressionBodySyntax:SearchFeedPresenter.kt$SearchFeedPresenter.SearchFeedEvent.CREATOR${ return arrayOfNulls(size) }</ID>
+    <ID>ExpressionBodySyntax:SegmentDynamicField.kt$SegmentDynamicField${ return getOptions().filter { it.key == value }.firstOrNull()?.key }</ID>
+    <ID>ExpressionBodySyntax:SelectColorViewController.kt$SelectColorViewController${ // hex without # return title //TODO replace with spannable if color icon needed (see MetroTextFactory) }</ID>
+    <ID>ExpressionBodySyntax:SelectReasonDialog.kt$SelectReasonDialog${ return inflater.inflate(R.layout.dialog_select_simple, container, false) }</ID>
+    <ID>ExpressionBodySyntax:SelectReasonDialog.kt$SelectReasonDialog.ReasonAdapter${ return position.toLong() }</ID>
+    <ID>ExpressionBodySyntax:SelectReasonDialog.kt$SelectReasonDialog.ReasonAdapter${ return reasons.size }</ID>
+    <ID>ExpressionBodySyntax:ServicesInteractor.kt$ServicesInteractor${ return servicesRepository.getServices(configRepository.isEvakEnabled()) }</ID>
+    <ID>ExpressionBodySyntax:ShadowLayout.kt$ShadowLayout${ return context.obtainStyledAttributes(attributeSet, attr, 0, 0) }</ID>
+    <ID>ExpressionBodySyntax:ShowMarkModelStrategy.kt$ShowMarkModelStrategy${ return buildPopular(items, converter, popularFilter).buildAllModels(items, converter) }</ID>
+    <ID>ExpressionBodySyntax:ShowOkAuthCommand.kt$ShowOkAuthCommand${ return "https://connect.ok.ru/dk?st.cmd=OAuth2Login&amp;st.redirect=%252Fdk%253Fst.cmd%253DOAuth2Permissions%2526amp%253Bst.response_type%253Dcode%2526amp%253Bst.show_permissions%253Doff%2526amp%253Bst.redirect_uri%253Dhttps%25253A%25252F%25252Fauth.auto.ru%25252Fsocial%25252Fcallback%25252Fok%25252F%2526amp%253Bst.state%253Doi0gZUvowj%2526amp%253Bst.client_id%253D1090386944&amp;st.client_id=1090386944" }</ID>
+    <ID>ExpressionBodySyntax:SliderAdapter.kt$SliderAdapter${ return R.layout.item_services_pager }</ID>
+    <ID>ExpressionBodySyntax:SliderAdapter.kt$SliderAdapter${ return items[position] is PagerViewModel }</ID>
+    <ID>ExpressionBodySyntax:SnackbarBuilder.kt$SnackbarBuilder${ return padding(padding, padding, padding, padding) }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository${ return Single.fromCallable { colors["color_public"] } }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository${ return Single.fromCallable { options["owners"] } }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository${ return Single.fromCallable { options["pts"] } }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository${ return getSuggest(step).map { it.bodyTypes?.sortedBy { it.label } ?: emptyList() } }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository${ return getSuggest(step).map { it.engineTypes?.sortedBy { it.label } ?: emptyList() } }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository${ return getSuggest(step).map { it.gearTypes?.sortedBy { it.label } ?: emptyList() } }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository${ return getSuggest(step).map { it.superGenerations?.sortedBy { it.name } ?: emptyList() } }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository${ return getSuggest(step).map { it.techParams?.sortedBy { it.name } ?: emptyList() } }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository${ return getSuggest(step).map { it.transmissionTypes?.sortedBy { it.label } ?: emptyList() } }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository${ return getSuggest(step).map { it.years?.sortedDescending() ?: emptyList() } }</ID>
+    <ID>ExpressionBodySyntax:StringExt.kt${ return link.matches(DRIVE_2_PATTERN.toRegex()) }</ID>
+    <ID>ExpressionBodySyntax:SuggestItem.kt$SuggestItem${ return value.hashCode() }</ID>
+    <ID>ExpressionBodySyntax:TextSearchLoggerInterceptor.kt$TextSearchLoggerInterceptor${ return isOnSearchFeedFromTextSearch }</ID>
+    <ID>ExpressionBodySyntax:ThreadLocalDateFormat.kt$ThreadLocalDateFormat${ return SimpleDateFormat(format, Locale.getDefault()) }</ID>
+    <ID>ExpressionBodySyntax:TransmissionStepViewModel.kt$TransmissionStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ExpressionBodySyntax:TrustAllSslDownloader.kt$TrustAllSslDownloader${ return super.createConnection(url, extra) }</ID>
+    <ID>ExpressionBodySyntax:TurboVASHeaderAdapter.kt$TurboVASHeaderAdapter${ return items[position] is TurboVASHeader }</ID>
+    <ID>ExpressionBodySyntax:UnknownMessageReceiver.kt$UnknownMessageReceiver${ return true }</ID>
+    <ID>ExpressionBodySyntax:UserOffersFragment.kt$UserOffersFragment${ return inflater.inflate(R.layout.fragment_user_offers, container, false) as ViewGroup }</ID>
+    <ID>ExpressionBodySyntax:UserOffersFragment.kt$UserOffersFragment${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:UserOffersFragment.kt$UserOffersFragment${ return presenter }</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor${ return offersRepo.archiveOffer(category, offerId, reason) }</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor${ return offersRepo.deleteOffer(category, offerId) }</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor${ return userRepo.observeOffers().map { offers -&gt; offers.map { it.enrichWithDetails() } } }</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor${ return userRepo.observeTopOffer().map { it?.enrichWithDetails() } }</ID>
+    <ID>ExpressionBodySyntax:UserPhoneInteractor.kt$UserPhoneInteractor${ return codeTimerRepository.observeCodeTimerSec(phone) }</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper${ return Observable.from(offers).flatMapSingle { offersRepository.createOffer(it) }.toList().toSingle() }</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper${ return Single.defer { Single.just(allUserOffers.get()) } }</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper${ return UserService.getInstance().isAuthorized }</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper${ return getUser().map { it.balance ?: throw IllegalStateException("User balance is unknown") } }</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper${ return latestOffer }</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper${ return offers }</ID>
+    <ID>ExpressionBodySyntax:VASListActivity.kt$VASListActivity.VasAdapter${ return vasList.size }</ID>
+    <ID>ExpressionBodySyntax:VASListActivity.kt$VASListActivity.VasAdapter${ return view == `object` }</ID>
+    <ID>ExpressionBodySyntax:VASRepository.kt$VASRepository${ return activeVASMap[offerId] ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:VASRepository.kt$VASRepository${ return offersVASMap[offerId] ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:ValidateFieldsStrategy.kt$ValidateFieldsStrategy${ return NAME_TO_FIELD[fieldName] ?: tryToParseFieldName(fieldName) }</ID>
+    <ID>ExpressionBodySyntax:Video.kt$Video${ return 0 }</ID>
+    <ID>ExpressionBodySyntax:Video.kt$Video.Companion.&lt;no name provided&gt;${ return Video(`in`) }</ID>
+    <ID>ExpressionBodySyntax:Video.kt$Video.Companion.&lt;no name provided&gt;${ return arrayOfNulls(size) }</ID>
+    <ID>ExpressionBodySyntax:VideoUrlModule.kt$VideoUrlModule${ return NavigatorHolder() }</ID>
+    <ID>ExpressionBodySyntax:VideoUrlModule.kt$VideoUrlModule${ return navigator }</ID>
+    <ID>ExpressionBodySyntax:ViewExt.kt${ return LayoutInflater.from(context).inflate(layoutId, this, attachToRoot) }</ID>
+    <ID>ExpressionBodySyntax:ViewModelFragment.kt$ViewModelFragment${ return FragmentArgsLoader(pmBuilder) }</ID>
+    <ID>ExpressionBodySyntax:ViewModelFragment.kt$ViewModelFragment.Companion${ return withArgs(Bundle().apply { putParcelable(ARGS_VIEW_MODEL_FACTORY, args) }) }</ID>
+    <ID>ExpressionBodySyntax:WheelField.kt$WheelField${ return listOf(SerializablePair&lt;String, String&gt;(id, if(value) WheelMapper.Wheel.RIGHT else WheelMapper.Wheel.LEFT)) }</ID>
+    <ID>ExpressionBodySyntax:WizardFragment.kt$WizardFragment${ return titles?.get(steps[position].javaClass) ?: "" }</ID>
+    <ID>ExpressionBodySyntax:WizardFragment.kt$WizardFragment${ return true }</ID>
+    <ID>ExpressionBodySyntax:WizardPagerAdapter.kt$WizardPagerAdapter${ return steps.size }</ID>
+    <ID>ExpressionBodySyntax:WizardPagerAdapter.kt$WizardPagerAdapter${ return view == obj }</ID>
+    <ID>ExpressionBodySyntax:XivaSocketService.kt$XivaSocketService${ return params.connectUrl }</ID>
+    <ID>ExpressionBodySyntax:YearStepViewModel.kt$YearStepViewModel${ return copy(offer = offer) }</ID>
+    <ID>ForEachOnRange:BarChartActivity.kt$BarChartActivity$forEach { extraDays.add(calendar.time) calendar.add(Calendar.DATE, 1) }</ID>
+    <ID>ForbiddenComment:AbstractDraftFactory.kt$AbstractDraftFactory$// todo: add field</ID>
+    <ID>ForbiddenComment:AbstractDraftFactory.kt$AbstractDraftFactory$// todo: check that this is the way to send equipment with custom params</ID>
+    <ID>ForbiddenComment:ComDraftFactory.kt$ComDraftFactory$// todo: what is this?</ID>
+    <ID>ForbiddenComment:DateField.kt$DateField$// fixme: crutch: we need to fetch min and max if we had them (can't just move margins here, because DateValue is Parcelable)</ID>
+    <ID>ForbiddenComment:GeoSelectSuggestsPresenter.kt$GeoSelectSuggestsPresenter$// TODO: prompt user to get permission</ID>
+    <ID>ForbiddenComment:IUserOffersRepository.kt$IUserOffersRepository$// TODO: Think how to simplify this. Currently there are too many handles to use.</ID>
+    <ID>ForbiddenComment:KeyboardViewController.kt$KeyboardViewController$// todo: side effects?</ID>
+    <ID>ForbiddenComment:LoginEvent.kt$LoginEvent$// TODO: is this needed?</ID>
+    <ID>ForbiddenComment:RequestRefundPresenter.kt$RequestRefundPresenter$// todo: Get emails from public api to support users without email login</ID>
+    <ID>ForbiddenComment:SegmentViewController.kt$SegmentViewController$//todo: doesn't work. For some reason, disabled field is enabled in onClick</ID>
+    <ID>ForbiddenComment:SelectViewController.kt$SelectViewController$// todo: may be create DynamicSelectViewController?</ID>
+    <ID>ForbiddenComment:Suggest.kt$Suggest$// TODO: make follow properties instance List&lt;Entity&gt;?</ID>
+    <ID>ForbiddenComment:TechParam.kt$TechParam$//todo: think about non-null params</ID>
+    <ID>ForbiddenComment:UserOffersPresenter.kt$UserOffersPresenter$// TODO: Bug: if user scrolls down several times, pages can mess up</ID>
+    <ID>ForbiddenComment:ValidateFieldsStrategy.kt$ValidateFieldsStrategy.Companion$// todo: in NWOffer availability is set by default, but server doesn't see it</ID>
+    <ID>FunctionOnlyReturningConstant:ShowOkAuthCommand.kt$ShowOkAuthCommand$private fun makeUrl(): String</ID>
+    <ID>LongParameterList:AddPhoneModule.kt$AddPhoneModule$(viewState: AddPhoneViewState, @Named(ADD_PHONE_NAVIGATOR) router: Navigator, authErrorFactory: AuthErrorFactory, phoneInteractor: UserPhoneInteractor, analytics: AuthMetricsLogger, componentManager: ComponentManager, stringsProvider: StringsProvider)</ID>
+    <ID>LongParameterList:ApiModule.kt$ApiModule$(@Named(DiName.PUBLIC_API) config: ServerConfigInterface, @Named(DiName.PUBLIC_API) httpLoggingInterceptor : HttpLoggingInterceptor, uidInterceptor: UidInterceptor, saveSidInterceptor: SaveSidInterceptor, timeZoneInterceptor: TimeZoneInterceptor, networkInfoInterceptor: NetworkInfoInterceptor, cookieJar: AcceptAllCookieJar, logOutInterceptor: LogOutInterceptor)</ID>
+    <ID>LongParameterList:Decoration.kt$Decoration$(c: Canvas, parent: RecyclerView, child: View, paint: Paint, leftDividerMargin: Int, rightDividerMargin: Int, height: Int)</ID>
+    <ID>LongParameterList:DragAndDropTouchHelper.kt$DragAndDropTouchHelper.OnDragDrawListener$( c: Canvas, recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder, dX: Float, dY: Float, actionState: Int, isCurrentlyActive: Boolean )</ID>
+    <ID>LongParameterList:FullDraftFilterScreen.kt$FullDraftFilterScreen.Companion$( strings: StringsProvider = AndroidStringProvider(), options: OptionsProvider&lt;Select.Option&gt;, colors: OptionsProvider&lt;SelectColor.ColorItem&gt;, damages: OptionsProvider&lt;Entity&gt;, catalogOptions: CatalogOptionsProvider, complectationsProvider: ChosenComplectationProvider, uiFieldsManager: IUiFieldsManager, damagesUpdater: IDamagesUpdater?, isEditMode: Boolean )</ID>
+    <ID>LongParameterList:KotlinExt.kt$(p1: P1?, p2: P2?, p3: P3?, p4: P4?, p5: P5?, p6: P6?, block: (Tuple6&lt;P1, P2, P3, P4, P5, P6&gt;) -&gt; R)</ID>
+    <ID>LongParameterList:LoadableBaseFragment.kt$LoadableBaseFragment$(view: View, textView: TextView?, titleView: TextView?, actionView: TextView?, imageView: ImageView?, text: String, title: String, actionText: String, imageRes: Int?)</ID>
+    <ID>LongParameterList:MultiMarkModule.kt$MultiMarkModule$(@Named(MultiMarkModule.MULTI_MARK_MODULE) router: Navigator, errorFactory: ErrorFactory, componentManager: ComponentManager, marksInteractor: MarksInteractor, viewState: MultiViewState&lt;MultiView&gt;, stringsProvider: StringsProvider, filterParamsInteractor: FilterParamsInteractor )</ID>
+    <ID>LongParameterList:Network.kt$Network$(category: String, mark: String, model: String, generation: String, configuration: String, techParam: String, complectationId: String?)</ID>
+    <ID>LongParameterList:ScalaApi.kt$ScalaApi$(@Path("category") category: String, @Query("mark") mark: String?, @Query("model") model: String?, @Query("super_gen") generation: String?, @Query("truck_category") truckCategory: String?, @Query("moto_category") motoCategory: String?, @Query("vendor_id") vendorId: String?, @Query("page_size") pageSize: String = "1", @Query("page") page: String = "1")</ID>
+    <ID>LongParameterList:ServicesModule.kt$ServicesModule$( servicesInteractor: ServicesInteractor, locationInteractor: LocationAutoDetectInteractor, stringsProvider: StringsProvider, servicesViewState: ServicesViewState, router: NavigatorHolder, errorFactory: ErrorFactory, assetDrawableRepository: IAssetDrawableRepository )</ID>
+    <ID>LongParameterList:SnippetFactory.kt$SnippetFactory$( offer: T, isViewed: Boolean, isFavorite: Boolean, note: String?, topThree: Boolean, ignoreVas: Boolean, payload: Offer )</ID>
+    <ID>MagicNumber:AutoRuWebChromeClient.kt$AutoRuWebChromeClient$21</ID>
+    <ID>MagicNumber:CacheInterceptor.kt$CacheInterceptor$60</ID>
+    <ID>MagicNumber:CreditPaymentStrategy.kt$CreditPaymentStrategy$100.0</ID>
+    <ID>MagicNumber:CreditPaymentStrategy.kt$CreditPaymentStrategy$1200</ID>
+    <ID>MagicNumber:DateField.kt$DateField$4</ID>
+    <ID>MagicNumber:DraftModule.kt$DraftModule$1000L</ID>
+    <ID>MagicNumber:EngineDetailsBuilder.kt$EngineDetailsBuilder$100</ID>
+    <ID>MagicNumber:EngineNemaFactory.kt$EngineNameFactory$10</ID>
+    <ID>MagicNumber:EngineNemaFactory.kt$EngineNameFactory$100f</ID>
+    <ID>MagicNumber:EvaluateModule.kt$EvaluateModule$1000L</ID>
+    <ID>MagicNumber:EvaluatePresenter.kt$EvaluatePresenter$300</ID>
+    <ID>MagicNumber:ExpandArrowAnimatorBuilder.kt$ExpandArrowAnimatorBuilder$0.25f</ID>
+    <ID>MagicNumber:ExpandArrowAnimatorBuilder.kt$ExpandArrowAnimatorBuilder$180f</ID>
+    <ID>MagicNumber:ExpandArrowAnimatorBuilder.kt$ExpandArrowAnimatorBuilder$90f</ID>
+    <ID>MagicNumber:FlagView.kt$FlagView$100</ID>
+    <ID>MagicNumber:FlagView.kt$FlagView$255</ID>
+    <ID>MagicNumber:FlagView.kt$FlagView$35</ID>
+    <ID>MagicNumber:HistogramAdapter.kt$HistogramAdapter$0.2f</ID>
+    <ID>MagicNumber:HistogramAdapter.kt$HistogramAdapter$100f</ID>
+    <ID>MagicNumber:HistogramAdapter.kt$HistogramAdapter$4</ID>
+    <ID>MagicNumber:HistogramAdapter.kt$HistogramAdapter$700</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$1000</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$12</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$24</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$4</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$60</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$60f</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$8</ID>
+    <ID>MagicNumber:Network.kt$Network.ServerUtils$10</ID>
+    <ID>MagicNumber:Network.kt$Network.ServerUtils$1024</ID>
+    <ID>MagicNumber:NoteAdapter.kt$NoteAdapter$100L</ID>
+    <ID>MagicNumber:OfferActionsController.kt$OfferActionsController$10</ID>
+    <ID>MagicNumber:OfferDetailsModel.kt$OfferDetailsModel$1900</ID>
+    <ID>MagicNumber:OfferDetailsModel.kt$OfferDetailsModel$3</ID>
+    <ID>MagicNumber:OfferToFilterMapper.kt$OfferToFilterMapper$1000f</ID>
+    <ID>MagicNumber:OfferToFilterMapper.kt$OfferToFilterMapper$10f</ID>
+    <ID>MagicNumber:OffersByDateProvider.kt$OffersByDateProvider$1000</ID>
+    <ID>MagicNumber:OkAuthViewController.kt$OkAuthViewController$21</ID>
+    <ID>MagicNumber:OptionFactory.kt$3</ID>
+    <ID>MagicNumber:PhoneAuthActivity.kt$PhoneAuthActivity$16</ID>
+    <ID>MagicNumber:PhoneAuthPresenter.kt$PhoneAuthPresenter$200</ID>
+    <ID>MagicNumber:PhoneAuthPresenter.kt$PhoneAuthPresenter$3</ID>
+    <ID>MagicNumber:PriceChangePushReceiver.kt$PriceChangePushReceiver$31</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$100_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$100_000_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$15_899_999</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$15_900_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$1_000_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$200_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$300_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$3_999_999</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$4_000_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$500_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$5_999_999</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$6_000_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$99_999</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$9_899_999</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$9_900_000</ID>
+    <ID>MagicNumber:PricesLineChart.kt$PricesLineChart$105</ID>
+    <ID>MagicNumber:RecyclerViewExt.kt$500</ID>
+    <ID>MagicNumber:ShowDeeplinkCommand.kt$ShowDeeplinkCommand$16</ID>
+    <ID>MagicNumber:StatRepository.kt$StatRepository$12</ID>
+    <ID>MagicNumber:TurboVASHeaderAdapter.kt$TurboVASHeaderAdapter.&lt;no name provided&gt;$60</ID>
+    <ID>MagicNumber:UserServiceWrapper.kt$UserServiceWrapper$10</ID>
+    <ID>MagicNumber:VASListActivity.kt$VASListActivity.ChangeCloseColor$0.5f</ID>
+    <ID>MagicNumber:VasDetailsView.kt$VasDetailsView$0.5f</ID>
+    <ID>MagicNumber:VideoAdapter.kt$VideoAdapter$1000</ID>
+    <ID>MagicNumber:VideoGalleryItemAdapter.kt$VideoGalleryItemAdapter$1000</ID>
+    <ID>MagicNumber:VideoItemsRules.kt$VideoItemsRules$4</ID>
+    <ID>MagicNumber:ViewExt.kt$0.5f</ID>
+    <ID>MaxLineLength:AbstractDraftFactory.kt$ru.auto.ara.draft.factory.offer.AbstractDraftFactory.kt</ID>
+    <ID>MaxLineLength:AddPhoneModule.kt$ru.auto.ara.di.module.main.AddPhoneModule.kt</ID>
+    <ID>MaxLineLength:AuthButtonAdapter.kt$ru.auto.ara.ui.adapter.auth.AuthButtonAdapter.kt</ID>
+    <ID>MaxLineLength:AuthErrorFactory.kt$AuthErrorFactory$fun createPasswordExpired(e: Throwable?): FullScreenError</ID>
+    <ID>MaxLineLength:AuthMetricsLogger.kt$ru.auto.ara.util.stat.AuthMetricsLogger.kt</ID>
+    <ID>MaxLineLength:AuthModule.kt$AuthModule$googleAuthViewController: GoogleAuthViewController</ID>
+    <ID>MaxLineLength:AuthViewController.kt$AuthViewController$abstract fun bind(view: T, onItemClickedPrecondition: (SocialNet) -&gt; Boolean, fragment: Fragment? = null, onClickCallback: (() -&gt; Unit)? = null)</ID>
+    <ID>MaxLineLength:AutoNotificationChannels.kt$AutoNotificationChannels$private val initChannel: (NotificationChannel, context: Context) -&gt; NotificationChannel = { channel, _ -&gt; channel }</ID>
+    <ID>MaxLineLength:AutoNotificationChannels.kt$ru.auto.ara.firebase.notification.AutoNotificationChannels.kt</ID>
+    <ID>MaxLineLength:AutoPublishComplectationScreen.kt$AutoPublishComplectationScreen.Builder$private fun isLastItemOfGroup(index: Int)</ID>
+    <ID>MaxLineLength:AutoPublishComplectationScreen.kt$ru.auto.ara.draft.complectation.AutoPublishComplectationScreen.kt</ID>
+    <ID>MaxLineLength:AutoRuWebChromeClient.kt$AutoRuWebChromeClient$@SuppressLint("NewApi") protected fun openFileInput(fileUploadCallbackOld: ValueCallback&lt;Uri&gt;?, fileUploadCallback: ValueCallback&lt;Array&lt;Uri&gt;&gt;?, allowMultiple: Boolean)</ID>
+    <ID>MaxLineLength:AutoRuWebChromeClient.kt$AutoRuWebChromeClient$override fun onShowFileChooser(webView: WebView, filePathCallback: ValueCallback&lt;Array&lt;Uri&gt;&gt;, fileChooserParams: WebChromeClient.FileChooserParams): Boolean</ID>
+    <ID>MaxLineLength:AutoRuWebChromeClient.kt$AutoRuWebChromeClient$private fun showFileChooser(fileUploadCallbackOld: ValueCallback&lt;Uri&gt;?, fileUploadCallback: ValueCallback&lt;Array&lt;Uri&gt;&gt;?,allowMultiple: Boolean)</ID>
+    <ID>MaxLineLength:AutocodeDamageBlockAdapter.kt$AutocodeDamageBlockAdapter$private fun getDamagesLine(damages: List&lt;Damage&gt;): String?</ID>
+    <ID>MaxLineLength:BasePhoneAuthPresenter.kt$ru.auto.ara.presentation.presenter.auth.BasePhoneAuthPresenter.kt</ID>
+    <ID>MaxLineLength:BaseSegmentField.kt$BaseSegmentField : BasicFieldQueryFieldCleanableField</ID>
+    <ID>MaxLineLength:BuildUtils.kt$private const val DEFAULT_NOT_IMPL_REASON = "This wasn't implemented for reasons. If they changed, remove this assert and create implementation."</ID>
+    <ID>MaxLineLength:ChatMessageReciever.kt$ChatMessageReciever$private val chatSyncInteractor: ChatSyncInteractor</ID>
+    <ID>MaxLineLength:CodeEmailPresenter.kt$CodeEmailPresenter$componentManager: ComponentManager</ID>
+    <ID>MaxLineLength:CommonWebLinkParser.kt$CommonWebLinkParser$private fun getMobilePrefix()</ID>
+    <ID>MaxLineLength:CopyMultiSelectValueRule.kt$CopyMultiSelectValueRule$vararg targetFieldIds: String</ID>
+    <ID>MaxLineLength:CreditAdConverter.kt$ru.auto.ara.ad.converter.CreditAdConverter.kt</ID>
+    <ID>MaxLineLength:DateExt.kt$ru.auto.ara.util.DateExt.kt</ID>
+    <ID>MaxLineLength:DeeplinkUtils.kt$ru.auto.ara.utils.DeeplinkUtils.kt</ID>
+    <ID>MaxLineLength:DeviceRepository.kt$DeviceRepository$override fun sayHello(advertisingId: String, deviceId: String?, metrikaId: String?): Single&lt;String&gt;</ID>
+    <ID>MaxLineLength:Dictionary.kt$ru.auto.data.model.dictionary.Dictionary.kt</ID>
+    <ID>MaxLineLength:DictionaryRepository.kt$DictionaryRepository$private fun getDictionaryFromAssets(category: String, dictionary: String): Single&lt;NWDictionary&gt;</ID>
+    <ID>MaxLineLength:DraftOfferFactory.kt$DraftOfferFactory$override fun initFromField(key: String, value: Any?, suggest: Suggest?, materials: AbstractDraftFactory.Materials, fields: Map&lt;String, Any?&gt;)</ID>
+    <ID>MaxLineLength:DraftPresenter.kt$DraftPresenter$protected fun prepareOfferFromFieldsAndDraft(): Single&lt;Offer&gt;</ID>
+    <ID>MaxLineLength:EvaluatePresenter.kt$ru.auto.ara.presentation.presenter.evaluate.EvaluatePresenter.kt</ID>
+    <ID>MaxLineLength:EvaluateResultCardAdapter.kt$EvaluateResultCardAdapter${ "${NumberHelper.digitFraction(it.first.toDouble(), 1)} ${strings[R.string.engine_volume_litres]} / ${it.second} ${strings[R.string.unit_power]}" }</ID>
+    <ID>MaxLineLength:EvaluateResultFragment.kt$EvaluateResultFragment$override fun onSetupRecyclerView(recyclerView: RecyclerView, adapter: DiffAdapter, layoutManager: RecyclerView.LayoutManager, decorations: List&lt;RecyclerView.ItemDecoration&gt;)</ID>
+    <ID>MaxLineLength:EvaluateScreen.kt$EvaluateScreen.Builder$val complectationRepo = EquipmentRepo(AssetStorage(AppHelper.appContext()), complectationAssetName(Consts.AUTO_CATEGORY_ID))</ID>
+    <ID>MaxLineLength:ExtraScreen.kt$ExtraScreen.Builder$private fun FilterScreen.Builder.addCheckbox(id: String, name: String, withDivider: Boolean = true, isNested: Boolean = false, defaultValue: Boolean = false, isIgnored: Boolean = false, isAlwaysDefault: Boolean = false)</ID>
+    <ID>MaxLineLength:ExtraScreen.kt$ExtraScreen.Builder$private fun FilterScreen.Builder.addRadioBtn(id: String, name: String, withDivider: Boolean = true, isNested: Boolean = false, defaultValue: Boolean = false, isIgnored: Boolean = false, isAlwaysDefault: Boolean = false)</ID>
+    <ID>MaxLineLength:ExtraScreen.kt$ExtraScreen.Builder$private fun getUpdateMultiSelectCheckboxValueRules(screen: ExtraScreen, parentId: String, childIds: List&lt;String&gt;): List&lt;Rule&gt;</ID>
+    <ID>MaxLineLength:ExtraScreen.kt$ExtraScreen.Companion.ExtraScreenToFormStateMapperDecorator$val multiSelectFieldStates: List&lt;MultiSelectState&gt; = fieldStates.map { it.value }.mapNotNull { it as? MultiSelectState }</ID>
+    <ID>MaxLineLength:ExtraScreen.kt$ExtraScreen.Companion.ExtraScreenToFormStateMapperDecorator$val multiSelectInlineFields: List&lt;InlineMultiSelectField&gt; = screen.fields.mapNotNull { it as? InlineMultiSelectField }</ID>
+    <ID>MaxLineLength:ExtraScreen.kt$ExtraScreen.Companion.MapperWithoutCopyValueRulesDecorator$private val disableRuleBlocker: IDisableRuleBlocker</ID>
+    <ID>MaxLineLength:ExtraScreen.kt$ru.auto.ara.filter.screen.ExtraScreen.kt</ID>
+    <ID>MaxLineLength:ExtrasMapper.kt$ExtrasMapper$private fun getMultiSelectParams(fieldIds: Set&lt;String&gt;): List&lt;SerializablePair&lt;String, String&gt;&gt;?</ID>
+    <ID>MaxLineLength:FacebookAuthViewController.kt$FacebookAuthViewController$override fun bind(view: View, onItemClickedPrecondition: (SocialNet) -&gt; Boolean, fragment: Fragment?, onClickCallback: (() -&gt; Unit)?)</ID>
+    <ID>MaxLineLength:FeedInteractor.kt$ru.auto.ara.search.FeedInteractor.kt</ID>
+    <ID>MaxLineLength:FiltersStep22.kt$ru.auto.ara.migration.FiltersStep22.kt</ID>
+    <ID>MaxLineLength:GenerationsCatalogFragment.kt$GenerationsCatalogFragment$@Suppress("UNCHECKED_CAST") val params = arguments.getSerializable(Consts.EXTRA_CALLBACK_QUERY) as List&lt;SerializablePair&lt;String, String&gt;&gt;? ?: emptyList()</ID>
+    <ID>MaxLineLength:GenerationsCatalogPresenter.kt$ru.auto.ara.presentation.presenter.catalog.GenerationsCatalogPresenter.kt</ID>
+    <ID>MaxLineLength:GeoSelectAdapter.kt$GeoSelectAdapter : Adapter</ID>
+    <ID>MaxLineLength:HeaderWithLinkDelegateAdapter.kt$HeaderWithLinkDelegateAdapter$override fun isForViewType(items: MutableList&lt;out IComparableItem&gt;, position: Int)</ID>
+    <ID>MaxLineLength:HelloInteractor.kt$ru.auto.data.interactor.HelloInteractor.kt</ID>
+    <ID>MaxLineLength:InlineMultiSelectFieldMapper.kt$ru.auto.ara.screens.mapper.field.InlineMultiSelectFieldMapper.kt</ID>
+    <ID>MaxLineLength:InlineSelectFieldMapper.kt$ru.auto.ara.screens.mapper.field.InlineSelectFieldMapper.kt</ID>
+    <ID>MaxLineLength:InlineSelectViewController.kt$InlineSelectViewController$val icon: ImageView get() = view.icon //alias for view.icon : getView() might return another view - it calculates getView every time</ID>
+    <ID>MaxLineLength:MarksViewModel.kt$MarksViewModel$private fun getExpandedItemIds(checkedItemId: String, items: List&lt;Identifiable&gt;, expandedIds: MutableSet&lt;String&gt;): MutableSet&lt;String&gt;</ID>
+    <ID>MaxLineLength:MessagesListPresenter.kt$ru.auto.ara.presentation.presenter.chat.MessagesListPresenter.kt</ID>
+    <ID>MaxLineLength:MessagesListViewModel.kt$MessagesListViewModel$private fun getImageMessageViewModel(message: ChatMessage, image: MultisizeImage, fullScreenImage: Image)</ID>
+    <ID>MaxLineLength:MessagesListViewModel.kt$MessagesListViewModel$val imageAttachments = message.attachments.filterIsInstance&lt;ImageAttachment&gt;().flatMap { it.sizes }.sortedBy { it.size.width }</ID>
+    <ID>MaxLineLength:MultiSelectItemAdapter.kt$ru.auto.ara.ui.adapter.select.MultiSelectItemAdapter.kt</ID>
+    <ID>MaxLineLength:MultiSelectTransformer.kt$MultiSelectTransformer$override fun available(transformFrom: Int, transformTo: Int)</ID>
+    <ID>MaxLineLength:Network.kt$ru.auto.ara.network.api.Network.kt</ID>
+    <ID>MaxLineLength:NewFiltersExtrasStep.kt$NewFiltersExtrasStep$private fun migrateSimpleState(srcFormState: Map&lt;String, FieldState&gt;, dstFormState: MutableMap&lt;String, FieldState&gt;, srcFieldId: String)</ID>
+    <ID>MaxLineLength:NewFiltersExtrasStep.kt$ru.auto.ara.migration.NewFiltersExtrasStep.kt</ID>
+    <ID>MaxLineLength:NewFiltersStep.kt$NewFiltersStep$val engineState = formState.getFieldStateOfClass(Filters.ENGINE_TYPE_FIELD, MultiSelectState::class.java) ?: MultiSelectState(Field.TYPES.multiselect)</ID>
+    <ID>MaxLineLength:NewFiltersStep.kt$ru.auto.ara.migration.NewFiltersStep.kt</ID>
+    <ID>MaxLineLength:NewServerApi.kt$NewServerApi$@FormUrlEncoded @POST("user/subscriptions") fun subscribe(@Field("token") pushToken: String, @Field("http_query") params: String, @Field("period") period: Int): Observable&lt;PushSubscription&gt;</ID>
+    <ID>MaxLineLength:NewServerApi.kt$NewServerApi$@GET("search") fun search(@Query("page_num") page: Int, @Query("page_size") limit: Int, @QueryMap(encoded = true) params: Map&lt;String, QueryValue&gt;): Single&lt;PagerResponse&lt;OfferBase&gt;&gt;</ID>
+    <ID>MaxLineLength:NotificationModel.kt$NotificationModel$constructor(context: Context, title: String, text: String, intent: Intent, requestCode: Int = intent.filterHashCode()) : this(title, text, TaskStackBuilder.create(context).addNextIntentWithParentStack(intent) .getPendingIntent(requestCode, PendingIntent.FLAG_UPDATE_CURRENT)) //use the flag FLAG_UPDATE_CURRENT to override any notification already there</ID>
+    <ID>MaxLineLength:OfferActionsController.kt$ru.auto.ara.presentation.presenter.user.OfferActionsController.kt</ID>
+    <ID>MaxLineLength:OfferDetailsFragment.kt$OfferDetailsFragment$private fun createPartsGalleryAdapter(): DelegateAdapter</ID>
+    <ID>MaxLineLength:OfferDetailsFragment.kt$OfferDetailsFragment$private fun showTabletToolbar(toolbarProvider: JxToolbarProvider, isVisible: Boolean)</ID>
+    <ID>MaxLineLength:OfferDetailsFragment.kt$OfferDetailsFragment$val (fromColor, toColor) = (toolbar.color(R.color.common_back_transparent) to toolbar.color(R.color.common_back_white)).run { return@run if (isVisible) this else swap() }</ID>
+    <ID>MaxLineLength:OfferDetailsFragment.kt$OfferDetailsFragment.&lt;no name provided&gt;$override fun onDismissed(transientBottomBar: Snackbar?, event: Int)</ID>
+    <ID>MaxLineLength:OfferDetailsFragment.kt$ru.auto.ara.ui.fragment.offer.OfferDetailsFragment.kt</ID>
+    <ID>MaxLineLength:OfferDetailsModel.kt$OfferDetailsModel$private val defaultDividerViewModel = DividerViewModel(dividerColor = R.color.common_back_light_gray, marginLeft = R.dimen.negative_half_margin, marginRight = R.dimen.negative_half_margin)</ID>
+    <ID>MaxLineLength:OfferDetailsModel.kt$OfferDetailsModel$private val defaultDoubledTransparentDividerViewModel = DividerViewModel(dividerColor = R.color.common_back_transparent, height = R.dimen.default_side_margins)</ID>
+    <ID>MaxLineLength:OfferDetailsModel.kt$OfferDetailsModel$private val defaultHeaderDividerViewModel = DividerViewModel(dividerColor = R.color.common_back_transparent, height = R.dimen.big_margin)</ID>
+    <ID>MaxLineLength:OfferDetailsModel.kt$OfferDetailsModel$private val defaultTransparentDividerViewModel = DividerViewModel(dividerColor = R.color.common_back_transparent, height = R.dimen.half_margin)</ID>
+    <ID>MaxLineLength:OfferDetailsModel.kt$OfferDetailsModel$private val defaultTrippledTransparentDividerViewModel = DividerViewModel(dividerColor = R.color.common_back_transparent, height = R.dimen.big_margin)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$@Provides @OfferDetailsScope @Suppress("LongParameterList") fun providePriceChangeController( viewState: OfferDetailsViewState, @Named(OfferDetailsModule.OFFER_DETAILS_MODULE) router: Navigator, errorFactory: OfferDetailsErrorFactory, priceChangeInteractor: IPriceChangeInteractor, favoriteInteractor: IFavoriteInteractor&lt;Offer&gt;, offerController: OfferDetailsActionsController, callController: PhoneDelegatePresenter, analystManager: AnalystManager ): FavoriteActionsController</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$@Provides @OfferDetailsScope fun provideCardNotificationInteractor(api: ScalaApi): CardNotificationInteractor</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$@Provides @OfferDetailsScope fun provideEditOfferController( viewState: OfferDetailsViewState, @Named(OfferDetailsModule.OFFER_DETAILS_MODULE) router: Navigator, errorFactory: OfferDetailsErrorFactory, offerActionsController: IOfferActionsController&lt;OfferActionsView&gt;, offerController: OfferDetailsActionsController, changePriceInteractor: ChangePriceInteractor ): EditOfferController</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$@Provides @OfferDetailsScope fun provideOfferController( viewState: OfferDetailsViewState, @Named(OfferDetailsModule.OFFER_DETAILS_MODULE) router: Navigator, errorFactory: OfferDetailsErrorFactory, callController: PhoneDelegatePresenter ): OfferDetailsActionsController</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$@Provides @OfferDetailsScope fun provideSpecialOffersInteractor(api: ScalaApi, dictionaryRepository: IDictionaryRepository, geoRepo: IGeoRepository): SpecialOffersInteractor</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$@Provides @OfferDetailsScope internal fun provideRelatedOffersInteractor(api: ScalaApi, dictionaryRepository: IDictionaryRepository, geoRepo: IGeoRepository): IRelatedOffersInteractor</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val autoCodeController = AutocodeActionsController(viewState, errorFactory, router, stringsProvider, model, autocodeInteractor, offerController::updateOffer)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val autoServicesController = AutoServicesController(viewState, errorFactory, router, autoServicesInteractor, model, offerController::updateOffer, stringsProvider)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val galleryController = GalleryActionsController(viewState, errorFactory, router, model, photoCachedRepository, stringsProvider, viewHashCode)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val menuController = MenuController(viewState, errorFactory, router, model, favoriteInteractor, editOfferController::onEditOfferClicked, editOfferController::onStopOfferClicked, editOfferController::onRemoveOfferClicked, editOfferController::onActivateOfferClicked, favoriteController::onLikeClicked, noteController::onNoteAddClickedFromMenu, shareController::onShareClicked, complainController::onComplainClicked)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val noteController = NoteActionsController(viewState, errorFactory, router, model, offerController::updateOffer, noteInteractor, favoriteInteractor, prefsDelegate)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val notificationController = NotificationController(viewState, errorFactory, router, cardNotificationInteractor, model, offerController::updateOffer)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val promoController = PromoController(viewState, errorFactory, router, model, offerController::updateOffer, geoProvider, promoProvider, prefsDelegate, filterInteractor, SearchContext.LISTING)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val relatedOffersController = RelatedOffersActionsController(viewState, errorFactory, router, model, relatedOffersInteractor, specialOffersInteractor, analystManager, offerController::updateOffer, stringsProvider)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val relatedPartsController = RelatedPartsController(viewState, errorFactory, router, model, relatedPartsInteractor, offerController::updateOffer)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val requestCallController = RequestCallActionsController(viewState, errorFactory, router, offerController::updateOffer, sessionRepo, interactor, callController::onCallClicked, analystManager, stringsProvider, model, userRepository)</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$OfferDetailsModule$val videoController = VideoActionsController(viewState, errorFactory, router, model, cardInteractor, offerController::updateOffer)</ID>
+    <ID>MaxLineLength:OfferDetailsPresenter.kt$OfferDetailsPresenter$private fun setupOfferLoaded(offer: Offer, isInit: Boolean, wasPreload: Boolean)</ID>
+    <ID>MaxLineLength:OfferDetailsPresenter.kt$ru.auto.ara.presentation.presenter.offer.OfferDetailsPresenter.kt</ID>
+    <ID>MaxLineLength:OkAuthViewController.kt$OkAuthViewController$override fun bind(view: View, onItemClickedPrecondition: (SocialNet) -&gt; Boolean, fragment: Fragment?, onClickCallback: (() -&gt; Unit)?)</ID>
+    <ID>MaxLineLength:OnInfinitePageChangeListenerDecorator.kt$OnInfinitePageChangeListenerDecorator : OnPageChangeListener</ID>
+    <ID>MaxLineLength:PartsFragment.kt$ru.auto.ara.ui.fragment.parts.PartsFragment.kt</ID>
+    <ID>MaxLineLength:PasswordAuthPresenter.kt$PasswordAuthPresenter$private val authErrorFactory: AuthErrorFactory</ID>
+    <ID>MaxLineLength:PhoneAuthPresenter.kt$ru.auto.ara.presentation.presenter.auth.PhoneAuthPresenter.kt</ID>
+    <ID>MaxLineLength:PhoneRepository.kt$PhoneRepository : BaseCachedRepositoryIPhoneRepository</ID>
+    <ID>MaxLineLength:PriceChangeInteractor.kt$PriceChangeInteractor$override fun shouldShowPriceChange(offerId: String, isEditing: Boolean, priceChangeRur: Long, tags: List&lt;String&gt;): Single&lt;Boolean&gt;</ID>
+    <ID>MaxLineLength:PriceChangePushReceiver.kt$PriceChangePushReceiver$private fun processNotification(context: Context, title: String, text: String, model: OfferNotificationModel, pushName: String)</ID>
+    <ID>MaxLineLength:PriceChangePushReceiver.kt$PriceChangePushReceiver${ offer -&gt; processNotification(AppHelper.appContext(), title, body, OfferNotificationModel(category, offerId, offer), pushName) }</ID>
+    <ID>MaxLineLength:PromoVASFragment.kt$PromoVASFragment$override fun onSetupRecyclerView(recyclerView: RecyclerView, adapter: DiffAdapter, layoutManager: RecyclerView.LayoutManager, decorations: List&lt;RecyclerView.ItemDecoration&gt;)</ID>
+    <ID>MaxLineLength:PromoVASPresenter.kt$PromoVASPresenter$val firstComposite: VASInfo? = model.compositeInfo.firstOrNull { vas -&gt; vas.alias == VAS_ALIAS_ALL_SALE_FRESH }</ID>
+    <ID>MaxLineLength:PublicApiErrorHandler.kt$PublicApiErrorHandler$private fun getError(error: ApiException, errorString: String, httpException: HttpException): Throwable</ID>
+    <ID>MaxLineLength:PushTokenInteractor.kt$ru.auto.data.interactor.PushTokenInteractor.kt</ID>
+    <ID>MaxLineLength:RadioBtnFieldMapper.kt$ru.auto.ara.screens.mapper.field.RadioBtnFieldMapper.kt</ID>
+    <ID>MaxLineLength:RequestPermissionDialogCommand.kt$RequestPermissionDialogCommand : RouterCommand</ID>
+    <ID>MaxLineLength:RequestRefundException.kt$RequestRefundException : Exception</ID>
+    <ID>MaxLineLength:RequestRefundPresenter.kt$RequestRefundPresenter : BasePresenter</ID>
+    <ID>MaxLineLength:RequestRefundPresenter.kt$RequestRefundPresenter$val email = if (isEmailValid(login)) login else null // todo: Get emails from public api to support users without email login</ID>
+    <ID>MaxLineLength:RestrictableFrameLayout.kt$RestrictableFrameLayout$val newHeightMeasureSpec = if (maxHeight != -1 &amp;&amp; height &gt; maxHeight) MeasureSpec.makeMeasureSpec(maxHeight, measureMode) else heightMeasureSpec</ID>
+    <ID>MaxLineLength:RestrictableFrameLayout.kt$RestrictableFrameLayout$val newWidthMeasureSpec = if (maxWidth != -1 &amp;&amp; width &gt; maxWidth) MeasureSpec.makeMeasureSpec(maxWidth, measureMode) else widthMeasureSpec</ID>
+    <ID>MaxLineLength:SavedSearchMessageReceiver.kt$SavedSearchMessageReceiver$private val stringsProvider: StringsProvider</ID>
+    <ID>MaxLineLength:SavedSearchMessageReceiver.kt$ru.auto.ara.firebase.receiver.SavedSearchMessageReceiver.kt</ID>
+    <ID>MaxLineLength:ScalaClientFactory.kt$ScalaClientFactory$val isDevOrDebug: Boolean</ID>
+    <ID>MaxLineLength:ScreenVisibilityRepository.kt$ScreenVisibilityRepository : IScreenVisibilityRepositoryActivityLifecycleCallbacks</ID>
+    <ID>MaxLineLength:ScreenVisibilityRepository.kt$ScreenVisibilityRepository$&lt;no name provided&gt; : FragmentLifecycleCallbacks</ID>
+    <ID>MaxLineLength:SelectFragment.kt$SelectFragment.Companion$ @JvmStatic fun createOptionScreen(fieldId: String, label: String, options: List&lt;Select.Option&gt;, value: String?, event: IBaseEvent? = null) : ScreenBuilder.SimpleScreen</ID>
+    <ID>MaxLineLength:SelectFragment.kt$SelectFragment.Companion$@JvmStatic fun createColorScreen(fieldId: String, label: String, colors: List&lt;SelectColor.ColorItem&gt;, value: String?): ScreenBuilder.SimpleScreen</ID>
+    <ID>MaxLineLength:ServicePriceConverter.kt$ru.auto.data.model.network.scala.offer.converter.ServicePriceConverter.kt</ID>
+    <ID>MaxLineLength:ServicesPresenter.kt$ru.auto.ara.presentation.presenter.services.ServicesPresenter.kt</ID>
+    <ID>MaxLineLength:ServicesRepository.kt$ru.auto.data.repository.ServicesRepository.kt</ID>
+    <ID>MaxLineLength:ShowAlertDialogCommand.kt$ShowAlertDialogCommand : RouterCommand</ID>
+    <ID>MaxLineLength:ShowCatalogCommand.kt$ShowCatalogCommand$val url = AutoLinks.CATALOG + CatalogCardLink.mark(model.markId) + CatalogCardLink.model(model.modelId) + CatalogCardLink.generation(model.generationId)</ID>
+    <ID>MaxLineLength:ShowDeeplinkCommand.kt$ru.auto.ara.router.command.ShowDeeplinkCommand.kt</ID>
+    <ID>MaxLineLength:ShowEvaluateResultCommand.kt$ShowEvaluateResultCommand$private val complectationLabel: String? //crunch for public api's offer, why it is not in offer.carInfo.complectation?!!</ID>
+    <ID>MaxLineLength:ShowLocationCommand.kt$ShowLocationCommand.Companion$private const val PRIVATE_KEY: String = "MIIBVAIBADANBgkqhkiG9w0BAQEFAASCAT4wggE6AgEAAkEAvlh6eGdpN38HNO5XLBIgJm68KAnw9SMVzsY6cIKZu+IK8WRq5JIwjriuHS7x2nQUgb3T2qk0UoaR/xV30q42mQIDAQABAkAKoI/95vAl7A6v8tqlGEH5Q1d3+M4eMZ5HFCQxIemJZsXDqzg3JLDMIW/nLx7YVTA17P9VRv722+Hk6HRT8UOxAiEA4gNiaBr66Gv6HzDNtrD1ljrtVJavQUvpHUaNLYpADhUCIQDXmaG/dMzy3I24gj33i3EpeMEoI/rFoQmRfar53bFrdQIhANx9DsCfKY4a4L0TAG0s/7larXOrOTgLVVURIeN+jvTtAiB3YbGHsyQ9IlUzIqMvbD4H6b6C/JFCV25V6pD+9HvmdQIgcqUcbXGr9L3SOi+zTojzt8+ZIiiN1LH0IymYUMWGhHM="</ID>
+    <ID>MaxLineLength:ShowOkAuthCommand.kt$ru.auto.ara.router.command.ShowOkAuthCommand.kt</ID>
+    <ID>MaxLineLength:ShowWebViewCommand.kt$ShowWebViewCommand$private val shouldSupportMultipleWindows: Boolean = false</ID>
+    <ID>MaxLineLength:SliderAdapter.kt$ru.auto.ara.ui.adapter.services.SliderAdapter.kt</ID>
+    <ID>MaxLineLength:SocialAuthViewControllerProvider.kt$SocialAuthViewControllerProvider$private val mailRuAuthViewController: MailRuAuthViewController</ID>
+    <ID>MaxLineLength:SocialAuthViewControllerProvider.kt$SocialAuthViewControllerProvider.Companion.NotImplementedAuthViewController$override fun bind(view: View, onItemClickedPrecondition: (SocialNet) -&gt; Boolean, fragment: Fragment?, onClickCallback: (() -&gt; Unit)?)</ID>
+    <ID>MaxLineLength:SubcategoryBuilder.kt$ru.auto.ara.draft.screen.SubcategoryBuilder.kt</ID>
+    <ID>MaxLineLength:TrustAllSslDownloader.kt$TrustAllSslDownloader : BaseImageDownloader</ID>
+    <ID>MaxLineLength:UpdateMultiSelectCheckboxValueRule.kt$UpdateMultiSelectCheckboxValueRule$vararg childFieldIds: String</ID>
+    <ID>MaxLineLength:UpdateSelectRadioBtnValueRule.kt$UpdateSelectRadioBtnValueRule$vararg childFieldIds: String</ID>
+    <ID>MaxLineLength:UserOffersParser.kt$UserOffersParser$private val FULL_PATH_OFFERS = "/$HOST_USERS/$PATH_OFFERS" // if it comes with autoru://app users.auto.ru become part of full path instead host</ID>
+    <ID>MaxLineLength:VasStatEventFactory.kt$VasStatEventFactory$override fun getStatEvent(alias: String, @WalletAddMoneyStatEvent.Context context: String): Pair&lt;StatEvent, Map&lt;String, Any&gt;&gt;?</ID>
+    <ID>MaxLineLength:VideoGalleryItemAdapter.kt$VideoGalleryItemAdapter : BaseGalleryItemAdapter</ID>
+    <ID>MaxLineLength:VideoGalleryViewModel.kt$VideoGalleryViewModel : GalleryViewModel</ID>
+    <ID>MaxLineLength:VideoListException.kt$VideoListException : InteractorException</ID>
+    <ID>MaxLineLength:VideoListFragment.kt$VideoListFragment$override fun onSetupRecyclerView(recyclerView: RecyclerView, adapter: DiffAdapter, layoutManager: RecyclerView.LayoutManager, decorations: List&lt;RecyclerView.ItemDecoration&gt;)</ID>
+    <ID>MaxLineLength:VideoModule.kt$VideoModule$@Provides @VideoScope fun provideVideoListInteractor(videosRepository: IVideosRepository): VideoListInteractor</ID>
+    <ID>MaxLineLength:VkAuthViewController.kt$VkAuthViewController$override fun bind(view: View, onItemClickedPrecondition: (SocialNet) -&gt; Boolean, fragment: Fragment?, onClickCallback: (() -&gt; Unit)?)</ID>
+    <ID>MaxLineLength:VkAuthViewController.kt$VkAuthViewController$private fun toSocialAuthRequest(vkAccessToken: VKAccessToken, socialUserSource: SocialUserSource): SocialAuthRequest</ID>
+    <ID>MaxLineLength:YaAuthViewController.kt$YaAuthViewController$override fun bind(view: View, onItemClickedPrecondition: (SocialNet) -&gt; Boolean, fragment: Fragment?, onClickCallback: (() -&gt; Unit)?)</ID>
+    <ID>MethodOverloading:BasePresenter.kt$BasePresenter&lt;View : BaseView, out ViewState : BaseViewState&lt;View&gt;&gt;</ID>
+    <ID>MethodOverloading:FullDraftPresenter.kt$FullDraftPresenter : BasePresenterILoadErrorPresenterIUiFieldsManagerIFieldsProviderIDamagesUpdater</ID>
+    <ID>MethodOverloading:MainComponent.kt$MainComponent</ID>
+    <ID>MethodOverloading:OfferActionsController.kt$OfferActionsController : IOfferActionsControllerIOfferVASActionsController</ID>
+    <ID>MethodOverloading:OptionFactory.kt$ru.auto.ara.draft.options.OptionFactory.kt</ID>
+    <ID>ModifierOrder:AutocodeSummaryStatusView.kt$AutocodeSummaryStatusView$private @DrawableRes</ID>
+    <ID>ModifierOrder:DateField.kt$DateField$open protected</ID>
+    <ID>ModifierOrder:GeoSelectSuggestDialog.kt$GeoSelectSuggestDialog$@Inject lateinit internal</ID>
+    <ID>ModifierOrder:GeoSelectSuggestDialog.kt$GeoSelectSuggestDialog$lateinit private</ID>
+    <ID>ModifierOrder:SuggestFragment.kt$SuggestFragment$override abstract</ID>
+    <ID>NestedBlockDepth:ABaseOfferConverter.kt$ABaseOfferConverter$private fun getLocation(src: Offer): Location?</ID>
+    <ID>NestedBlockDepth:AbstractInfoFactory.kt$AbstractInfoFactory$protected fun prepareBodyFullLine(offer: Offer): String</ID>
+    <ID>NestedBlockDepth:ActiveOfferViewHolder.kt$ActiveOfferViewHolder$override fun bindOffer(model: UserOffer)</ID>
+    <ID>NestedBlockDepth:AdditionalOfferInfoAdapter.kt$AdditionalOfferInfoAdapter$private fun KViewHolder.bindExpirationDate(date: Long?)</ID>
+    <ID>NestedBlockDepth:AutoNotificationChannels.kt$AutoNotificationChannels$fun getChannel(context: Context): NotificationChannel?</ID>
+    <ID>NestedBlockDepth:AutoRuWebChromeClient.kt$AutoRuWebChromeClient$fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) : Boolean</ID>
+    <ID>NestedBlockDepth:AutoUpdateFieldsStrategy.kt$AutoUpdateFieldsStrategy$private fun updateWithSuggest(screen: FilterScreen, offer: Offer, suggest: Suggest?)</ID>
+    <ID>NestedBlockDepth:AutocodeActionsController.kt$AutocodeActionsController$override fun onAutocodeInflated()</ID>
+    <ID>NestedBlockDepth:AutocodeDamageBlockAdapter.kt$AutocodeDamageBlockAdapter$private fun getDamagesLine(damages: List&lt;Damage&gt;): String?</ID>
+    <ID>NestedBlockDepth:AutocodeOldOfferAdapter.kt$AutocodeOldOfferAdapter$override fun onBind(viewHolder: KViewHolder, item: AutocodeOldOfferViewModel)</ID>
+    <ID>NestedBlockDepth:AutocodePresenter.kt$AutocodePresenter$private fun show( autocodeResult: AutocodeResult.Success, startGroupId: String? = null )</ID>
+    <ID>NestedBlockDepth:AutocodeSectionTitleAdapter.kt$AutocodeSectionTitleAdapter$override fun onBind(viewHolder: KViewHolder, item: AutocodeSectionTitleViewModel)</ID>
+    <ID>NestedBlockDepth:BaseWizardOfferAdapter.kt$BaseWizardOfferAdapter$override fun onBind(viewHolder: KViewHolder, item: T)</ID>
+    <ID>NestedBlockDepth:CardFeatureDiscoveryFactory.kt$CardFeatureDiscoveryFactory.FeatureDiscoveryPromptText$override fun prepare(options: PromptOptions&lt;out PromptOptions&lt;*&gt;&gt;, clipToBounds: Boolean, clipBounds: Rect)</ID>
+    <ID>NestedBlockDepth:CommonListItemDecoration.kt$CommonListItemDecoration$override fun onDrawOver(c: Canvas, parent: RecyclerView, state: RecyclerView.State)</ID>
+    <ID>NestedBlockDepth:ComplainFragment.kt$ComplainFragment$override fun onOptionsItemSelected(item: MenuItem): Boolean</ID>
+    <ID>NestedBlockDepth:ComplectationField.kt$ComplectationField$private fun List&lt;EquipmentField&gt;.toFieldStates(): Map&lt;Pair&lt;String, String&gt;, FieldState&gt;</ID>
+    <ID>NestedBlockDepth:CurrentMotoParamsFactory.kt$CurrentMotoParamsFactory$override fun createParams(offer: Offer, columnIndex: Int, age: String?): List&lt;String&gt;</ID>
+    <ID>NestedBlockDepth:CurrentTruckParamsFactory.kt$CurrentTruckParamsFactory$override fun createParams(offer: Offer, columnIndex: Int, age: String?): List&lt;String&gt;</ID>
+    <ID>NestedBlockDepth:CustomLinkify.kt$CustomLinkify$private fun makeUrl(inputUrl: String, prefixes: Array&lt;String&gt;, matcher: Matcher, filter: TransformFilter?): String</ID>
+    <ID>NestedBlockDepth:DateViewController.kt$DateViewController$private fun setValue(field: DateField?)</ID>
+    <ID>NestedBlockDepth:DealerFeedFragment.kt$DealerFeedFragment$override fun showDealer(dealerModel: DealerViewModel)</ID>
+    <ID>NestedBlockDepth:DealerViewModel.kt$DealerViewModel.Companion$fun fromDealerItem(dealer: DealerItem): DealerViewModel</ID>
+    <ID>NestedBlockDepth:DeeplinkParserChain.kt$DeeplinkParserChain$private fun DeeplinkParser.Result.addLogParams(uri: Uri): DeeplinkParser.Result</ID>
+    <ID>NestedBlockDepth:DialogDelegateAdapter.kt$DialogDelegateAdapter$override fun onBind(viewHolder: KViewHolder, item: DialogViewModel)</ID>
+    <ID>NestedBlockDepth:DialogDelegateAdapter.kt$DialogDelegateAdapter$private fun initMenu(containerView: View, item: DialogViewModel)</ID>
+    <ID>NestedBlockDepth:DialogsInteractor.kt$DialogsInteractor$fun getDialogActions(dialog: ChatDialog): List&lt;DialogAction&gt;</ID>
+    <ID>NestedBlockDepth:DividerAdapter.kt$DividerAdapter$override fun onBind(viewHolder: KViewHolder, item: DividerViewModel)</ID>
+    <ID>NestedBlockDepth:DoNotScrollOnAddCallback.kt$DoNotScrollOnAddCallback$override fun onInserted(position: Int, count: Int)</ID>
+    <ID>NestedBlockDepth:DraftFieldsParams.kt$DraftFieldsParams$fun offerToCatalogParams(offer: Offer): Map&lt;String, String&gt;</ID>
+    <ID>NestedBlockDepth:DraftPresenter.kt$DraftPresenter$override fun getNotDefaultFields(): Map&lt;String, Any&gt;</ID>
+    <ID>NestedBlockDepth:EngineDetailsBuilder.kt$EngineDetailsBuilder$fun addEnginePower(showUnits: Boolean, prefix: Separator): EngineDetailsBuilder</ID>
+    <ID>NestedBlockDepth:EngineDetailsBuilder.kt$EngineDetailsBuilder$fun addVolumeCubic(showUnits: Boolean, prefix: Separator): EngineDetailsBuilder</ID>
+    <ID>NestedBlockDepth:EvaluateFieldsStrategy.kt$EvaluateFieldsStrategy$private fun updateWithSuggest(screen: FilterScreen, offer: Offer, suggest: Suggest?)</ID>
+    <ID>NestedBlockDepth:ExtraFilterViewState.kt$ExtraFilterViewState$override fun restore()</ID>
+    <ID>NestedBlockDepth:ExtraScreen.kt$ExtraScreen.Builder$override fun build(name: String): FilterScreen</ID>
+    <ID>NestedBlockDepth:ExtraScreen.kt$ExtraScreen.Companion.ExtraScreenToFormStateMapperDecorator$private fun afterConvertToFormState(formState: FormState, screen: Screen): FormState</ID>
+    <ID>NestedBlockDepth:FeedInteractor.kt$FeedInteractor$private fun getSpecial(specialIterator: Iterator&lt;Offer&gt;): SpecialsResult?</ID>
+    <ID>NestedBlockDepth:FilterFeedPresenter.kt$FilterFeedPresenter$fun onMiniFilterIconClicked(markPosition: Int, fieldTypeId: String)</ID>
+    <ID>NestedBlockDepth:FiltersStep22.kt$FiltersStep22$private fun migrateField(fieldId: Map.Entry&lt;String, String?&gt;, formState: FormState)</ID>
+    <ID>NestedBlockDepth:FiltersStep23.kt$FiltersStep23$private fun migrateField(fieldId: Map.Entry&lt;String, String?&gt;, formState: FormState)</ID>
+    <ID>NestedBlockDepth:FullDraftDateViewController.kt$FullDraftDateViewController$private fun setValue(field: DateField?)</ID>
+    <ID>NestedBlockDepth:FullDraftPresenter.kt$FullDraftPresenter$override fun getNotDefaultFields(): Map&lt;String, Any&gt;</ID>
+    <ID>NestedBlockDepth:FullDraftPresenter.kt$FullDraftPresenter$private fun onOfferPublished(publishInfo: PublishInfo)</ID>
+    <ID>NestedBlockDepth:HeadersImageDownloader.kt$HeadersImageDownloader$@Throws(IOException::class) override fun createConnection(url: String?, extra: Any?): HttpURLConnection</ID>
+    <ID>NestedBlockDepth:HistogramAdapter.kt$HistogramAdapter$override fun onInflated(view: View, item: HistogramModel)</ID>
+    <ID>NestedBlockDepth:HistoryFactory.kt$HistoryFactory$fun buildHistoryBlocks( autocodeResult: AutocodeResult.Success, isUserOffer: Boolean ): List&lt;IComparableItem&gt;</ID>
+    <ID>NestedBlockDepth:KotlinExt.kt$fun &lt;P1, P2, P3, R&gt; let3(p1: P1?, p2: P2?, p3: P3?, block: (Triple&lt;P1, P2, P3&gt;) -&gt; R): R?</ID>
+    <ID>NestedBlockDepth:KotlinExt.kt$fun &lt;P1, P2, P3, R&gt; run3(p1: P1?, p2: P2?, p3: P3?, block: Triple&lt;P1, P2, P3&gt;.() -&gt; R): R?</ID>
+    <ID>NestedBlockDepth:LetterScrollDecoration.kt$LetterScrollDecoration$private fun RecyclerView.findLetter(): String?</ID>
+    <ID>NestedBlockDepth:LetterScrollDecoration.kt$LetterScrollDecoration$private fun hide()</ID>
+    <ID>NestedBlockDepth:LetterScrollDecoration.kt$LetterScrollDecoration$private fun show()</ID>
+    <ID>NestedBlockDepth:LimitInputViewController.kt$LimitInputViewController$private fun showValue(field: LimitInputField)</ID>
+    <ID>NestedBlockDepth:LoadableBaseFragment.kt$LoadableBaseFragment$protected fun setFullscreenState(view: View, textView: TextView?, titleView: TextView?, actionView: TextView?, imageView: ImageView?, text: String, title: String, actionText: String, imageRes: Int?)</ID>
+    <ID>NestedBlockDepth:MainFragment.kt$MainFragment$override fun deliverActivityResult(activityResult: ActivityResultModel)</ID>
+    <ID>NestedBlockDepth:MessagesListPresenter.kt$MessagesListPresenter$private fun onSendMessage(type: MessageType)</ID>
+    <ID>NestedBlockDepth:MiniFilterCollapsedFieldBinder.kt$MiniFilterCollapsedFieldBinder$fun bind(view: View, item: MiniFilterFieldViewModel, onClick: (String) -&gt; Unit, onIconClick: (String) -&gt; Unit )</ID>
+    <ID>NestedBlockDepth:MiniFilterExpandedFieldBinder.kt$MiniFilterExpandedFieldBinder$fun bind(view: View, item: MiniFilterFieldViewModel, onClick: (String) -&gt; Unit, onIconClick: (String) -&gt; Unit )</ID>
+    <ID>NestedBlockDepth:MiniFilterInteractor.kt$MiniFilterInteractor$fun removeMark(position: Int)</ID>
+    <ID>NestedBlockDepth:ModelsInteractor.kt$ModelsInteractor$private fun getModelWithFilteredNameplates(input: String, model: ModelCatalogItem, showNamePlate: Boolean): ModelCatalogItem</ID>
+    <ID>NestedBlockDepth:MultiGenerationFilterFragment.kt$MultiGenerationFilterFragment$override fun setToolbarState(model: MultiToolbarViewModel)</ID>
+    <ID>NestedBlockDepth:MultiGeoAdapter.kt$MultiGeoAdapter$override fun onInflated(view: View, item: CommonListItem): Unit</ID>
+    <ID>NestedBlockDepth:MultiMarkItemDecoration.kt$MultiMarkItemDecoration$override fun onDrawOver(c: Canvas, parent: RecyclerView, state: RecyclerView.State)</ID>
+    <ID>NestedBlockDepth:MultiMarkModelFragment.kt$MultiMarkModelFragment$override fun setSearchState(model: SearchViewModel)</ID>
+    <ID>NestedBlockDepth:MultiModelFilterFragment.kt$MultiModelFilterFragment$override fun setToolbarState(model: MultiToolbarViewModel)</ID>
+    <ID>NestedBlockDepth:MultiModelPresenter.kt$MultiModelPresenter$private fun toggleNameplate(model: Model, namePlate: Nameplate)</ID>
+    <ID>NestedBlockDepth:MultiSelectItemAdapter.kt$MultiSelectItemAdapter$override fun onBind(viewHolder: KViewHolder, item: MultiSelectItemViewModel)</ID>
+    <ID>NestedBlockDepth:NewFiltersStep.kt$NewFiltersStep$//migrates turbo_type: adds values of turbo field to engine private fun migrateTurboFieldToEngineField(formState: FormState)</ID>
+    <ID>NestedBlockDepth:NewFiltersStep.kt$NewFiltersStep$private fun migrateField(fieldId: Map.Entry&lt;String, String?&gt;, formState: FormState)</ID>
+    <ID>NestedBlockDepth:OfferDetailsFragment.kt$OfferDetailsFragment$private fun invalidateName(progress: Float, initialCountOfLines: Int)</ID>
+    <ID>NestedBlockDepth:OfferDetailsModel.kt$OfferDetailsModel$private fun buildTechInfo(offer: Offer): List&lt;IComparableItem&gt;</ID>
+    <ID>NestedBlockDepth:OfferDetailsModel.kt$OfferDetailsModel$private fun createGallery(offer: Offer): IComparableItem</ID>
+    <ID>NestedBlockDepth:OfferDetailsModel.kt$OfferDetailsModel$private fun getData(offer: Offer)</ID>
+    <ID>NestedBlockDepth:OfferSnippetView.kt$OfferSnippetView$private fun bindCertificate(model: SnippetViewModel)</ID>
+    <ID>NestedBlockDepth:OfferSnippetView.kt$OfferSnippetView$private fun bindFooter(model: SnippetViewModel)</ID>
+    <ID>NestedBlockDepth:PartsSearchDelegateAdapter.kt$PartsSearchDelegateAdapter$override fun onInflated(view: View, item: PartsSuggestUiItem)</ID>
+    <ID>NestedBlockDepth:PhoneAdapter.kt$PhoneAdapter$override fun onBind(viewHolder: KViewHolder, item: SelectablePhoneItem)</ID>
+    <ID>NestedBlockDepth:PhotoAdapter.kt$PhotoAdapter$override fun onBind(viewHolder: KViewHolder, item: PhotoViewModel)</ID>
+    <ID>NestedBlockDepth:PhotoDecorator.kt$PhotoDecorator$override fun getItemOffsets( outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State )</ID>
+    <ID>NestedBlockDepth:PhotosPart.kt$PhotosPart$override fun proceedAddPhotoFromPicker(data: List&lt;String&gt;, isAdded: Boolean)</ID>
+    <ID>NestedBlockDepth:PhotosViewModel.kt$PhotosViewModel$override fun getItems(): List&lt;IComparableItem&gt;</ID>
+    <ID>NestedBlockDepth:PickerPhotoAdapter.kt$PickerPhotoAdapter$override fun onBind(viewHolder: KViewHolder, item: PhotoViewModel)</ID>
+    <ID>NestedBlockDepth:PlusMinusController.kt$PlusMinusController$private fun createListOfExpandedItems( expandModel: ExpandViewModel, features: Features, side: FeatureSide, shouldShowAll: Boolean ): List&lt;IComparableItem&gt;</ID>
+    <ID>NestedBlockDepth:PresetToSearchMapper.kt$PresetToSearchMapper$private fun Preset.convertToSearch(): Search?</ID>
+    <ID>NestedBlockDepth:PriceChangePushReceiver.kt$PriceChangePushReceiver$override fun onMessageReceived(remoteMessage: RemoteMessage)</ID>
+    <ID>NestedBlockDepth:PricesLineChart.kt$PricesLineChart$private fun drawSegments(canvas: Canvas)</ID>
+    <ID>NestedBlockDepth:ProgressRequestBody.kt$ProgressRequestBody$override fun writeTo(sink: BufferedSink)</ID>
+    <ID>NestedBlockDepth:PurchaseButtonAdapter.kt$PurchaseButtonAdapter$override fun onInflated(view: View, item: TurboVASButton)</ID>
+    <ID>NestedBlockDepth:RadioBtnViewController.kt$RadioBtnViewController$override fun bind(field: RadioBtnField)</ID>
+    <ID>NestedBlockDepth:RangeFragment.kt$RangeFragment$private fun onAcceptClick(model: RangeValuesModel, listener: Listener)</ID>
+    <ID>NestedBlockDepth:RangeViewController.kt$RangeViewController$private fun showValue(field: RangeField)</ID>
+    <ID>NestedBlockDepth:ReplaceableDatabase.kt$ReplaceableDatabase$override fun put(entities: Collection&lt;*&gt;)</ID>
+    <ID>NestedBlockDepth:ReviewCommentsAdapter.kt$ReviewCommentsAdapter$override fun onInflated(view: View, item: ReviewComment)</ID>
+    <ID>NestedBlockDepth:ReviewCommentsFragment.kt$ReviewCommentsFragment$private fun setParentComment(parentComment: ReviewComment?, text: Spannable?)</ID>
+    <ID>NestedBlockDepth:ReviewSnippetAdapter.kt$ReviewSnippetAdapter$override fun onBind(viewHolder: KViewHolder, item: ReviewSnippet)</ID>
+    <ID>NestedBlockDepth:ReviewSnippetPagerAdapter.kt$ReviewSnippetPagerAdapter$override fun instantiateItem(container: ViewGroup?, position: Int): Any</ID>
+    <ID>NestedBlockDepth:ReviewSubtitleAdapter.kt$ReviewSubtitleAdapter$override fun onInflated(view: View, item: ReviewSubtitle)</ID>
+    <ID>NestedBlockDepth:ReviewTitleAdapter.kt$ReviewTitleAdapter$override fun onInflated(view: View, item: ReviewTitleViewModel)</ID>
+    <ID>NestedBlockDepth:SalonAdapter.kt$SalonAdapter$private fun Salon.getRegistrationAge(): Int?</ID>
+    <ID>NestedBlockDepth:SearchAdvertDeeplinkParser.kt$SearchAdvertDeeplinkParser$override fun parse(uri: Uri): DeeplinkParser.Result?</ID>
+    <ID>NestedBlockDepth:SectionDividerAdapter.kt$SectionDividerAdapter$override fun onBind(viewHolder: KViewHolder, item: SectionDividerViewModel)</ID>
+    <ID>NestedBlockDepth:ShowVideoReviewsCommand.kt$ShowVideoReviewsCommand$private fun createUrl(): String</ID>
+    <ID>NestedBlockDepth:SmsListener.kt$SmsListener$override fun onReceive(context: Context, intent: Intent)</ID>
+    <ID>NestedBlockDepth:SnackbarBuilder.kt$SnackbarBuilder$fun build(): Snackbar?</ID>
+    <ID>NestedBlockDepth:SoldOfferBadgeAdapter.kt$SoldOfferBadgeAdapter$override fun onBind(viewHolder: KViewHolder, item: SoldOfferBadgeViewModel)</ID>
+    <ID>NestedBlockDepth:StepRepository.kt$StepRepository.Companion$fun offerToCatalogParams(offer: Offer): Map&lt;String, String&gt;</ID>
+    <ID>NestedBlockDepth:TextMessageBaseDelegateAdapter.kt$TextMessageBaseDelegateAdapter$override fun onBind(viewHolder: ViewHolder, item: TextMessageViewModel)</ID>
+    <ID>NestedBlockDepth:TrustAllSslDownloader.kt$TrustAllSslDownloader$private fun addHeaders(extra: Any, http: HttpURLConnection)</ID>
+    <ID>NestedBlockDepth:UserErrorFactory.kt$UserErrorFactory$override fun createSnackError(throwable: Throwable?, defaultMessage: String): String</ID>
+    <ID>NestedBlockDepth:UserOffersPresenter.kt$UserOffersPresenter$private fun showAndLogError(e: Throwable, onErrorClicked: Boolean = false)</ID>
+    <ID>NestedBlockDepth:VasDetailsView.kt$VasDetailsView$fun setButton( isActive: Boolean, price: Int, listener: (vas: String) -&gt; Unit = {}, vas: String, @StringRes buttonText: Int = R.string.vas_activated, similarListener: ((String) -&gt; Unit)? = null, prolongationListener: (vasAlias: String) -&gt; Unit = {} )</ID>
+    <ID>NestedBlockDepth:VasSearchUpViewHolder.kt$VasSearchUpViewHolder$private fun setUpSearchAutoUp(servicePrice: ServicePrice, model: UserOffer)</ID>
+    <ID>NestedBlockDepth:VehicleMarkConverter.kt$VehicleMarkConverter$ private fun mergeMarks(sortedViews: List&lt;MarkModelNameplateView&gt;): List&lt;MutableMark&gt;</ID>
+    <ID>NestedBlockDepth:VehicleSearchConverter.kt$VehicleSearchConverter$ private fun getMarkModelNameplateCodes(src: CommonVehicleParams): List&lt;String&gt;?</ID>
+    <ID>NestedBlockDepth:VehicleSearchConverter.kt$VehicleSearchConverter$private fun enrichWithModel(mark: Mark, model: Model, result: MutableList&lt;String&gt;)</ID>
+    <ID>NestedBlockDepth:VehicleSearchExtractor.kt$VehicleSearchExtractor$private fun getState(params: List&lt;Pair&lt;String, String&gt;&gt;): StateGroup?</ID>
+    <ID>NestedBlockDepth:ViewsBarChart.kt$ViewsBarChart$ @Suppress("MagicNumber") private fun buildHighlightPositions(highlightValues: List&lt;Date&gt;): List&lt;List&lt;Int&gt;&gt;</ID>
+    <ID>NestedBlockDepth:ViewsDataRenderer.kt$ViewsDataRenderer$// NB: This code mostly taken from parent, only difference being how colors for highlighs are chosen @Suppress("LoopWithTooManyJumpStatements") override fun drawHighlighted(c: Canvas, indices: Array&lt;Highlight&gt;)</ID>
+    <ID>NestedBlockDepth:WhatsNewViewState.kt$WhatsNewViewState$override fun restore()</ID>
+    <ID>NestedBlockDepth:WizardOfferAdapter.kt$WizardOfferAdapter$override fun onBind(viewHolder: KDelegateAdapter.KViewHolder, item: VASOfferViewModel)</ID>
+    <ID>NestedBlockDepth:WizardPagerAdapter.kt$WizardPagerAdapter$private fun initRecyclerView(recyclerView: RecyclerView, position: Int)</ID>
+    <ID>NestedBlockDepth:WizardPresenter.kt$WizardPresenter$fun onSearch(markListener: MarkSelectedListener, modelListener: ModelSelectedListener)</ID>
+    <ID>NestedBlockDepth:ZenUtils.kt$ZenUtils$fun initializeZen(context: Context, strings: StringsProvider, prefs: IPrefsDelegate)</ID>
+    <ID>NotImplementedDeclaration:BuildUtils.kt$throw NotImplementedError(reason)</ID>
+    <ID>NotImplementedDeclaration:ComplectationField.kt$ComplectationField$throw NotImplementedError("it's for draft, which doesn't depend on SerializablePair")</ID>
+    <ID>NotImplementedDeclaration:DraftScreenFactory.kt$DraftScreenFactory$TODO("not implemented yet, category == $category")</ID>
+    <ID>NotImplementedDeclaration:EvaluateModule.kt$EvaluateModule$TODO("not implemented yet")</ID>
+    <ID>NotImplementedDeclaration:EvaluateModule.kt$EvaluateModule$TODO("not implemented")</ID>
+    <ID>NotImplementedDeclaration:EvaluateScreenFactory.kt$EvaluateScreenFactory$TODO("not implemented yet")</ID>
+    <ID>NotImplementedDeclaration:EvaluateScreenFactory.kt$EvaluateScreenFactory$TODO("not implemented")</ID>
+    <ID>NotImplementedDeclaration:PublicApiErrorHandler.kt$PublicApiErrorHandler$TODO("not implemented")</ID>
+    <ID>OptionalWhenBraces:AbstractDraftFactory.kt$AbstractDraftFactory$Filters.CHANGE_WISH_FIELD -&gt; { materials.exchange = value.safeCastToBoolean() }</ID>
+    <ID>OptionalWhenBraces:AbstractDraftFactory.kt$AbstractDraftFactory$Filters.RUN_FIELD -&gt; { materials.mileage = (value as String?).tryParseToInt() }</ID>
+    <ID>OptionalWhenBraces:ComDraftFactory.kt$ComDraftFactory$Filters.POWER_FIELD -&gt; { materials.power = (value as String).tryParseToInt() }</ID>
+    <ID>OptionalWhenBraces:ComDraftFactory.kt$ComDraftFactory$Filters.VOLUME_FIELD -&gt; { materials.displacement = (value as String).tryParseToInt() }</ID>
+    <ID>OptionalWhenBraces:ComDraftFactory.kt$ComDraftFactory$Filters.WHEEL_FIELD -&gt; { materials.wheel = if (value == DEFAULT_WHEEL_ID) SteeringWheel.LEFT else SteeringWheel.RIGHT }</ID>
+    <ID>OptionalWhenBraces:DraftOfferFactory.kt$DraftOfferFactory$Filters.BODY_TYPE_FIELD -&gt; { materials.bodyType = suggest?.bodyTypes?.find { it.name == (value as Select.Option).key } }</ID>
+    <ID>OptionalWhenBraces:DraftOfferFactory.kt$DraftOfferFactory$Filters.GEARBOX_FIELD -&gt; { materials.drive = suggest?.gearTypes?.find { it.name == (value as Select.Option).key } }</ID>
+    <ID>OptionalWhenBraces:DraftOfferFactory.kt$DraftOfferFactory$Filters.TRANSMISSION_FULL_FIELD -&gt; { materials.transmission = suggest?.transmissionTypes?.find { it.name == (value as Select.Option).key } }</ID>
+    <ID>OptionalWhenBraces:ExtraScreen.kt$ExtraScreen.Builder$Filters.EQUIPMENT_MULTISELECT_FIELD -&gt; { options?.map { it.id }?.let { childIds -&gt; listOf(getShowMultiSelectFieldsRule(screen, parentId, childIds)) .plus(getCopyValueRule(screen, parentId, childIds)) .plus(getUpdateMultiSelectCheckboxValueRules(screen, parentId, childIds)) }?.forEach { screen.addRule(it) } }</ID>
+    <ID>OptionalWhenBraces:ExtraScreen.kt$ExtraScreen.Builder$Filters.EQUIPMENT_SELECT_FIELD -&gt; { options?.map { it.id }?.let { childIds -&gt; listOf(getShowSelectFieldsRule(screen, parentId, childIds)) .plus(getUpdateSelectCheckboxValueRules(screen, parentId, childIds)) }?.forEach { screen.addRule(it) } }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.ATV_TYPE_FIELD -&gt; { materials.atvType = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.CYLINDERS_FIELD -&gt; { materials.cylinderAmount = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.CYLINDERS_TYPE_FIELD -&gt; { materials.cylinderType = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.DRIVE_KEY_FIELD -&gt; { materials.driveEntity = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.ENGINE_TYPE_FIELD -&gt; { materials.engineTypeEntity = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.MOTO_TYPE_FIELD -&gt; { materials.motoType = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.SNOW_MOBILE_TYPE_FIELD -&gt; { materials.snowMobileType = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:PartsSearchInteractor.kt$PartsSearchInteractor$item.isHistory.not() &amp;&amp; defaultUrl != null -&gt; { PartsSuggestItem.from(PartsSuggest(item.value, defaultUrl, emptyList()), isPreset = true) }</ID>
+    <ID>OptionalWhenBraces:UserOffersFragment.kt$UserOffersFragment$Consts.REQUEST_CODE_EDIT -&gt; { showPromo(it, PromoVasScreenType.TURBO_AND_COMPOSITES_WITH_FRESH) }</ID>
+    <ID>OptionalWhenBraces:UserOffersFragment.kt$UserOffersFragment$Consts.REQUEST_CODE_OK -&gt; { showPromo(it, PromoVasScreenType.TURBO_AND_COMPOSITES) }</ID>
+    <ID>StringLiteralDuplication:AbstractInfoFactory.kt$AbstractInfoFactory$"${this.label} \n"</ID>
+    <ID>StringLiteralDuplication:AutoUpPresenter.kt$AutoUpPresenter$"$hour$TIME_END"</ID>
+    <ID>StringLiteralDuplication:BreadcrumbsRepository.kt$BreadcrumbsToModelEntryConverter$"entities_list"</ID>
+    <ID>StringLiteralDuplication:CategoryUtils.kt$CategoryUtils$"Cannot map unknown oldId: $oldId"</ID>
+    <ID>StringLiteralDuplication:DBUtils.kt$"persistIfNotAlready"</ID>
+    <ID>StringLiteralDuplication:DateConverter.kt$DateConverter$"Can't parse date: $src"</ID>
+    <ID>StringLiteralDuplication:DateExt.kt$"d MMMM"</ID>
+    <ID>StringLiteralDuplication:DateExt.kt$"Вчера"</ID>
+    <ID>StringLiteralDuplication:FormFragment.kt$FormFragment$"draft do not have empty state"</ID>
+    <ID>StringLiteralDuplication:GenerationInfo.kt$GenerationInfo$"$from-$to"</ID>
+    <ID>StringLiteralDuplication:GroupViewController.kt$GroupViewController$"Unknown group field"</ID>
+    <ID>StringLiteralDuplication:ImageSizeConverter.kt$ImageSizeConverter$"image_size"</ID>
+    <ID>StringLiteralDuplication:InfoFactoryExt.kt$"Offers carInfo, motoInfo and truckInfo are nulls"</ID>
+    <ID>StringLiteralDuplication:MessagesRepository.kt$MessagesRepository$"message"</ID>
+    <ID>StringLiteralDuplication:MultiMaskedTextChangedListener.kt$MultiMaskedTextChangedListener$"+7 ([000]) [000]-[00]-[00]"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"2_SEAT_1_SLEEP"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"2_SEAT_2_SLEEP"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"2_SEAT_WO_SLEEP"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"3_SEAT_1_SLEEP"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"3_SEAT_WO_SLEEP"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"AUTOMATIC"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"AWNING"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"CARDAN"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"CHAIN"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"CHASSIS"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"CONTAINER_CARRIER"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"ISOTHERMAL_BODY"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"MECHANICAL"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"ONBOARD_TRUCK"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"OPPOSITE"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"REFRIGERATOR"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"ROBOTIC"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"SEMI_AUTOMATIC"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"TIPPER"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"TOW_TRUCK"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"VARIATOR"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"V_TYPE"</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$"transmission_key"</ID>
+    <ID>StringLiteralDuplication:NativeAdRequestInfo.kt$NativeAdRequestInfo.Companion$"adf_p1"</ID>
+    <ID>StringLiteralDuplication:NativeAdRequestInfo.kt$NativeAdRequestInfo.Companion$"other"</ID>
+    <ID>StringLiteralDuplication:NewFiltersExtrasStep20.kt$NewFiltersExtrasStep20$"armored_status"</ID>
+    <ID>StringLiteralDuplication:NewFiltersStep.kt$NewFiltersStep$"custom"</ID>
+    <ID>StringLiteralDuplication:NewFiltersStep.kt$NewFiltersStep$"custom_key"</ID>
+    <ID>StringLiteralDuplication:NewFiltersStep.kt$NewFiltersStep$"turbo"</ID>
+    <ID>StringLiteralDuplication:NewFiltersStep.kt$NewFiltersStep$"turbo_type"</ID>
+    <ID>StringLiteralDuplication:OptionFactory.kt$"why do we use options with null kye"</ID>
+    <ID>StringLiteralDuplication:PartsDeeplinkParser.kt$PartsDeeplinkParser.Companion$"/parts"</ID>
+    <ID>StringLiteralDuplication:RequestPermissionDialogCommand.kt$RequestPermissionDialogCommand$"permission wasn't granted"</ID>
+    <ID>StringLiteralDuplication:SavedSearchRepository.kt$SavedSearchRepository$"$PREFS_PREFIX$savedSearchId"</ID>
+    <ID>StringLiteralDuplication:ScalaApi.kt$ScalaApi$"autoru"</ID>
+    <ID>StringLiteralDuplication:StatEvent.kt$"Источник"</ID>
+    <ID>StringLiteralDuplication:Transmission.kt$Transmission.AUTOMATIC$"Автомат"</ID>
+    <ID>ThrowingExceptionsWithoutMessageOrCause:MarksViewModel.kt$MarksViewModel$IllegalArgumentException()</ID>
+    <ID>ThrowingExceptionsWithoutMessageOrCause:MultiSelectViewModel.kt$MultiSelectViewModel$IllegalArgumentException()</ID>
+    <ID>TooGenericExceptionCaught:BaseSocketService.kt$BaseSocketService.RxWebSocketListener$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:BreadcrumbsConverter.kt$BreadcrumbsConverter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ComplaintReasonConverter.kt$ComplaintReasonConverter$e: Throwable</ID>
+    <ID>TooGenericExceptionCaught:DateConverter.kt$DateConverter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ImageAttachmentConverter.kt$ImageAttachmentConverter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MainFragment.kt$MainFragment$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:PhoneTextWatcher.kt$PhoneTextWatcher$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SelectReasonDialog.kt$SelectReasonDialog.ReasonAdapter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ShowDeeplinkCommand.kt$ShowDeeplinkCommand$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TrustAllSslDownloader.kt$TrustAllSslDownloader.Companion$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:VkAuthRepository.kt$VkAuthRepository.&lt;no name provided&gt;$e: Exception</ID>
+    <ID>TooGenericExceptionThrown:SocialAuthImageViewFactory.kt$SocialAuthImageViewFactory$throw RuntimeException("No drawable res for socialNet $socialNet")</ID>
+    <ID>UnconditionalJumpStatementInLoop:MainFragment.kt$MainFragment$for (fragment: Fragment? in fragments) { fragment?.onActivityResult( activityResult.requestCode, //TODO send it only to target fragment activityResult.resultCode, activityResult.data) break }</ID>
+    <ID>UnsafeCallOnNullableType:CodeTimerRepository.kt$CodeTimerRepository$phoneTimers[key]!!</ID>
+    <ID>UnsafeCallOnNullableType:DraftFieldsParams.kt$DraftFieldsParams$value!!</ID>
+    <ID>UnsafeCallOnNullableType:Network.kt$Network.ServerUtils$api!!</ID>
+    <ID>UnsafeCallOnNullableType:TrustAllSslDownloader.kt$TrustAllSslDownloader$url!!</ID>
+    <ID>UnsafeCallOnNullableType:TrustAllSslDownloader.kt$TrustAllSslDownloader.Companion$TrustAllSslDownloader::class.java.name!!</ID>
+    <ID>UnsafeCallOnNullableType:WarrantyDateViewController.kt$WarrantyDateViewController$value!!</ID>
+    <ID>UntilInsteadOfRangeTo:QueryValue.kt$QueryValue$1 .. getValues().size - 1</ID>
+    <ID>UntilInsteadOfRangeTo:VASListActivity.kt$VASListActivity$0..availableVas.size - 1</ID>
+    <ID>UnusedImports:ActionViewCommand.kt$import ru.auto.ara.router.MainDrawerRouter</ID>
+    <ID>UnusedImports:ActionViewCommand.kt$import ru.auto.ara.router.ScreenBuilderFactory</ID>
+    <ID>UnusedImports:ActionViewCommand.kt$import ru.auto.ara.ui.fragment.user.UserOffersFragment</ID>
+    <ID>UnusedImports:ActivityResultModel.kt$import android.support.v4.app.Fragment</ID>
+    <ID>UnusedImports:AddAdvertPresenter.kt$import ru.auto.ara.network.session.SessionPreferences</ID>
+    <ID>UnusedImports:AddAdvertPresenter.kt$import ru.auto.ara.router.command.ShowPhoneAuthCommand</ID>
+    <ID>UnusedImports:AddPhotosRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:AdvertDescriptionComponent.kt$import ru.auto.ara.di.scope.main.DraftScope</ID>
+    <ID>UnusedImports:AutoUpView.kt$import ru.auto.ara.viewmodel.picker.RangeValuesModel</ID>
+    <ID>UnusedImports:AutoruUserProfileConverter.kt$import ru.auto.data.model.User</ID>
+    <ID>UnusedImports:BaseClientFactory.kt$import okhttp3.logging.HttpLoggingInterceptor.Level</ID>
+    <ID>UnusedImports:CacheInterceptor.kt$import java.util.concurrent.TimeUnit</ID>
+    <ID>UnusedImports:CacheInterceptor.kt$import okhttp3.CacheControl</ID>
+    <ID>UnusedImports:ColorOptionsProvider.kt$import ru.auto.ara.data.entities.form.Select</ID>
+    <ID>UnusedImports:ColorOptionsProvider.kt$import rx.Single</ID>
+    <ID>UnusedImports:CopyMultiSelectValueRule.kt$import rx.functions.Func1</ID>
+    <ID>UnusedImports:CopyMultiSelectValueRule.kt$import rx.functions.Func2</ID>
+    <ID>UnusedImports:CreateRoomRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:DealerDetailsAdapter.kt$import ru.auto.data.model.dealer.DealerMark</ID>
+    <ID>UnusedImports:EvaluateFieldsStrategy.kt$import ru.auto.ara.draft.options.toWheelOption</ID>
+    <ID>UnusedImports:EvaluateFormInteractor.kt$import rx.Single</ID>
+    <ID>UnusedImports:ExtraScreen.kt$import rx.functions.Func2</ID>
+    <ID>UnusedImports:ExtrasMapper.kt$import java.util.HashMap</ID>
+    <ID>UnusedImports:ExtrasMapper.kt$import ru.auto.ara.R.string.companion</ID>
+    <ID>UnusedImports:ExtrasMapper.kt$import ru.auto.ara.filter.fields.MultiSelectField</ID>
+    <ID>UnusedImports:FeedViewState.kt$import ru.auto.ara.viewmodel.feed.FilterFeedViewModel</ID>
+    <ID>UnusedImports:GeoItemViewHolder.kt$import butterknife.BindView</ID>
+    <ID>UnusedImports:GeoItemViewHolder.kt$import butterknife.ButterKnife</ID>
+    <ID>UnusedImports:GeoItemViewHolder.kt$import ru.auto.ara.R</ID>
+    <ID>UnusedImports:IAuthCompatibilityInteractor.kt$import ru.auto.data.model.Session</ID>
+    <ID>UnusedImports:IImagePicker.kt$import java.io.File</ID>
+    <ID>UnusedImports:ILogoutInteractor.kt$import ru.auto.data.repository.ILogoutRepository</ID>
+    <ID>UnusedImports:IMessageReceiver.kt$import ru.auto.ara.firebase.receiver.FirebaseMessageReceiver</ID>
+    <ID>UnusedImports:IOffersProvider.kt$import ru.auto.ara.utils.SerializablePair</ID>
+    <ID>UnusedImports:IServicesRepository.kt$import ru.auto.data.model.services.Service</ID>
+    <ID>UnusedImports:ISocialAuthInteractor.kt$import ru.auto.data.model.SocialNet</ID>
+    <ID>UnusedImports:ImagePickerActivity.kt$import android.os.Environment</ID>
+    <ID>UnusedImports:ImagePickerActivity.kt$import android.support.v4.content.FileProvider</ID>
+    <ID>UnusedImports:ImagePickerActivity.kt$import android.widget.Toast</ID>
+    <ID>UnusedImports:ImagePickerActivity.kt$import java.text.SimpleDateFormat</ID>
+    <ID>UnusedImports:ImagePickerActivity.kt$import ru.auto.ara.BuildConfig</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.network.scala.NWImageUrl</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.network.scala.NWInlineModel</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.network.scala.NWUser</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.network.scala.NWUserProfile</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.network.scala.response.NWSocialLoginResponse</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.response.SocialLoginResponse</ID>
+    <ID>UnusedImports:InlineMultiSelectField.kt$import ru.auto.ara.screens.QueryField</ID>
+    <ID>UnusedImports:InlineMultiSelectField.kt$import ru.auto.ara.utils.SerializablePair</ID>
+    <ID>UnusedImports:KeyboardDescriptionField.kt$import ru.auto.ara.router.ScreenBuilderFactory</ID>
+    <ID>UnusedImports:MarksCatalogComponent.kt$import ru.auto.ara.ui.fragment.catalog.SuggestFragment</ID>
+    <ID>UnusedImports:ModelInfoConverter.kt$import ru.auto.data.model.search.Model</ID>
+    <ID>UnusedImports:MotoDraftBuilder.kt$import ru.auto.ara.draft.field.ComplectationField</ID>
+    <ID>UnusedImports:MotoDraftBuilder.kt$import ru.auto.ara.draft.field.KeyboardField</ID>
+    <ID>UnusedImports:MotoDraftBuilder.kt$import ru.auto.ara.filter.fields.MarkField</ID>
+    <ID>UnusedImports:MotoDraftBuilder.kt$import ru.auto.ara.filter.fields.ModelField</ID>
+    <ID>UnusedImports:NWAnswer.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWAttachment.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWAutoParams.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWAutoruUserProfile.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWChatOffer.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWComplectation.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWComplectationGroup.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWConfiguration.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWConfirmRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWCustomsState.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWDate.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWDealerItem.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWDealerMark.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWDraft.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWEngineType.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWEquipment.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWFilter.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWGeneration.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWGeo.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWImage.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWImageId.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWImageUrl.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWLocation.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWLoginOrRegisterRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWMark.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWMessagePayload.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWMimeType.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWMobileTokenAndUser.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWModel.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWModelNameplate.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWOrder.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWPaidService.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWPhone.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWPriceInfo.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWPushToken.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWQuestion.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWScalaStatus.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSession.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSize.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocialLoginRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocialUser.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocialUserSource.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocketChat.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocketChatMessage.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocketMessage.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocketMessageSent.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocketOperation.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSort.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWState.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSuperGenEntity.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSuperGeneration.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWTechParam.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWTextSearch.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWTextSearchFilters.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserEmail.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserEssentials.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserLightProfile.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserPhone.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserProfile.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserProfileLight.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserSocialProfile.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:OffersProvider.kt$import ru.auto.ara.utils.SerializablePair</ID>
+    <ID>UnusedImports:PriceFormatter.kt$import ru.auto.ara.utils.Consts</ID>
+    <ID>UnusedImports:PricesLineChart.kt$import android.support.annotation.FloatRange</ID>
+    <ID>UnusedImports:ProgressRequestBody.kt$import okio.BufferedSink</ID>
+    <ID>UnusedImports:RequestCallInteractor.kt$import ru.auto.ara.network.ServerClientException.OFFLINE_MESSAGE</ID>
+    <ID>UnusedImports:ScooterDraftBuilder.kt$import ru.auto.ara.filter.fields.MarkField</ID>
+    <ID>UnusedImports:ScooterDraftBuilder.kt$import ru.auto.ara.filter.fields.ModelField</ID>
+    <ID>UnusedImports:SearchViewState.kt$import ru.auto.ara.viewmodel.search.SuggestUiItem</ID>
+    <ID>UnusedImports:SendMessageRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:ShowAddPhoneListCommand.kt$import android.os.Parcelable</ID>
+    <ID>UnusedImports:ShowOldOfferCommand.kt$import ru.auto.ara.data.provider.NewApiTechGroupProvider</ID>
+    <ID>UnusedImports:ShowWalletCommand.kt$import ru.auto.ara.billing.vas.VASPurchasePresenter</ID>
+    <ID>UnusedImports:SnowMobileDraftBuilder.kt$import ru.auto.ara.filter.fields.MarkField</ID>
+    <ID>UnusedImports:SnowMobileDraftBuilder.kt$import ru.auto.ara.filter.fields.ModelField</ID>
+    <ID>UnusedImports:StatRepository.kt$import ru.auto.data.util.let3</ID>
+    <ID>UnusedImports:UpdateComplectationRule.kt$import ru.auto.ara.draft.field.ComplectationField</ID>
+    <ID>UnusedImports:UserOffersView.kt$import ru.auto.data.model.data.offer.Offer</ID>
+    <ID>UnusedImports:UserProfileConverter.kt$import ru.auto.data.model.AutoruUserProfile</ID>
+    <ID>UnusedImports:UserProfileConverter.kt$import ru.auto.data.model.User</ID>
+    <ID>UnusedImports:UserProfileConverter.kt$import ru.auto.data.model.network.scala.NWUser</ID>
+    <ID>UnusedImports:UserProfileConverter.kt$import ru.auto.data.model.network.scala.response.NWSocialLoginResponse</ID>
+    <ID>UnusedImports:UserProfileConverter.kt$import ru.auto.data.model.response.SocialLoginResponse</ID>
+    <ID>UnusedImports:VideoListFragment.kt$import com.yandex.mobile.verticalcore.utils.AppHelper</ID>
+  </Whitelist>
+</SmellBaseline>

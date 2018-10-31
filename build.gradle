@@ -8,15 +8,38 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath 'com.android.tools.build:gradle:3.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath "gradle.plugin.io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.0.0.RC9.2"
+    }
+}
+
+plugins {
+    id("io.gitlab.arturbosch.detekt").version("1.0.0.RC9.2")
+}
+apply plugin: 'io.gitlab.arturbosch.detekt'
+
+subprojects {
+    apply {
+        plugin("io.gitlab.arturbosch.detekt")
+    }
+    detekt {
+        toolVersion = "1.0.0.RC9.2"
+        input = files(
+                "$rootDir/app/src/main/java",
+        )
+        config = files("$rootDir/tools/detekt/detekt-config.yml")
+        baseline = file("$rootDir/tools/detekt/baseline2.xml")
+        filters = ".*/res.*/.*,.*/assets/.*"
+    }
+    dependencies {
+        detekt project(':detekt')
     }
 }
 
 allprojects {
+    apply from: "$rootDir/ktlint.gradle"
     repositories {
         google()
         jcenter()

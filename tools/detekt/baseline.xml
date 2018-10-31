@@ -1,0 +1,1118 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <Blacklist timestamp="1516273814028"></Blacklist>
+  <Whitelist timestamp="1539168094658">
+    <ID>ClassNaming:KeyboardField.kt$KeyboardField$INPUT_TYPE</ID>
+    <ID>CollapsibleIfStatements:CustomLinkify.kt$CustomLinkify$if (m == null || m !is LinkMovementMethod) { if (t.linksClickable) { t.movementMethod = LinkMovementMethod.getInstance() } }</ID>
+    <ID>CollapsibleIfStatements:ExtraScreen.kt$ExtraScreen.Builder$if (screenField.isDivider()) { if ((index &lt; this.size - 1 &amp;&amp; this[index + 1].isSection()) || index == this.size - 1) { return@mapIndexed listOf&lt;ScreenField&gt;() } }</ID>
+    <ID>CollapsibleIfStatements:RequestCallBlockAdapter.kt$RequestCallBlockAdapter$if (event.action == MotionEvent.ACTION_DOWN) { if (view.tvInput.isVisible() || view.tvInput.hasFocus()) { (view.tvInput.parent as View?)?.getGlobalVisibleRect(rect) if (!rect.contains(event.rawX.toInt(), event.rawY.toInt())) { view.tvInput.hideKeyboard() view.tvInput.clearFocus() } } }</ID>
+    <ID>ComplexCondition:DateConverter.kt$DateConverter$year == null || year == 0 || month == null || month &lt; 1</ID>
+    <ID>ComplexCondition:ExtraScreen.kt$ExtraScreen$oldValue is Boolean &amp;&amp; newValue is Boolean &amp;&amp; oldValue == newValue || oldValue is InlineMultiSelectValue &amp;&amp; newValue is InlineMultiSelectValue &amp;&amp; oldValue.checked == newValue.checked</ID>
+    <ID>EmptyClassBlock:EvaluateResultView.kt$EvaluateResultView : LoadableListView</ID>
+    <ID>EmptyClassBlock:IServiceModel.kt$IServiceModel</ID>
+    <ID>EmptyClassBlock:ModelItemAdapter.kt$ModelItemAdapter</ID>
+    <ID>EmptyClassBlock:OffersListing.kt$OffersListing</ID>
+    <ID>EmptyClassBlock:RequestRefundException.kt$RequestRefundException : Exception</ID>
+    <ID>EmptyDefaultConstructor:BaseUserOfferAdapter.kt$BaseUserOfferAdapter$()</ID>
+    <ID>EmptySecondaryConstructor:HeadersImageDownloader.kt$HeadersImageDownloader${}</ID>
+    <ID>EmptySecondaryConstructor:InlineMultiSelectValue.kt$InlineMultiSelectValue${ }</ID>
+    <ID>EmptySecondaryConstructor:InlineSelectValue.kt$InlineSelectValue${ }</ID>
+    <ID>EnumNaming:NWSocketOperation.kt$NWSocketOperation$message_sent</ID>
+    <ID>EnumNaming:NWSocketOperation.kt$NWSocketOperation$ping</ID>
+    <ID>EnumNaming:NWVehicleCategory.kt$NWVehicleCategory$cars</ID>
+    <ID>EnumNaming:NWVehicleCategory.kt$NWVehicleCategory$moto</ID>
+    <ID>EnumNaming:NWVehicleCategory.kt$NWVehicleCategory$trucks</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter$return (src.state?.mileage ?: -1).toLong()</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter$return OfferBase().apply { category = getCategory() autoruBilling = null engine = getEngine(src) year = getYear(src) location = getLocation(src) metros = getMetros(src) publishedDate = getPublishedDate(src) price = getPrice(src) price_history = getPriceHistory(src) seller = getSeller(src) setPublicStatus(getPublicStatus(src)) state = getState(src) bodytype = null kmAge = getKmAge(src) }</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter$return convertNotNull(src.additional?.creationDate, "creationDate")</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter$return convertNotNull(src.documents?.year, "year")</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter$return convertNotNull(src.status, "status")</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter$return src.getLocation()?.let { srcLocation -&gt; Location().apply { region = Location.Region().apply { name = srcLocation.address } } }</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter$return src.getLocation()?.metro?.map { val color = convertNotNull(it.lines?.firstOrNull()?.color, "color") Metro(it.name, color, it.distance) }?.toTypedArray()</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter$return src.priceHistory.map { OfferBasePriceInfo(it.price, it.currency) }.toTypedArray()</ID>
+    <ID>ExpressionBodySyntax:ABaseOfferConverter.kt$ABaseOfferConverter$return src.section</ID>
+    <ID>ExpressionBodySyntax:AbstractDraftFactory.kt$AbstractDraftFactory$return this as Boolean? ?: if (isDevOrDebug()) throw NullPointerException("type of value is Boolean?, expected Boolean") else default</ID>
+    <ID>ExpressionBodySyntax:AbstractExtendedOfferAdapter.kt$AbstractExtendedOfferAdapter$return (items[position] as? OfferViewModel)?.isExtended ?: false</ID>
+    <ID>ExpressionBodySyntax:AbstractInfoFactory.kt$AbstractInfoFactory$return offer.carInfo?.let { carInfo -&gt; val bodyType = carInfo.bodyType?.label when { bodyType.isNullOrEmpty() -&gt; "" carInfo.doorsCount?.let { it &gt; 0 } ?: false -&gt; bodyType + " " + strings.get(R.string.unit_door) else -&gt; bodyType } } ?: ""</ID>
+    <ID>ExpressionBodySyntax:AbstractInfoFactory.kt$AbstractInfoFactory$return offer.getEngineSummary().let { line -&gt; if (line.isNotBlank()) "$line\n" else "" }</ID>
+    <ID>ExpressionBodySyntax:AbstractInfoFactory.kt$AbstractInfoFactory$return offer.motoInfo?.displacement?.let { volume -&gt; "$volume ${string(R.string.engine_volume_cm_cube)}\n" } ?: ""</ID>
+    <ID>ExpressionBodySyntax:AbstractInfoFactory.kt$AbstractInfoFactory$return offer.motoInfo?.horsePower?.let { power -&gt; "$power ${string(R.string.unit_power)}\n" } ?: ""</ID>
+    <ID>ExpressionBodySyntax:AbstractOfferAdapter.kt$AbstractOfferAdapter$return if (item.isViewed) R.color.common_light_gray else R.color.common_back_black</ID>
+    <ID>ExpressionBodySyntax:AddAdvertFragment.kt$AddAdvertFragment$return inflater.inflate(R.layout.fragment_add_advert, container, false)</ID>
+    <ID>ExpressionBodySyntax:AddPhoneFragment.kt$AddPhoneFragment.Companion$return ScreenBuilderFactory.fullScreen(AddPhoneFragment::class.java) .withTag("phone_auth_fragment") .asFirstLevel() .addToBackStack() .withCustomActivity(if (ContextUtils.isLarge(context)) PhoneAuthDialogActivity::class.java else PhoneAuthActivity::class.java) .withArgs(Bundle(1).apply { putString(Consts.EXTRA_DIALOG_ID, eventId) }) .create()</ID>
+    <ID>ExpressionBodySyntax:AddPhoneModule.kt$AddPhoneModule$return AddPhonePresenter(viewState, router, analytics, authErrorFactory, phoneInteractor, componentManager, eventId, stringsProvider)</ID>
+    <ID>ExpressionBodySyntax:AddPhoneModule.kt$AddPhoneModule$return AddPhoneViewState()</ID>
+    <ID>ExpressionBodySyntax:AddPhoneModule.kt$AddPhoneModule$return AuthErrorFactory(stringsProvides)</ID>
+    <ID>ExpressionBodySyntax:AndroidExt.kt$return try { val paddingVertical: Int = (((textHeight - sizePixels) / 2) * PADDING_MULTIPLIER).toInt() ShapeDrawable(OvalShape()).apply { paint.color = colour mutate() setBounds(sidePadding, paddingVertical, sizePixels + sidePadding, textHeight) shape.resize(shape.width, sizePixels.toFloat()) paint.shader = shaderFactory?.resize(shape.width.toInt(), sizePixels) } } catch (e: Exception) { /* do nothing */ null }</ID>
+    <ID>ExpressionBodySyntax:ApiModule.kt$ApiModule$return NetworkLoggerFactory().createLogger()</ID>
+    <ID>ExpressionBodySyntax:ApiModule.kt$ApiModule$return XivaClientFactory(httpLoggerInterceptor).create()</ID>
+    <ID>ExpressionBodySyntax:AppMetricaPushReceiver.kt$AppMetricaPushReceiver$return remoteMessage.data.containsKey(APPMETRIKA_KEY)</ID>
+    <ID>ExpressionBodySyntax:AuthErrorFactory.kt$AuthErrorFactory$return if (Utils.isEmpty(value)) messageIfEmpty else messageIfWrong</ID>
+    <ID>ExpressionBodySyntax:AuthErrorFactory.kt$AuthErrorFactory$return when (throwable) { is BaseAPIException -&gt; throwable.message ?: "" is UnknownHostException -&gt; getString(R.string.connection_error_title) is NetworkConnectionException -&gt; getString(R.string.connection_error_title) is ApiException -&gt; when (throwable.errorCode) { CLIENT_LOGIN_NOT_ALLOWED -&gt; getString(R.string.error_client_login_not_allowed) else -&gt; defaultMessage } else -&gt; defaultMessage }</ID>
+    <ID>ExpressionBodySyntax:AuthInteractor.kt$AuthInteractor$return authRepository.postConfirmationCode(confirm) .flatMap { val sid = it.session?.id ?: SessionPreferences.getSid() authCompatibilityIteractor.onUserLoggedIn(it.user, sid) } .subscribeOn(AutoSchedulers.background())</ID>
+    <ID>ExpressionBodySyntax:AuthInteractor.kt$AuthInteractor$return codeTimerRepository.observeCodeTimerSec(phone)</ID>
+    <ID>ExpressionBodySyntax:AuthInteractor.kt$AuthInteractor$return codeTimerRepository.observeCodeTimerSec(phone, requestCode) .take(1) .toSingle() .flatMap { Completable.fromCallable { codeTimerRepository.restart(phone, requestCode) } .andThen(authRepository.authPhone(phone).map { it.code }) }.doOnSuccess { SessionPreferences.saveCachedLogin(phone) cachePhone(phone) } .doOnSuccess { codeLength = it } .subscribeOn(AutoSchedulers.network())</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule$return AuthErrorFactory(stringsProvides)</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule$return OkAuthViewController(stringsProvider, socialAuthInteractor)</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule$return PhoneAuthPresenter(viewState, router, analytics, authErrorFactory, authInteractor, componentManager, socialAuthViewControllerProvider, googleApiInteractor, stringsProvider, showAuthError)</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule$return PhoneAuthViewState()</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule$return SocialAuthImageViewFactory()</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule$return SocialAuthInteractor(authRepository, authCompatibilityInteractor)</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule$return SocialAuthViewControllerProvider(yaAuthViewController, facebookAuthViewController, okAuthViewController, vkAuthViewController, googleAuthViewController, mailRuAuthViewController)</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule$return VkAuthRepository()</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule$return VkAuthViewController(vkAuthRepository, socialAuthInteractor)</ID>
+    <ID>ExpressionBodySyntax:AuthModule.kt$AuthModule$return YaAuthViewController(yaLoginSdk, socialAuthInteractor)</ID>
+    <ID>ExpressionBodySyntax:AuthRepository.kt$AuthRepository$return Single.defer { Single.just(NWConfirmRequest(code = confirm.code, phone = confirm.phone, email = confirm.email)) } .flatMap(api::postConfirmationCode) .map(ConfirmPhoneResponseConverter::fromNetwork)</ID>
+    <ID>ExpressionBodySyntax:AuthRepository.kt$AuthRepository$return Single.just(email) .map { NWLoginOrRegisterRequest(email = it) } .flatMap(api::loginOrRegister) .map(CodeResponseConverter::fromNetwork)</ID>
+    <ID>ExpressionBodySyntax:AuthRepository.kt$AuthRepository$return Single.just(phone) .map { NWLoginOrRegisterRequest(phone = it) } .flatMap(api::loginOrRegister) .map(CodeResponseConverter::fromNetwork)</ID>
+    <ID>ExpressionBodySyntax:AuthRepository.kt$AuthRepository$return Single.just(request) .map(SocialLoginRequestConverter::toNetwork) .flatMap(api::postAuthSocialLogin) .map(SocialLoginResponseConverter::fromNetwork)</ID>
+    <ID>ExpressionBodySyntax:AuthRepository.kt$AuthRepository$return api.login(NWLoginRequest(login, password)) .map(ConfirmPhoneResponseConverter::fromNetwork)</ID>
+    <ID>ExpressionBodySyntax:AutoNotificationChannels.kt$AutoNotificationChannels$return if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.O) { getChannel(context)?.id } else null</ID>
+    <ID>ExpressionBodySyntax:AutoNotificationChannels.kt$AutoNotificationChannels$return if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.O) { val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as? NotificationManager notificationManager?.let { it.getNotificationChannel(channelId) ?: NotificationChannel(channelId, context.getString(channelNameResId), importance) .let { initChannel.invoke(it, context) } .apply { notificationManager.createNotificationChannel(this) } } } else null</ID>
+    <ID>ExpressionBodySyntax:AutoPublishComplectationScreen.kt$AutoPublishComplectationScreen$return field.value?.key ?: throw IllegalStateException("field ${field.id} has no value!")</ID>
+    <ID>ExpressionBodySyntax:AutoPublishComplectationScreen.kt$AutoPublishComplectationScreen$return fields.filter { (it as? CleanableField)?.isDefault?.not() ?: false } .associate { field -&gt; when (field) { is CheckboxField -&gt; field.id to true is SelectField -&gt; getSelectValueOrThrow(field) to true is MultiSelectField -&gt; throw NotImplementedError("MultiSelectField not implemented yet , Sorry ;(") else -&gt; throw IllegalStateException("Cannot extract value from this field") } }</ID>
+    <ID>ExpressionBodySyntax:AutoPublishComplectationScreen.kt$AutoPublishComplectationScreen.Companion$return AutoPublishComplectationScreen .Builder(strings, options, colors, equipments) .build(name)</ID>
+    <ID>ExpressionBodySyntax:AutoServicesRepository.kt$AutoServicesRepository$return api.getAutoServices(page, PAGE_SIZE, mark, rid) .map(AutoServicesListingConverter::fromNetwork)</ID>
+    <ID>ExpressionBodySyntax:AutoUpFragment.kt$AutoUpFragment$return (arguments.getSerializable(ARGS_CONTEXT) as AutoUpContext).also { autoUpContext -&gt; autoUpContext.chosenHour?.let { hour -&gt; if (hour in 0..HOURS_IN_DAY) return@let throw IllegalArgumentException("hour is not in range 0..$HOURS_IN_DAY ($hour)") } }</ID>
+    <ID>ExpressionBodySyntax:AutocodeInteractor.kt$AutocodeInteractor$return autocodeRepo.getAutocodeInfo(category, offerId, spendQuota) .map { it.removePrices() } .doOnSuccess { autocodeInfo -&gt; val autocodeResult = AutocodeResult.Success( autocodeInfo = autocodeInfo, state = calculateState(autocodeInfo), historyServicePrice = autocodeInfo?.servicePrices?.firstOrNull() ) autocodeResultSubject.onNext(autocodeResult) } .doOnError { autocodeResultSubject.onNext(AutocodeResult.Error(it)) } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:AutocodeRepository.kt$AutocodeRepository$return api.getAutocodeInfo(category, offerId, tryToBuy) .map { AutocodeResponseConverter.fromNetwork(it) }</ID>
+    <ID>ExpressionBodySyntax:AveragePriceInfoFragment.kt$AveragePriceInfoFragment.Companion$return ScreenBuilderFactory .fullScreen(AveragePriceInfoFragment::class.java) .withCustomActivity(MultiSelectActivity::class.java) .create() as ScreenBuilder.SimpleScreen</ID>
+    <ID>ExpressionBodySyntax:BaseCachedRepository.kt$BaseCachedRepository$return if (this.id == id) get() else null</ID>
+    <ID>ExpressionBodySyntax:BaseDraftFieldViewController.kt$BaseDraftFieldViewController$return super.getField()</ID>
+    <ID>ExpressionBodySyntax:BaseFilterFieldViewController.kt$BaseFilterFieldViewController$return super.getField()</ID>
+    <ID>ExpressionBodySyntax:BasePhoneAuthViewState.kt$BasePhoneAuthViewState$return view.let { it?.askForPermission(permission) ?: Observable.just(false) }</ID>
+    <ID>ExpressionBodySyntax:BaseSocketService.kt$BaseSocketService$return Request.Builder() .url(getConnectionUrl(params)) .build()</ID>
+    <ID>ExpressionBodySyntax:BaseUniqueCachedRepository.kt$BaseUniqueCachedRepository$return if (cache.hasValue()) cache.first().toSingle() else null</ID>
+    <ID>ExpressionBodySyntax:BaseUserOfferAdapter.kt$BaseUserOfferAdapter$return items[position] is UserOffer</ID>
+    <ID>ExpressionBodySyntax:BasicField.kt$BasicField$return if (super.getValue() != null) super.getValue() else super.getDefaultValue()</ID>
+    <ID>ExpressionBodySyntax:BillingRepository.kt$BillingRepository$return NWAutoUpRequest( schedule_type = scheduleType, time = time, timezone = timeZone)</ID>
+    <ID>ExpressionBodySyntax:BillingRepository.kt$BillingRepository$return api.addProlongation( category = category, offerId = offerId, product = vasName ).mapWithExceptionIfAny()</ID>
+    <ID>ExpressionBodySyntax:BillingRepository.kt$BillingRepository$return api.deleteSchedules(category, offerId, product) .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:BillingRepository.kt$BillingRepository$return api.putSchedules(category, offerId, product, buildSchedule(scheduleType, time)) .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:BillingRepository.kt$BillingRepository$return api.removeProlongation( category = category, offerId = offerId, product = vasName ).mapWithExceptionIfAny()</ID>
+    <ID>ExpressionBodySyntax:BillingRepository.kt$BillingRepository$return this.map { response -&gt; if (response.status != NWScalaStatus.SUCCESS) { val exceptionName = response.error?.name ?: "" throw IOException(exceptionName) } }.toCompletable()</ID>
+    <ID>ExpressionBodySyntax:BlockGalleryAdapter.kt$DeviceIndependentOneItem$return (screenWidth - sidePadding * MULTIPLIER_ONE).toInt() / ITEMS_ON_PAGE_ONE</ID>
+    <ID>ExpressionBodySyntax:BlockGalleryAdapter.kt$DeviceIndependentTwoItems$return (screenWidth - sidePadding * MULTIPLIER_TWO).toInt() / ITEMS_ON_PAGE_TWO</ID>
+    <ID>ExpressionBodySyntax:BodyTypeStepViewModel.kt$BodyTypeStepViewModel$return bodyTypes.map { CommonListItem( it.name, it.label, payload = it, iconResId = bodyTypeIcons(getBodytype(it.name)), isChecked = it.name == offer.carInfo?.bodyType?.id ) }</ID>
+    <ID>ExpressionBodySyntax:BodyTypeStepViewModel.kt$BodyTypeStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:BodyTypeStepViewModel.kt$BodyTypeStepViewModel$return try { BodyType.valueOf(name) } catch (ex: IllegalArgumentException) { null }</ID>
+    <ID>ExpressionBodySyntax:BuildSearchFromSearchParams.kt$BuildSearchFromSearchParams$return listOf(Consts.FILTER_PARAM_CATEGORY to params.category, Consts.CATALOG_NEW_MODEL_ID to params.model?.id, Consts.CATALOG_NEW_MARK_ID to params.mark?.id, Consts.CATALOG_NEW_GENERATION to params.generation?.id) .filter { it.second != null } .map { SerializablePair(it.first, it.second as String) }</ID>
+    <ID>ExpressionBodySyntax:CallBlockAdapter.kt$CallBlockAdapter$return R.layout.item_services_call</ID>
+    <ID>ExpressionBodySyntax:CallBlockAdapter.kt$CallBlockAdapter$return items[position] is CallBlockViewModel</ID>
+    <ID>ExpressionBodySyntax:CatalogOptionsProvider.kt$CatalogOptionsProvider$return items?.map { item -&gt; toOption(item) } ?: emptyList()</ID>
+    <ID>ExpressionBodySyntax:CatalogOptionsProvider.kt$CatalogOptionsProvider$return items?.map { item -&gt; val paramValue = item.toString() // show the same param Select.Option(paramValue, paramValue) } ?: emptyList()</ID>
+    <ID>ExpressionBodySyntax:CategoryUtils.kt$CategoryUtils$return try { CategoryUtils.oldIdToParentCategory(oldSubcategoryId) } catch (e: IllegalArgumentException) { AUTO_ID }</ID>
+    <ID>ExpressionBodySyntax:ChatMessageReciever.kt$ChatMessageReciever$return remoteMessage.data[URL]?.contains(CHAT_PATH) ?: false</ID>
+    <ID>ExpressionBodySyntax:ChatPhoneListenerProvider.kt$ChatPhoneListenerProvider.Companion$return ChatPhoneListenerProvider(messagesContext, title, onPhoneClick as Serializable)</ID>
+    <ID>ExpressionBodySyntax:ChatSyncInteractor.kt$ChatSyncInteractor$return if (currentDialogId == null || message.dialogId != currentDialogId) { //Dialog is not visible if (currentUserId == message.userId) { //From current user Completable.complete() } else { //Not from current user dialogsRepo.markAsUnread(message.dialogId) } } else { //Dialog is visible if (currentUserId == message.userId) { //From current user Completable.complete() } else { //Not from current user dialogsRepo.markAsRead(message.dialogId) } }</ID>
+    <ID>ExpressionBodySyntax:CheckBoxAdapter.kt$CheckBoxAdapter$return items[position] is CheckBoxViewModel</ID>
+    <ID>ExpressionBodySyntax:ChildRectIgnoringScrollingBehavior.kt$ChildRectIgnoringScrollingBehavior$return false</ID>
+    <ID>ExpressionBodySyntax:ChosenComplectationProvider.kt$ChosenComplectationProvider$return currentSuggest?.complectations?.firstOrNull()?.equipment ?: mapOf()</ID>
+    <ID>ExpressionBodySyntax:CodePhonePresenter.kt$CodePhonePresenter$return if (addPhoneModel == null) authInteractor.authPhone(phone, true) else phoneInteractor.addPhone(phone, true).map { it.codeLength }</ID>
+    <ID>ExpressionBodySyntax:CodeTimerRepository.kt$CodeTimerRepository.Timer$return "Timer(timeSec=$timeSec, timer=$timer, timerSubscription=$timerSubscription)"</ID>
+    <ID>ExpressionBodySyntax:CollapsedModelsDescriptionStrategy.kt$CollapsedModelsDescriptionStrategy$return models.filter { it.generations.isNotEmpty() }.joinToString(", ") { "${it.name} (${AppHelper.quantity(R.plurals.generations, it.generations.size)})" }</ID>
+    <ID>ExpressionBodySyntax:ColorAdapter.kt$ColorAdapter$return items[position] is ColorListItem</ID>
+    <ID>ExpressionBodySyntax:ColorOptionsProvider.kt$ColorOptionsProvider$return AssetsUtils.getStringFromAssetsFile("fields/$name.json", "UTF-8").call() .let { json -&gt; Gson().fromJson(json, OptionsHolder::class.java).options }</ID>
+    <ID>ExpressionBodySyntax:ColorStepViewModel.kt$ColorStepViewModel$return colors.map { ColorListItem(it, isSelected = offer.color?.id == it.id) }</ID>
+    <ID>ExpressionBodySyntax:ColorStepViewModel.kt$ColorStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:ComDraftFactory.kt$ComDraftFactory$return materials.run { Offer( category = VehicleCategory.TRUCKS, id = baseOffer.id, truckInfo = prepareTruckInfo(materials, baseOffer), userId = SessionPreferences.getUserId(), priceInfo = materials.price?.let { PriceInfo(it.first.replace(",", "").toIntOrNull() ?: 0, it.second) }, badges = baseOffer.badges, certInfo = baseOffer.certInfo, state = prepareState(materials, baseOffer), counters = baseOffer.counters, section = baseOffer.section, oldCategoryId = baseOffer.oldCategoryId, additional = prepareAdditionalInfo(materials, baseOffer), documents = prepareDocuments(materials), description = description, seller = prepareSeller(materials), color = colorHex?.let { Entity(it, "") }, fallbackUrl = baseOffer.fallbackUrl, sellerType = SellerType.PRIVATE ) }</ID>
+    <ID>ExpressionBodySyntax:CommonMessageReceiver.kt$CommonMessageReceiver$return remoteMessage.data.containsKey(EXTRA_URL)</ID>
+    <ID>ExpressionBodySyntax:CommonWebLinkParser.kt$CommonWebLinkParser$return uri?.run { scheme == SCHEME_AUTORU &amp;&amp; host == PREFIX_WEB } ?: false</ID>
+    <ID>ExpressionBodySyntax:Complectation.kt$Complectation$return name</ID>
+    <ID>ExpressionBodySyntax:ComplectationField.kt$ComplectationField$return SimpleState().apply { fieldName = id value = "1" }</ID>
+    <ID>ExpressionBodySyntax:ComplectationField.kt$ComplectationField$return SimpleState().apply { this.fieldName = fieldName value = id label = name }</ID>
+    <ID>ExpressionBodySyntax:ComplectationInteractor.kt$ComplectationInteractor$return repo.groups()</ID>
+    <ID>ExpressionBodySyntax:ComponentManager.kt$ComponentManager$return messagesListComponents[context] ?: main.messagesListComponentBuilder() .messagesListModule(MessagesListModule(context, title)) .build() .apply { messagesListComponents.put(context, this) }</ID>
+    <ID>ExpressionBodySyntax:CompositePurchaseButtonAdapter.kt$CompositePurchaseButtonAdapter$return try { FORMAT.format(FORMAT.parse(price)) } catch (e: ParseException) { L.d(TAG(), e.message) price }</ID>
+    <ID>ExpressionBodySyntax:CompositeVASHeaderAdapter.kt$CompositeVASHeaderAdapter$return items[position] is CompositeVASHeader</ID>
+    <ID>ExpressionBodySyntax:CompositeVASItemAdapter.kt$CompositeVASItemAdapter$return items[position] is CompositeVASItem</ID>
+    <ID>ExpressionBodySyntax:ConfirmExitDialog.kt$ConfirmExitDialog$return buildDialog()</ID>
+    <ID>ExpressionBodySyntax:ConnectionErrorAdapter.kt$ConnectionErrorAdapter$return R.layout.item_connection_error</ID>
+    <ID>ExpressionBodySyntax:ConnectionErrorAdapter.kt$ConnectionErrorAdapter$return items[position] is ConnectionErrorModel</ID>
+    <ID>ExpressionBodySyntax:ConnectionHelper.kt$ConnectionHelper$return ContextUtils.isOnline(AppHelper.appContext())</ID>
+    <ID>ExpressionBodySyntax:ContextExt.kt$return theme.getAttrDimen(attrId, default)</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt$return ConvertException("Field '$fieldName' must not be null")</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt$return convertNullable(item, converter) ?: throw createConvertException(fieldName)</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt$return convertNullable(items, converter) ?: throw createConvertException(fieldName)</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt$return item ?: throw createConvertException(fieldName)</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt$return item?.let { f -&gt; additional?.let { s -&gt; converter(f, s) } }</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt$return item?.let(converter)</ID>
+    <ID>ExpressionBodySyntax:ConvertUtils.kt$return items?.map(converter)</ID>
+    <ID>ExpressionBodySyntax:CreateOfferAdapter.kt$CreateOfferAdapter$return AddAdvertViewHolder.create(parent, clickListener)</ID>
+    <ID>ExpressionBodySyntax:CreateOfferAdapter.kt$CreateOfferAdapter$return items[position] is CreateOfferHeader</ID>
+    <ID>ExpressionBodySyntax:CreateOfferHeader.kt$CreateOfferHeader$return id</ID>
+    <ID>ExpressionBodySyntax:CreditAdConverter.kt$CreditAdConverter$return "${nwAd.title} ${String.format("%,d", payment).replace(",", " ")} ${stringsProvider[R.string.monthly_payment]}"</ID>
+    <ID>ExpressionBodySyntax:CreditAdRepository.kt$CreditAdRepository$return adsFactory.from(NativeAdRequestInfo.forOffer(offer)).observeAd().map { val ad: NativeImageAd = it as? NativeImageAd ?: throw ConvertException("ad should be type of ${NativeImageAd::javaClass.name}") converter.from(ad, offer) }</ID>
+    <ID>ExpressionBodySyntax:CustomLinkify.kt$CustomLinkify$return addLinks(textView, pattern, arrayOf(scheme), matchFilter, transformFilter, { clickListener?.onLinkClicked(Uri.parse(it), asAction = false) })</ID>
+    <ID>ExpressionBodySyntax:DamagesAdapter.kt$DamagesAdapter$return if (isLarge()) { val stubItem = DamageViewModel(Entity("", ""), emptyList(), "", 0f to 0f) item.copy(damages = item.damages + stubItem) } else { item }</ID>
+    <ID>ExpressionBodySyntax:DamagesField.kt$DamagesField$return mutableListOf()</ID>
+    <ID>ExpressionBodySyntax:DateConverter.kt$DateConverter$return DateInfo(year = src.year, month = src.month, day = src.day)</ID>
+    <ID>ExpressionBodySyntax:DateConverter.kt$DateConverter$return fromTimestamp(src, firstTimestampFormat.getOrSet(firstTimestampFormatFactory)) ?: fromTimestamp(src, secondTimestampFormat.getOrSet(secondTimestampFormatFactory)) ?: throw ConvertException("Can't parse date: $src")</ID>
+    <ID>ExpressionBodySyntax:DateField.kt$DateField$return ScreenBuilderFactory.popupScreen(SelectMonthDialog::class.java) .withArgs(getArgs()) .asDialog() .create()</ID>
+    <ID>ExpressionBodySyntax:DateValue.kt$DateValue$return 0</ID>
+    <ID>ExpressionBodySyntax:DateValue.kt$DateValue.CREATOR$return DateValue(source.readInt(), source.readInt(), source.readInt(), source.readInt())</ID>
+    <ID>ExpressionBodySyntax:DateValue.kt$DateValue.CREATOR$return arrayOfNulls(size)</ID>
+    <ID>ExpressionBodySyntax:DealerFeedModule.kt$DealerFeedModule$return NavigatorHolder()</ID>
+    <ID>ExpressionBodySyntax:DealerRepository.kt$DealerRepository$return nodeApi.getDealer(dealerCode) .map{ nwItem -&gt; DealerItemConverter.fromNetwork(nwItem) }</ID>
+    <ID>ExpressionBodySyntax:DeleteDialog.kt$DeleteDialog$return buildDialog(savedInstanceState)</ID>
+    <ID>ExpressionBodySyntax:DialogsRepository.kt$DialogsRepository$return api.muteChat(dialogId) .flatMapCompletable { updateDialog(dialogId, { dialog -&gt; dialog.copy(isMuted = true) }) }</ID>
+    <ID>ExpressionBodySyntax:DictionaryProvider.kt$DictionaryProvider$return dictionaryRepository.getDictionariesForCategory(category) .toBlocking() .value()[name] ?.values ?.values ?.toMutableList() ?: mutableListOf()</ID>
+    <ID>ExpressionBodySyntax:DocumentsConverter.kt$DocumentsConverter$return if (this.isBlank()) null else this</ID>
+    <ID>ExpressionBodySyntax:DraftColorOptionsProvider.kt$DraftColorOptionsProvider$return colorCache ?: AssetsUtils.getStringFromAssetsFile("fields/color_public.json", "UTF-8").call() .let { json -&gt; Gson().fromJson(json, OptionsHolder::class.java).options } .apply { colorCache = this }</ID>
+    <ID>ExpressionBodySyntax:DraftColorOptionsProvider.kt$DraftColorOptionsProvider$return get("whatever").firstOrNull { item -&gt; item.id == id }</ID>
+    <ID>ExpressionBodySyntax:DraftFieldsParams.kt$DraftFieldsParams$return fields .map { field -&gt; val key = DraftSuggestParam.values() .firstOrNull { it.filterId == field.id }?.param ?: field.id val value = if (field is ISuggestField) field.suggestValue() else null Pair(key, value) } .filter { (key, value) -&gt; !value.isNullOrBlank() &amp;&amp; requestParamsSet.contains(key) } .map { (key, value) -&gt; Pair(key, value!!) } // !! depend on condition above .toMap()</ID>
+    <ID>ExpressionBodySyntax:DraftFragment.kt$DraftFragment$return FilterScreen.registerDefault() .register(CheckboxField::class.java, { p, e -&gt; FullDraftCheckboxViewController(p, e) }) .register(RedirectExplanationField::class.java, ::buildRedirectInfoViewController) .register(VinInfoField::class.java, { p, e -&gt; VinInfoViewController(p, e) }) .register(LicenceNumberField::class.java, ::buildLicenceFieldViewController) .register(PriceField::class.java, { p, e -&gt; PriceViewController(p, e) }) .register(TextViewField::class.java, { p, e -&gt; CustomTextViewController(p, e) }) .register(SelectDynamicField::class.java, ::buildSelectDynamicViewController) .register(SelectPresetComplectationField::class.java, ::buildPresetComplectationViewController) .register(ComplectationField::class.java, { p, e -&gt; ComplectationViewController(p, e) }) .register(GeoField::class.java, { p, e -&gt; GeoViewController(p, e) }) .register(KeyboardField::class.java, ::buildKeyboardViewController) .register(KeyboardDescriptionField::class.java, ::buildKeyboardDescriptionViewController) .register(PhoneField::class.java, { p, e -&gt; PhoneViewController(p, e) }) .register(SegmentDynamicField::class.java, { p, e -&gt; DynamicSegmentViewController(p, e) }) .register(PublishButtonField::class.java, ::buildPublishButtonViewController) .register(ExitButtonField::class.java, ::buildExitButtonViewController) .register(DateField::class.java, { p, e -&gt; DateViewController(p, e) }) .register(WarrantyDateField::class.java, { p, e -&gt; WarrantyDateViewController(p, e) }) .register(PhotoVideoField::class.java, ::buildPhotoVideoViewController) .register(GenerationDynamicField::class.java, ::buildGenerationViewController) .register(GlobalCategoryField::class.java, { p, e -&gt; CategoryViewController(p, e) }) .register(CategoryField::class.java, ::buildCategoryViewController) .build()</ID>
+    <ID>ExpressionBodySyntax:DraftInteractor.kt$DraftInteractor$return draftRepository.publishOffer(offerId, isFromWizard).map { offer -&gt; val haveToPay = offer.servicePrices .firstOrNull { it.serviceId == ACTIVATE_ID } ?.let { it.paidReason != PaidReason.NO_REASON } ?: true PublishInfo(offer, haveToPay) }</ID>
+    <ID>ExpressionBodySyntax:DraftInteractor.kt$DraftInteractor$return getDraft() .map { offer -&gt; Offer( category = offer.category, fallbackUrl = offer.fallbackUrl, id = offer.id, sellerType = offer.sellerType ) } .flatMap { saveDraftImmediatelyIfNotPublished(it) } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:DraftModule.kt$DraftModule$return DraftInteractor(draftRepo, suggestRepo, photoUploadRepository, updateDelay = if (isDevOrDebug()) 1000L else DraftInteractor.UPDATE_TIME, category = category, isEditMode = publishOfferId != null)</ID>
+    <ID>ExpressionBodySyntax:DraftModule.kt$DraftModule$return DraftRepository( publishOfferId, api, dictionaryRepository = dictionaryRepository, category = category)</ID>
+    <ID>ExpressionBodySyntax:DraftModule.kt$DraftModule$return DraftScreenFactory( optionsProvider = optionsProvider, colorsProvider = colorsProvider, catalogOptions = catalogOptions, complectationsProvider = complectationsProvider, predictedPrice = predictedPrice)</ID>
+    <ID>ExpressionBodySyntax:DraftModule.kt$DraftModule$return PhotoUploadRepository(api, category)</ID>
+    <ID>ExpressionBodySyntax:DraftModule.kt$DraftModule$return catalogOptionsProvider</ID>
+    <ID>ExpressionBodySyntax:DraftModule.kt$DraftModule$return navigator</ID>
+    <ID>ExpressionBodySyntax:DraftPresenter.kt$DraftPresenter$return suggestSingleFromFields() .backgroundToUi() .doOnSuccess { suggest -&gt; suggestCache = suggest catalogChangedListeners.forEach { it.onChanged(suggest) } } .doOnError { checkErrors(it) } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:DraftRepository.kt$DraftRepository$return Single.just(offer) .flatMap { it?.category?.let { dictionaryRepository.getDictionariesForCategory(it) } ?: throw NullPointerException("category is null!") } .map { OfferConverter(it).fromNetwork(offer, servicePrices = servicePrices) }</ID>
+    <ID>ExpressionBodySyntax:DraftRepository.kt$DraftRepository$return api.publishOffer(offerId, category, WIZARD_TAG.takeIf { isFromWizard }) .flatMap(draftToOffer()) .onErrorResumeNext(checkValidationError())</ID>
+    <ID>ExpressionBodySyntax:DraftRepository.kt$DraftRepository$return api.updateDraft(offer.toNetwork(), offer.id, category) .flatMap(draftToOffer()) .onErrorResumeNext(checkValidationError()) .doOnSuccess { subj.onNext(it) }</ID>
+    <ID>ExpressionBodySyntax:DraftRepository.kt$DraftRepository$return if (anonymous) { api.getDraftById(offerId, category).flatMap(draftToOffer()) } else { api.editOffer(offerId, category) .flatMap { draft -&gt; api.getDraftById(draft.offer_id ?: throw NullPointerException("offer id from server is Null"), category) } .flatMap(draftToOffer()) }</ID>
+    <ID>ExpressionBodySyntax:DraftRepository.kt$DraftRepository$return when { subj.hasValue() &amp;&amp; forceNetwork.not() -&gt; subj.first().toSingle() else -&gt; { val single = publishedOfferId?.let { editPublishedOffer(it) } ?: getCurrentDraft() single.doOnSuccess { subj.onNext(it) } } }</ID>
+    <ID>ExpressionBodySyntax:DraftRepository.kt$DraftRepository$return { e -&gt; if (e is NWValidationException) { val validationFields = NWValidationConverter.fromNetwork(e.validation) Single.error(DraftValidationException(validationFields)) } else { Single.error(e) } }</ID>
+    <ID>ExpressionBodySyntax:DraftScreenExt.kt$return (maxLength + DIGITS_PER_SPACE - 1) / DIGITS_PER_SPACE - 1 + maxLength</ID>
+    <ID>ExpressionBodySyntax:EditModeStrategy.kt$EditModeStrategy$return this.id == Filters.EXIT_BUTTON_FIELD || this.id == Filters.PUBLISH_BUTTON_FIELD || this.id == Filters.NO_PUBLISH_FIELD</ID>
+    <ID>ExpressionBodySyntax:EmptyDelegateAdapter.kt$EmptyDelegateAdapter$return R.layout.item_no_results</ID>
+    <ID>ExpressionBodySyntax:EmptyDelegateAdapter.kt$EmptyDelegateAdapter$return items[position] is EmptyModel</ID>
+    <ID>ExpressionBodySyntax:EmptyModel.kt$EmptyModel$return EmptyModel::class.java.simpleName</ID>
+    <ID>ExpressionBodySyntax:EmptyVendorRepository.kt$EmptyVendorRepository$return Single.just(emptyList())</ID>
+    <ID>ExpressionBodySyntax:EngineDetailsBuilder.kt$EngineDetailsBuilder$return offer.carInfo?.engineType?.label ?: offer.motoInfo?.engine?.label ?: offer.truckInfo?.engine?.label</ID>
+    <ID>ExpressionBodySyntax:EngineDetailsBuilder.kt$EngineDetailsBuilder$return offer.carInfo?.horsePower ?: offer.motoInfo?.horsePower ?: offer.truckInfo?.horsePower</ID>
+    <ID>ExpressionBodySyntax:EngineDetailsBuilder.kt$EngineDetailsBuilder$return offer.carInfo?.techParam?.displacement ?: offer.motoInfo?.displacement ?: offer.truckInfo?.displacement</ID>
+    <ID>ExpressionBodySyntax:EngineNemaFactory.kt$EngineNameFactory$return nameplateEngine.letOrEmpty { "$it " } + displacement?.volumeToLiters().letOrEmpty { "$it " } + transmission.letOrEmpty { "${it.shorten()} " } + engineType.letOrEmpty { "${it.label} " } + power.letOrEmpty { "($it л.с.)" }</ID>
+    <ID>ExpressionBodySyntax:EngineStepViewModel.kt$EngineStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:EntityConverter.kt$EntityConverter$return run3(src.id, src.name, src.group) { GroupedEntity(first, second, third) } ?: run3(src.id, src.name, src.shortName) { TransmissionEntity(first, second, third) } ?: run2(src.id, src.name) { Entity(first, second) }</ID>
+    <ID>ExpressionBodySyntax:EntityConverter.kt$EntityConverter$return when (src) { is GroupedEntity -&gt; NWEntity(id = src.id, name = src.label, group = src.group) is TransmissionEntity -&gt; NWEntity(id = src.id, name = src.label, shortName = src.shortName) else -&gt; NWEntity(id = src.id, name = src.label) }</ID>
+    <ID>ExpressionBodySyntax:EquipmentsConverter.kt$EquipmentsConverter$return src.mapKeys { it.key.id }</ID>
+    <ID>ExpressionBodySyntax:ErrorDelegateAdapter.kt$ErrorDelegateAdapter$return R.layout.view_load_error</ID>
+    <ID>ExpressionBodySyntax:ErrorDelegateAdapter.kt$ErrorDelegateAdapter$return items[position] is ErrorModel</ID>
+    <ID>ExpressionBodySyntax:ErrorModel.kt$ErrorModel$return this</ID>
+    <ID>ExpressionBodySyntax:ErrorModel.kt$ErrorModel$return title</ID>
+    <ID>ExpressionBodySyntax:EvaluateDraftRepository.kt$EvaluateDraftRepository$return draft?.let { Single.just(it) } ?: Single.error(NotFoundException())</ID>
+    <ID>ExpressionBodySyntax:EvaluateInfoFragment.kt$EvaluateInfoFragment$return inflater.inflate(R.layout.fragment_evaluate_info, container, false)</ID>
+    <ID>ExpressionBodySyntax:EvaluateInfoFragment.kt$EvaluateInfoFragment.Companion$return ScreenBuilderFactory.fullScreen() .withFragment(EvaluateInfoFragment::class.java) .withCustomActivity(SimpleFragmentActivity::class.java) .create()</ID>
+    <ID>ExpressionBodySyntax:EvaluateInteractor.kt$EvaluateInteractor$return Single.zip( draftRepository.getDraft(), getDraft(evaluateDraftId), { currentDraft, evaluateDraft -&gt; evaluateDraft.copy( id = currentDraft.id, // we need to send Pts.ORIGINAL because server doesn't clear pts field, if send empty // see https://st.yandex-team.ru/AUTORUAPPS-5929 documents = evaluateDraft.documents?.copy(pts = Pts.ORIGINAL) ) } ).flatMap { draftRepository.updateDraft(it) }.toCompletable()</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule$return DraftInteractor(draftRepo, suggestRepo, photoUploader, updateDelay = if (isDevOrDebug()) 1000L else DraftInteractor.UPDATE_TIME, category = category, isEditMode = false)</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule$return DraftRepository(publishOfferId, api, dictionaryRepository, category = category, anonymous = true)</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule$return EvaluateScreenFactory( optionsProvider = optionsProvider, colorsProvider = colorsProvider, catalogOptions = catalogOptions, complectationsProvider = complectationsProvider, prefsDelegate = prefsDelegate)</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule$return FilterScreen.registerDefault() .register(PriceField::class.java, { p, e -&gt; PriceViewController(p, e) }) .register(TextViewField::class.java, { p, e -&gt; CustomTextViewController(p, e) }) .register(SelectDynamicField::class.java, { p, e -&gt; SelectViewController(BaseFilterFieldViewController(p, e)) }) .register(SelectPresetComplectationField::class.java, { p, e -&gt; ComplectationSelectViewController(BaseFilterFieldViewController(p, e)) }) .register(ComplectationField::class.java, { p, e -&gt; ComplectationViewController(p, e) }) .register(GeoField::class.java, { p, e -&gt; GeoViewController(p, e) }) .register(KeyboardField::class.java, { parent, e -&gt; KeyboardViewController&lt;String&gt;(parent, e) }) .register(KeyboardDescriptionField::class.java, { p, e -&gt; KeyboardDescriptionViewController(p, e) }) .register(PhoneField::class.java, { p, e -&gt; PhoneViewController(p, e) }) .register(SegmentDynamicField::class.java, { p, e -&gt; DynamicSegmentViewController(p, e) }) .register(PublishButtonField::class.java, { p, e -&gt; ButtonFieldViewController&lt;ButtonField&gt;(p, e, R.layout.field_evaluate_button) }) .register(ExitButtonField::class.java, { p, e -&gt; ButtonFieldViewController&lt;ButtonField&gt;(p, e, R.layout.field_draft_exti_button) }) .register(DateField::class.java, { p, e -&gt; DateViewController(p, e) }) .register(WarrantyDateField::class.java, { p, e -&gt; WarrantyDateViewController(p, e) }) .register(GenerationDynamicField::class.java, { p, e-&gt; GenerationViewController(BaseFilterFieldViewController(p, e)) }) .register(GlobalCategoryField::class.java, { p, e -&gt; CategoryViewController(p, e) }) .register(DescriptionField::class.java, { p, e -&gt; DescriptionViewController(p, e) }) .build()</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule$return PhotoUploadRepository(api, category)</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule$return catalogOptionsProvider</ID>
+    <ID>ExpressionBodySyntax:EvaluateModule.kt$EvaluateModule$return navigator</ID>
+    <ID>ExpressionBodySyntax:EvaluateResultFragment.kt$EvaluateResultFragment$return false</ID>
+    <ID>ExpressionBodySyntax:EvaluateResultFragment.kt$EvaluateResultFragment$return object : GridLayoutManager.SpanSizeLookup() { override fun getSpanSize(position: Int): Int = when (position) { 1, 2 -&gt; 1 else -&gt; max } }</ID>
+    <ID>ExpressionBodySyntax:EvaluateResultFragment.kt$EvaluateResultFragment.Companion$return ScreenBuilderFactory.fullScreen(EvaluateResultFragment::class.java) .withArgs(Bundle(2).apply { putString(ARG_OFFER_ID, offerId) putString(ARG_COMPLECTATION_LABEL, complectationLabel) }) .withCustomActivity(SimpleFragmentActivity::class.java) .create()</ID>
+    <ID>ExpressionBodySyntax:EvaluateResultPresenter.kt$EvaluateResultPresenter$return ErrorModel(strings[R.string.error_eval_title], strings[R.string.error_eval_message], strings[R.string.error_eval_action])</ID>
+    <ID>ExpressionBodySyntax:EvaluateResultPresenter.kt$EvaluateResultPresenter$return Single.zip(getCardModel(offer, false), getPriceModel(offer), getHistogram(offer), { card, prediction, histogram -&gt; combineEvaluationResults(card, prediction, histogram) })</ID>
+    <ID>ExpressionBodySyntax:EvaluateResultPresenter.kt$EvaluateResultPresenter$return if (prediction.isPredictionCorrect() &amp;&amp; histogram.size &gt; 0) { HistogramModel(histogram, getPredictedPrice(prediction)) } else { null }</ID>
+    <ID>ExpressionBodySyntax:EvaluateResultPresenter.kt$EvaluateResultPresenter$return listOf(card) .plus(prediction) .plus(buildHistogramModel(histogram, prediction)) .plus(ButtonModel(PUBLISH_BUTTON, strings[R.string.label_sell_on_autoru])) .filterNotNull()</ID>
+    <ID>ExpressionBodySyntax:EvaluateScreen.kt$EvaluateScreen.Companion$return EvaluateScreen.Builder(strings, options, colors, catalogOptions, complectationsProvider, uiFieldsManager, showPromo) .build("Evaluate")</ID>
+    <ID>ExpressionBodySyntax:EvenPartsAdapter.kt$EvenPartsAdapter$return R.layout.view_parts_even</ID>
+    <ID>ExpressionBodySyntax:EvenPartsAdapter.kt$EvenPartsAdapter$return super.isForViewType(items, position) &amp;&amp; position % 2 == 0 &amp;&amp; position &lt; items.size - 1</ID>
+    <ID>ExpressionBodySyntax:FacebookAuthViewController.kt$FacebookAuthViewController$return e?.message ?.takeIf { it.startsWith(CONNECTION_ERROR) || it.contains(INTERNET_DISCONNECTED_ERROR) } ?.let { NetworkConnectionException(e) } ?: SocialAuthException(socialNet, e?.message ?: "")</ID>
+    <ID>ExpressionBodySyntax:FavoriteFeedFragment.kt$FavoriteFeedFragment.Companion$return ScreenBuilderFactory. fullScreen(FavoriteFeedFragment::class.java) .withCustomActivity(SimpleRedFragmentActivity::class.java) .withArgs(createArgs(shouldSetupToolbar)) .create()</ID>
+    <ID>ExpressionBodySyntax:FavoriteOffersRepo.kt$FavoriteOffersRepo$return offer.category?.let { category -&gt; dictionaryRepository.getDictionariesForCategory(category) .map { d -&gt; OfferConverter(dictionaries = d).fromNetwork(offer) } } ?: Single.error(IOException("category is null!"))</ID>
+    <ID>ExpressionBodySyntax:FavoritePlugin.kt$FavoritePlugin$return userService.isAuthorized .flatMapCompletable { _ -&gt; updateFavorites() } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:FeatureConverter.kt$FeatureConverter$return Feature( name = convertNotNull(src.name, "name"), plusCount = src.plus_count ?: 0, minusCount = src.minus_count ?: 0, type = convertNotNull(src.type, "type") )</ID>
+    <ID>ExpressionBodySyntax:FeaturesConverter.kt$FeaturesConverter$return Features( positive = convertNotNull(src.positive ?: emptyList(), FeatureConverter::fromNetwork, "positive"), negative = convertNotNull(src.negative ?: emptyList(), FeatureConverter::fromNetwork, "negative"), controversy = convertNotNull(src.controversy ?: emptyList(), FeatureConverter::fromNetwork, "controversy") )</ID>
+    <ID>ExpressionBodySyntax:FeedFragment.kt$FeedFragment$return object : GridLayoutManager.SpanSizeLookup() { override fun getSpanSize(position: Int): Int { if (adapter?.itemCount?.let { position &lt; it } == true) { val item = adapter?.getItem(position) if (item is Preset || item is PromoItem) return SPAN_SMALL } return span } }</ID>
+    <ID>ExpressionBodySyntax:FeedPresenter.kt$FeedPresenter$return Single.zip( offersRequest().flatMap { feedInteractor.loadNextFeed(it) }, noteInteractor.getNotes().onErrorResumeNext { Single.just(emptyMap()) }, { feedResult, notes -&gt; val feed = feedResult .feed .mapIndexed{ index, item -&gt; val topThree = isFirstPage &amp;&amp; index &lt; topExtendedOffersCount mapToFeedItem(item, notes, topThree) } .run { OfferService.INSTANCE.enrichOffersViewed(this) } FeedResult(feed, feedResult.savedSearchId) } ).doOnSuccess { checkCanLoadMore() onSearchIdChanged(it.savedSearchId) }</ID>
+    <ID>ExpressionBodySyntax:FeedViewModel.kt$FeedViewModel$return feedItems.find { it.id() == id }</ID>
+    <ID>ExpressionBodySyntax:FilterEquipmentConverter.kt$FilterEquipmentConverter$return src?.mapIndexed { index, category -&gt; listOf(createCategoryField(index, category)).plus(createFields(category)) }?.flatten() ?: throw EmptyEquipmentException()</ID>
+    <ID>ExpressionBodySyntax:FilterFeedPresenter.kt$FilterFeedPresenter$return OfferRequestInfo(filterModel.getSearchParams(), true, true, filterModel.videoParams, 0, SortSettingsManager.convert(sortSettingsManager.sortItem), filterModel.logParams, searchContext)</ID>
+    <ID>ExpressionBodySyntax:FilterFeedPresenter.kt$FilterFeedPresenter$return feedViewModel</ID>
+    <ID>ExpressionBodySyntax:FilterInteractor.kt$FilterInteractor$return Filter("", "", geoParams(getGeoState())).apply { categoryId = Consts.AUTO_CATEGORY_ID }</ID>
+    <ID>ExpressionBodySyntax:FilterInteractor.kt$FilterInteractor$return prepareTagUseCase.prepareWith(filter) .doOnSuccess { tag -&gt; filterChangedListener.filterChanged(tag) } .map { Unit }</ID>
+    <ID>ExpressionBodySyntax:FilterRepository.kt$FilterRepository$return let5(filterModel.filterTag, filterModel.categoryId, filterModel.filterScreen, filterModel.formState, filterModel.filter ) { (tag, category, screen, formState, filter) -&gt; FilterModel(tag, category, screen, formState, filter, filterModel.videoParams, LogParams.fromScreen(screen, geoStateProvider)) } ?: throw filterModelException</ID>
+    <ID>ExpressionBodySyntax:FinalStepViewModel.kt$FinalStepViewModel$return listOf( SubtitleItem(strings[ if (offer.additional?.hidden == false) R.string.wiz_offer_published else R.string.wiz_offer_created] ), HeaderWithTextItem(buildCarTitle(), buildCarDescription()), HeaderWithTextItem(strings[R.string.wiz_check_contacts_label], buildContacts()), HeaderWithTextItem(strings[R.string.wiz_check_price_label], buildPriceInfo()), AdditionalListItem( strings[R.string.wiz_check_additional_label], strings[R.string.wiz_check_additional_info], strings[R.string.wiz_check_views_percent].format(ADDITIONAL_VIEWS_PERCENTAGE), strings[R.string.wiz_check_additional_button] ) )</ID>
+    <ID>ExpressionBodySyntax:ForegroundPlugin.kt$ForegroundPlugin$return if (shouldResetOnBackground) { visibilityRepo.observeAppForeground() .doOnNext { L.d("Foreground plugin. isAppForeground: $it") } } else Observable.just(true)</ID>
+    <ID>ExpressionBodySyntax:FormStateFiltersConverter.kt$FormStateFiltersConverter$return MultiSelectState(Field.TYPES.multiselect_certification).apply { value = certification fieldName = Filters.CERTIFICATION_FIELD }</ID>
+    <ID>ExpressionBodySyntax:FrescoPlugin.kt$FrescoPlugin$return "FrescoPlugin"</ID>
+    <ID>ExpressionBodySyntax:FullDraftFragment.kt$FullDraftFragment.Companion$return ScreenBuilderFactory.fullScreen(FullDraftFragment::class.java) .withArgs(Bundle().apply { putString(ARGS_OFFER_ID, offerId) putString(ARGS_CATEGORY, category) putBoolean(ARGS_FROM_EVAL, isFromEvaluation) }) .withCustomActivity(EmptySecondLayerActivity::class.java)</ID>
+    <ID>ExpressionBodySyntax:FullDraftModule.kt$FullDraftModule$return navigator</ID>
+    <ID>ExpressionBodySyntax:FullDraftPriceViewController.kt$FullDraftPriceViewController$return DialogItemSelectedEvent(field?.id, SerializablePair.create(newText, Currency.RUR))</ID>
+    <ID>ExpressionBodySyntax:FullScreenLoadingDelegateAdapter.kt$FullScreenLoadingDelegateAdapter$return items[position] is FullScreenLoadingModel</ID>
+    <ID>ExpressionBodySyntax:FullScreenLoadingModel.kt$FullScreenLoadingModel$return FullScreenLoadingModel::class.java.simpleName</ID>
+    <ID>ExpressionBodySyntax:FullScreenPhotoFragment.kt$FullScreenPhotoFragment$return GenericDraweeHierarchyBuilder(resources) .setProgressBarImage(getProgressBar()) .setFailureImage(getFailureTextDrawable()) .setActualImageScaleType(ScalingUtils.ScaleType.FIT_CENTER) .apply { if (isPanorama) setOverlay(PanoramaDrawable(context)) } .build()</ID>
+    <ID>ExpressionBodySyntax:FullScreenPhotoFragment.kt$FullScreenPhotoFragment$return overlayView?.let { val snack = Snackbar.make(it, msg, Snackbar.LENGTH_LONG) .setAction(R.string.proceed, { action() }) val snackAction = snack.view.findViewById&lt;TextView&gt;(android.support.design.R.id.snackbar_action) if (snackAction != null) { snackAction.setAllCaps(true) snackAction.setTextColor(ContextCompat.getColor(context, R.color.common_red)) snackAction.setBackgroundDrawable(null) } snack }</ID>
+    <ID>ExpressionBodySyntax:GalleryStatEvent.kt$GalleryStatEvent$return mapOf(StatEvent.GALLERY_GOOGLE_PHOTO to StatEvent.GALLERY_LOCAL_PHOTO)</ID>
+    <ID>ExpressionBodySyntax:GalleryStatEvent.kt$GalleryStatEvent$return mapOf(StatEvent.GALLERY_GOOGLE_PHOTO to StatEvent.GALLERY_REMOTE_PHOTO)</ID>
+    <ID>ExpressionBodySyntax:GearStepViewModel.kt$GearStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:GearStepViewModel.kt$GearStepViewModel$return gears.map { item -&gt; CommonListItem( id = item.name, title = item.label, iconResId = gearIcons[item], payload = item, isChecked = item.name == offer.carInfo?.drive?.id ) }</ID>
+    <ID>ExpressionBodySyntax:GenerationDynamicField.kt$GenerationDynamicField$return GenerationsCatalogFragment.createScreen(generationsProvider.generations)</ID>
+    <ID>ExpressionBodySyntax:GenerationInfo.kt$GenerationInfo$return name?.let { if (it.isNullOrBlank()) "$from-$to" else it } ?: "$from-$to"</ID>
+    <ID>ExpressionBodySyntax:GenerationRepository.kt$GenerationRepository$return BreadcrumbsConverter(GenerationBreadcrumbsConverter::fromNetwork) .fromNetwork(this) .toSet()</ID>
+    <ID>ExpressionBodySyntax:GenerationStepViewModel.kt$GenerationStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:GenerationStepViewModel.kt$GenerationStepViewModel$return mutableListOf&lt;IComparableItem&gt;(LayoutItem()) .apply { addAll(generations.map { item -&gt; CommonListItem( id = item.id, title = "${item.yearFrom}-${item.yearTo} ${item.name}", imageUrl = item.photo, payload = item, isChecked = item.id == offer.carInfo?.generationId ) }) }</ID>
+    <ID>ExpressionBodySyntax:GenerationsCatalogFragment.kt$GenerationsCatalogFragment$return if (ContextUtils.isLarge(context)) { GridLayoutManager(context, 2) } else { LinearLayoutManager(context) }</ID>
+    <ID>ExpressionBodySyntax:GenerationsCatalogFragment.kt$GenerationsCatalogFragment$return listOf(CommonImageItemDelegateAdapter(presenter::onItemClicked))</ID>
+    <ID>ExpressionBodySyntax:GenerationsCatalogModule.kt$GenerationsCatalogModule$return NavigatorHolder()</ID>
+    <ID>ExpressionBodySyntax:GenerationsCatalogModule.kt$GenerationsCatalogModule$return navigator</ID>
+    <ID>ExpressionBodySyntax:GenerationsToFolderMapper.kt$GenerationsToFolderMapper$return ArrayList&lt;Folder&gt;().apply { for (model in generations) { add(Folder().apply { id = model.id name = model.name alias = model.autoruAlias level = "1" opinionsTotal = model.reviewsCount.toString() }) } }</ID>
+    <ID>ExpressionBodySyntax:GeoCatalogItem.kt$GeoCatalogItem$return name</ID>
+    <ID>ExpressionBodySyntax:GeoErrorFactory.kt$GeoErrorFactory$return if (throwable is GeoUiException) { when (throwable) { is GeoUiException.AutoDetect -&gt; FullScreenError( cause = throwable, image = R.drawable.icn_connect_error, title = stringsProvider.get(R.string.geo_can_not_find_location)) is GeoUiException.Search -&gt; super.createFullScreenError(throwable.cause).copy(cause = throwable) } } else { super.createFullScreenError(throwable) }</ID>
+    <ID>ExpressionBodySyntax:GeoPointConverter.kt$GeoPointConverter$return NWGeoPoint( latitude = src.latitude, longitude = src.longitude )</ID>
+    <ID>ExpressionBodySyntax:GeoPointConverter.kt$GeoPointConverter$return let2(src.latitude, src.longitude) { (lat, lon) -&gt; GeoPoint(lat, lon) }</ID>
+    <ID>ExpressionBodySyntax:GeoSelectSuggestDialog.kt$GeoSelectSuggestDialog$return inflater.inflate(R.layout.fragment_callback_group_form, container, false)</ID>
+    <ID>ExpressionBodySyntax:GroupViewController.kt$GroupViewController$return (field.getChildFieldById(Filters.PRICE_FIELD) as? PriceField)?.let { priceField -&gt; if (priceField.isDefault) field.label else AppHelper.string( R.string.draft_group_price, StringUtils.formatNumberString(priceField.value.first) ) } ?: field.label</ID>
+    <ID>ExpressionBodySyntax:GroupViewController.kt$GroupViewController$return field.getChildFieldById(Filters.USER_NAME_FIELD)?.let { childField -&gt; if (childField.value != null &amp;&amp; childField.value != childField.defaultValue) { childField.value.toString() } else field.label } ?: field.label</ID>
+    <ID>ExpressionBodySyntax:GroupViewController.kt$GroupViewController$return field.getCommonTitle() ?: getFillText(field)</ID>
+    <ID>ExpressionBodySyntax:GroupViewController.kt$GroupViewController$return listOf(Filters.MARK_FIELD, Filters.MODEL_FIELD) .mapNotNull { field.getChildFieldById(it) } .filter { it.value != null &amp;&amp; it.value != it.defaultValue } .map { it.value }.joinNotEmptyOr(" ", { field.label.toString() })</ID>
+    <ID>ExpressionBodySyntax:HeaderWithButtonDelegateAdapter.kt$HeaderWithButtonDelegateAdapter$return R.layout.item_title_with_button</ID>
+    <ID>ExpressionBodySyntax:HeaderWithButtonDelegateAdapter.kt$HeaderWithButtonDelegateAdapter$return items[position] is HeaderWithButtonViewModel</ID>
+    <ID>ExpressionBodySyntax:HelloPlugin.kt$HelloPlugin$return Completable.fromAction { if (intervalCount &gt; 0) { uidInterceptor.requestHello() L.d(name(), "request hello because of interval happens") } }</ID>
+    <ID>ExpressionBodySyntax:HelloPlugin.kt$HelloPlugin$return super.work().mergeWith(authCompletable()).subscribeOn(AutoSchedulers.network())</ID>
+    <ID>ExpressionBodySyntax:HelloPlugin.kt$HelloPlugin$return userService.isAuthorized .flatMapCompletable { auth -&gt; if (isAuth.get() == auth || !auth) { isAuth.set(auth) return@flatMapCompletable Completable.complete() } isAuth.set(auth) L.d(name(), "say hello because of auth happens") helloInteractor.sayHello().toCompletable() .onErrorComplete { uidInterceptor.requestHello(); true } } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:HistogramConverter.kt$HistogramConverter$return run3(src.from, src.to, src.count) { HistGroup(first, second, third) }</ID>
+    <ID>ExpressionBodySyntax:HistoryFactory.kt$HistoryFactory$return AutocodeSectionTitleViewModel( title = history.title, topMargin = R.dimen.half_margin, groupId = HISTORY_GROUP_ID, isNewFeature = false, subtitle = strings.get( R.string.price_history_exist, strings.plural(R.plurals.previous_offers, offers.size - 1) ) )</ID>
+    <ID>ExpressionBodySyntax:ImagePickerModule.kt$ImagePickerModule$return navigator</ID>
+    <ID>ExpressionBodySyntax:InactiveOfferAdapter.kt$InactiveOfferAdapter$return model.offer.isInactive()</ID>
+    <ID>ExpressionBodySyntax:IndicatorDrawerItem.kt$IndicatorDrawerItem.ItemFactory$return IndicatorDrawerItem.ViewHolder(v)</ID>
+    <ID>ExpressionBodySyntax:InfiniteGalleryAdapter.kt$InfiniteGalleryAdapter$return layoutManager as? LinearLayoutManager ?: throw IllegalStateException("You must use LinearLayoutManager")</ID>
+    <ID>ExpressionBodySyntax:InfinitePagerAdapterDecorator.kt$InfinitePagerAdapterDecorator$return adapter.getItemPosition(obj)</ID>
+    <ID>ExpressionBodySyntax:InfinitePagerAdapterDecorator.kt$InfinitePagerAdapterDecorator$return adapter.getPageWidth(position)</ID>
+    <ID>ExpressionBodySyntax:InfinitePagerAdapterDecorator.kt$InfinitePagerAdapterDecorator$return adapter.isViewFromObject(view, obj)</ID>
+    <ID>ExpressionBodySyntax:InfinitePagerAdapterDecorator.kt$InfinitePagerAdapterDecorator$return adapter.saveState()</ID>
+    <ID>ExpressionBodySyntax:KDelegateAdapter.kt$KDelegateAdapter$return KViewHolder( containerView = inflate(getLayoutId(), parent), parent = parent, onCreated = ::onCreated)</ID>
+    <ID>ExpressionBodySyntax:KeyboardViewController.kt$KeyboardViewController$return environment.context.findViewById(android.R.id.content)</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt$return let2(p1, p2) { (r1, r2) -&gt; let2(p3, p4) { (r3, r4) -&gt; block(Tuple4(r1, r2, r3, r4)) } }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt$return let3(p1, p2, p3) { first -&gt; let2(p4, p5) { second -&gt; block((first to second).toTuple()) } }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt$return let3(p1, p2, p3) { first -&gt; let3(p4, p5, p6) { second -&gt; block((first to second).toTuple()) } }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt$return map { entry -&gt; entry.key to entry.value } .mapNotNull { (key, value) -&gt; if (value == null) null else key to value } .toMap()</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt$return p1?.let { v1 -&gt; p2?.let { v2 -&gt; block(v1 to v2) } }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt$return p1?.let { v1 -&gt; p2?.let { v2 -&gt; p3?.let { v3 -&gt; block(Triple(v1, v2, v3)) } } }</ID>
+    <ID>ExpressionBodySyntax:KotlinExt.kt$return { then(this(it)) }</ID>
+    <ID>ExpressionBodySyntax:LastPartsAdapter.kt$LastPartsAdapter$return R.layout.view_parts_last</ID>
+    <ID>ExpressionBodySyntax:LastPartsAdapter.kt$LastPartsAdapter$return super.isForViewType(items, position) &amp;&amp; position == items.size - 1</ID>
+    <ID>ExpressionBodySyntax:LastSearchInteractor.kt$LastSearchInteractor$return changedLastSearchRepo.get() .flatMapCompletable { list -&gt; when { list.isEmpty() -&gt; Completable.complete() else -&gt; prepareLastSearchSingle(list.first()) } } .andThen(Completable.fromCallable { changedLastSearchRepo.save(emptyList()) }) .doOnCompleted { initialSearch = null }</ID>
+    <ID>ExpressionBodySyntax:LastSearchInteractor.kt$LastSearchInteractor$return itemsRepo.get().flatMapCompletable { items -&gt; saveLastSearchSingle(items, search) }</ID>
+    <ID>ExpressionBodySyntax:LicenceNumberViewController.kt$LicenceNumberViewController$return environment.context.findViewById(android.R.id.content)</ID>
+    <ID>ExpressionBodySyntax:LoadingProgressModel.kt$LoadingProgressModel$return comparableId ?: LoadingProgressModel::class.java</ID>
+    <ID>ExpressionBodySyntax:LocationAdapter.kt$LocationAdapter$return items[position] is LocationItem</ID>
+    <ID>ExpressionBodySyntax:MainSegmentModule.kt$MainSegmentModule$return MainPresenter( viewState, router, viewErrorFactory, startPosition, prefs, context, remoteConfigRepo, strings, zenInteractor, mainInteractor, filterChangedListener, componentManager )</ID>
+    <ID>ExpressionBodySyntax:MainSegmentModule.kt$MainSegmentModule$return MainViewState()</ID>
+    <ID>ExpressionBodySyntax:MarkConverter.kt$MarkConverter$return MarkCatalogItem( id = convertNotNull(src.id, "marks.id"), cyrillicName = src.mark?.cyrillic_name, name = convertNotNull(src.name, "marks.name"), autoruAlias = null, logo = src.mark?.logo?.sizes?.mapValues { it.value.toUrlHttps() }?.get("logo"), isInTop = src.is_popular == true, reviewsCount = 0 )</ID>
+    <ID>ExpressionBodySyntax:MarkStepViewModel.kt$MarkStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:MarkStepViewModel.kt$MarkStepViewModel$return showModelStrategy.getItemsList( items = marks, converter = { it.toCommonList() }, popularFilter = { it.isInTop } )</ID>
+    <ID>ExpressionBodySyntax:MarksCatalogFragment.kt$MarksCatalogFragment$return listOf( CommonListItemDelegateAdapter(presenter::onItemClicked, presenter::onIconClicked), HeaderDelegateAdapter(R.layout.item_header_divider) )</ID>
+    <ID>ExpressionBodySyntax:MarksCatalogModule.kt$MarksCatalogModule$return NavigatorHolder()</ID>
+    <ID>ExpressionBodySyntax:MarksCatalogModule.kt$MarksCatalogModule$return if (shouldShowVendors) VendorRepository(assetStorage) else EmptyVendorRepository()</ID>
+    <ID>ExpressionBodySyntax:MarksCatalogModule.kt$MarksCatalogModule$return navigator</ID>
+    <ID>ExpressionBodySyntax:MarksViewModel.kt$MarksViewModel$return getExpandedItemIds(checkedItemId, items, mutableSetOf())</ID>
+    <ID>ExpressionBodySyntax:MarksViewModel.kt$MarksViewModel$return items.filterIsInstance&lt;Vendor&gt;() .firstOrNull { vendor -&gt; vendor.subvendors?.map { it.id }?.contains(checkedItemId) ?: false }?.id</ID>
+    <ID>ExpressionBodySyntax:MessagesInteractor.kt$MessagesInteractor$return dialog.map { dialog -&gt; val messagesObservable = messagesRepo.getMessages(dialog, PAGE_SIZE).replay(1).autoConnect() DialogResult( dialog, parseSentPresetsAnMark(messagesObservable, dialog) .andThen(prepareMessages(messagesObservable, dialog)), dialog.subject?.let { it.isOfferActive &amp;&amp; !dialog.isCurrentUserOwner() } ?: false ) }</ID>
+    <ID>ExpressionBodySyntax:MessagesListActivity.kt$MessagesListActivity$return provideToolbar().setupAsSecondLevel().applyDefaultBackBehavior()</ID>
+    <ID>ExpressionBodySyntax:MessagesListFragment.kt$MessagesListFragment$return inflater?.inflate(R.layout.fragment_messages_list, container, false)</ID>
+    <ID>ExpressionBodySyntax:MessagesListPresenter.kt$MessagesListPresenter$return if (subject.isOfferActive) { subject.price?.format() ?: "" } else { stringsProvider.get(R.string.sold_title) }</ID>
+    <ID>ExpressionBodySyntax:MessagesRepository.kt$MessagesRepository$return (throwable as? ApiException)?.errorCode == "FORBIDDEN_REQUEST"</ID>
+    <ID>ExpressionBodySyntax:MessagesRepository.kt$MessagesRepository$return ChatMessage( id = LocalMessageId(messageDetails.localId), dialogId = messageDetails.dialogId, payload = messageDetails.payload, createdAt = Date(), status = status, userId = messageDetails.userId, attachments = emptyList() )</ID>
+    <ID>ExpressionBodySyntax:MessagesRepository.kt$MessagesRepository$return Single.fromCallable { prefs.getString(URL_KEY) to prefs.getLong(TIMESTAMP_KEY) } .flatMap { (url, ts) -&gt; getSocketParams(url, ts) } .map { SocketConnectionParams(it) }</ID>
+    <ID>ExpressionBodySyntax:MessagesRepository.kt$MessagesRepository$return api.getUploadImageUrl(messageDetails.dialogId, messageDetails.localId) .flatMap { val file = fileStorage.getFile(messageDetails.imageUri) val requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), file) val uploadUrl = bootstrapResponseConverter.convertNotNull(it.upload_image_url, "url") val body = MultipartBody.Part.createFormData("file", file.name, requestFile) api.uploadChatImage(uploadUrl, body) } .map { sendMessageResponseConverter.convertNotNull(it.message, ChatMessageConverter::fromNetwork, "message") }</ID>
+    <ID>ExpressionBodySyntax:MessagesRepository.kt$MessagesRepository$return when (messageDetails) { is SendTextMessageDetails -&gt; createTextMessageFromDetails(messageDetails, status) is SendImageMessageDetails -&gt; createImageMessageFromDetails(messageDetails, status) }</ID>
+    <ID>ExpressionBodySyntax:MessagesRepository.kt$MessagesRepository$return when (messageDetails) { is SendTextMessageDetails -&gt; sendTextMessage(messageDetails) is SendImageMessageDetails -&gt; sendImageMessage(messageDetails) } // Do not retry on SpamError .passFailedIf(messageDetails, ::isSpamError) .toObservable() .retryOnNetworkAppearOrDelayNtimesIf( networkConnected = networkInfoRepo.observeNetworkStatusConnected(), shouldRetry = { shouldRetry.get() } ) .first() .toSingle() .doOnError { shouldRetry.set(false) } .doOnSuccess { shouldRetry.set(true) } // we need to pass any failed messages anyway to not break the stream .passFailedIf(messageDetails) { true } .flatMap { messagesStorage.upsertMessage(it).andThen(Single.just(it)) }</ID>
+    <ID>ExpressionBodySyntax:MetroLineConverter.kt$MetroLineConverter$return NWMetroLine(src.color)</ID>
+    <ID>ExpressionBodySyntax:MetroLineConverter.kt$MetroLineConverter$return src.color?.let { MetroLine(it) }</ID>
+    <ID>ExpressionBodySyntax:MetroStationConverter.kt$MetroStationConverter$return NWMetroStation( name = src.name, lines = convertNullable(src.lines, MetroLineConverter::toNetwork), distance = src.distance )</ID>
+    <ID>ExpressionBodySyntax:MetroStationConverter.kt$MetroStationConverter$return src.name?.let { MetroStation( name = it, lines = convertNullable(src.lines, MetroLineConverter::fromNetwork)?.filterNotNull(), distance = src.distance ?: 0.0 ) }</ID>
+    <ID>ExpressionBodySyntax:MigrationRepository.kt$MigrationRepository$return subject</ID>
+    <ID>ExpressionBodySyntax:ModelCatalogItem.kt$ModelCatalogItem$return name</ID>
+    <ID>ExpressionBodySyntax:ModelConverter.kt$ModelConverter$return ModelCatalogItem( id = convertNotNull(src.id, "models.id"), name = convertNotNull(src.name, "models.name"), configurationId = null, autoruAlias = null, cyrillicName = src.model?.cyrillic_name, namePlates = convertNullable(src.model?.nameplates, NamePlateConverter::fromNetwork), isInTop = src.is_popular == true, reviewsCount = 0 )</ID>
+    <ID>ExpressionBodySyntax:ModelStepViewModel.kt$ModelStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:ModelStepViewModel.kt$ModelStepViewModel$return showModelStrategy.getItemsList( items = models, converter = { it.toCommonList() }, popularFilter = { it.isInTop } )</ID>
+    <ID>ExpressionBodySyntax:ModelsCatalogFragment.kt$ModelsCatalogFragment$return listOf( SimpleTextDelegateAdapter(presenter::onItemClicked), HeaderDelegateAdapter(R.layout.item_header_divider) )</ID>
+    <ID>ExpressionBodySyntax:ModelsCatalogModule.kt$ModelsCatalogModule$return NavigatorHolder()</ID>
+    <ID>ExpressionBodySyntax:ModelsCatalogModule.kt$ModelsCatalogModule$return navigator</ID>
+    <ID>ExpressionBodySyntax:ModelsInteractor.kt$ModelsInteractor$return if (showNamePlate) { model.namePlates ?.run { val foundNameplates = nameplateFinder.find(input, this) if (foundNameplates.isNotEmpty()) model.copy(namePlates = foundNameplates) else model } ?: model } else { model.copy(namePlates = null) }</ID>
+    <ID>ExpressionBodySyntax:ModelsToFolderMapper.kt$ModelsToFolderMapper$return ArrayList&lt;Folder&gt;().apply { for (model in models) { add(Folder().apply { id = model.id name = model.name alias = model.autoruAlias level = "1" opinionsTotal = model.reviewsCount.toString() }) } }</ID>
+    <ID>ExpressionBodySyntax:ModificationStepViewModel.kt$ModificationStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:ModificationStepViewModel.kt$ModificationStepViewModel$return modifications.map { item -&gt; CommonListItem( id = item.id, isSimple = true, title = item.name, payload = item, isChecked = item.id == offer.carInfo?.techParam?.id ) }</ID>
+    <ID>ExpressionBodySyntax:MotoDraftFactory.kt$MotoDraftFactory$return materials.run { Offer( category = VehicleCategory.MOTO, id = baseOffer.id, oldCategoryId = materials.oldCategory ?: OLD_AUTO, motoInfo = prepareMotoInfo(materials, baseOffer), userId = SessionPreferences.getUserId(), priceInfo = materials.price?.let { PriceInfo(it.first.replace(",", "").toIntOrNull() ?: 0, it.second) }, badges = baseOffer.badges, certInfo = baseOffer.certInfo, state = prepareState(materials, baseOffer), counters = baseOffer.counters, section = baseOffer.section, additional = prepareAdditionalInfo(materials, baseOffer), documents = prepareDocuments(materials), description = description, seller = prepareSeller(materials), color = colorHex?.let { Entity(it, "") }, fallbackUrl = baseOffer.fallbackUrl, sellerType = SellerType.PRIVATE ) }</ID>
+    <ID>ExpressionBodySyntax:MultiGenerationFragment.kt$MultiGenerationFragment.Companion$return ScreenBuilderFactory.fullScreen( if (isFromMiniFilter) MultiGenerationFragment::class.java else MultiGenerationFilterFragment::class.java ).withCustomActivity(SimpleRedFragmentActivity::class.java) .withArgs(Bundle(1).apply { putParcelable(EXTRA_CONTEXT, context) }) .create()</ID>
+    <ID>ExpressionBodySyntax:MultiGenerationPresenter.kt$MultiGenerationPresenter$return context.mark.models.run { val index: Int = this.indexOfFirst { it.id == request.modelId } val first: Int = getFirstIndexToLoad(index) this.subList(first, minOf(this.size, first + LOAD_COUNT + 1)) .map(Model::id) .map { request.copy(modelId = it) } .toSet() }</ID>
+    <ID>ExpressionBodySyntax:MultiGenerationPresenter.kt$MultiGenerationPresenter$return interactor.loadGenerations(requests) .backgroundToUi() .bindWithLog()</ID>
+    <ID>ExpressionBodySyntax:MultiGeoFragment.kt$MultiGeoFragment$return super.getDelegateAdapters() + MultiGeoAdapter(presenter::onItemClicked, presenter::onIconClicked) + HeaderDelegateAdapter(R.layout.item_header_divider_left_padding) + DividerAdapter</ID>
+    <ID>ExpressionBodySyntax:MultiGeoFragment.kt$MultiGeoFragment.Companion$return ScreenBuilderFactory.fullScreen(fragmentClazz) .withCustomActivity(SearchTitleActivity::class.java) .withArgs(Bundle(1).apply { putParcelable(EXTRA_CONTEXT, context) }) .create()</ID>
+    <ID>ExpressionBodySyntax:MultiGeoFragment.kt$MultiGeoFragment.Companion$return screen(context, MultiGeoFragment::class.java)</ID>
+    <ID>ExpressionBodySyntax:MultiGeoHistoryViewModel.kt$MultiGeoHistoryViewModel$return checkedItems.contains(item.id)</ID>
+    <ID>ExpressionBodySyntax:MultiGeoModule.kt$MultiGeoModule$return GeoErrorFactory(stringsProvider)</ID>
+    <ID>ExpressionBodySyntax:MultiGeoPresenter.kt$MultiGeoPresenter$return filterNot { element -&gt; element.id == itemId }</ID>
+    <ID>ExpressionBodySyntax:MultiGeoValue.kt$MultiGeoValue.Companion$return MultiGeoValue(items.sortedBy { it.name + it.parentName }, selectedRadius)</ID>
+    <ID>ExpressionBodySyntax:MultiGeoViewController.kt$MultiGeoViewController$return view.btn_clear</ID>
+    <ID>ExpressionBodySyntax:MultiGeoViewController.kt$MultiGeoViewController.ListenerProvider$return object : DialogListener&lt;T&gt; { override fun onChosen(value: T?) { chosen(value) } }</ID>
+    <ID>ExpressionBodySyntax:MultiGeoViewModel.kt$MultiGeoViewModel$return checkedItems.contains(item.id)</ID>
+    <ID>ExpressionBodySyntax:MultiMarkFragment.kt$MultiMarkFragment.Companion$return ScreenBuilderFactory.fullScreen(fragmentClazz) .withArgs(Bundle().apply { putParcelable(EXTRA_CONTEXT, context) }) .withCustomActivity(SearchTitleActivity::class.java) .create()</ID>
+    <ID>ExpressionBodySyntax:MultiMarkModelFragment.kt$MultiMarkModelFragment.Companion$return ScreenBuilderFactory.fullScreen(fragmentClazz) .withCustomActivity(SearchTitleActivity::class.java) .create()</ID>
+    <ID>ExpressionBodySyntax:MultiMarkStep24.kt$MultiMarkStep24$return try { assetStorage.readJsonAsset(path) } catch (th: JsonParseException) { ModelNamesMap() } catch (th: JsonSyntaxException) { ModelNamesMap() }</ID>
+    <ID>ExpressionBodySyntax:MultiMarkViewController.kt$MultiMarkViewController$return SwipeToDeleteItemTouchHelper({ it is MiniFilterSectionViewModel }, { item, _ -&gt; onSwipeDeleteClicked((item as MiniFilterSectionViewModel).markPosition) }, adapter, { it?.lContent } )</ID>
+    <ID>ExpressionBodySyntax:MultiMarkViewController.kt$MultiMarkViewController.ListenerProvider$return object : DialogListener&lt;T&gt; { override fun onChosen(value: T?) { chosen(value) } }</ID>
+    <ID>ExpressionBodySyntax:MultiMaskedTextChangedListener.kt$MultiMaskedTextChangedListener.Companion$return when { text.startsWith(7) -&gt; maskRU text.startsWith(8) -&gt; maskRU8 text.startsWith(375) -&gt; maskUA text.startsWith('+') -&gt; maskPlusANY else -&gt; maskANY }</ID>
+    <ID>ExpressionBodySyntax:MultiModelFilterFragment.kt$MultiModelFilterFragment.Companion$return screen(context, MultiModelFilterFragment::class.java)</ID>
+    <ID>ExpressionBodySyntax:MultiModelFragment.kt$MultiModelFragment$return super.getDelegateAdapters() + MultiModelAdapter(presenter::onItemClicked, presenter::onIconClicked) + CheckBoxAdapter(presenter::onSelectAllClicked) + HeaderDelegateAdapter(R.layout.item_header_divider_left_padding)</ID>
+    <ID>ExpressionBodySyntax:MultiModelFragment.kt$MultiModelFragment.Companion$return ScreenBuilderFactory.fullScreen(fragmentClazz) .withCustomActivity(SearchTitleActivity::class.java) .withArgs(Bundle(1).apply { putParcelable(EXTRA_CONTEXT, context) }) .create()</ID>
+    <ID>ExpressionBodySyntax:MultiModelFragment.kt$MultiModelFragment.Companion$return screen(context, MultiModelFragment::class.java)</ID>
+    <ID>ExpressionBodySyntax:MultiModelPresenter.kt$MultiModelPresenter$return filterNot { element -&gt; element.id == nameplateId }</ID>
+    <ID>ExpressionBodySyntax:MultiModelsViewModel.kt$MultiModelsViewModel$return checkedItems[item.id]?.nameplates?.isEmpty() ?: false</ID>
+    <ID>ExpressionBodySyntax:MultiModelsViewModel.kt$MultiModelsViewModel$return checkedItems[model.id]?.run { nameplates.isEmpty() || nameplates.any { it.id == nameplate.code } } ?: false</ID>
+    <ID>ExpressionBodySyntax:MultiSelectColorViewController.kt$MultiSelectColorViewController$return options .filter { it -&gt; value.contains(it.id) } .map { it.name } .joinToString(separator = ", ")</ID>
+    <ID>ExpressionBodySyntax:MultiSelectViewController.kt$MultiSelectViewController$return options .filter { it -&gt; value.contains(it.key) } .map { it.value } .joinToString(separator = ", ")</ID>
+    <ID>ExpressionBodySyntax:NamePlateConverter.kt$NamePlateConverter$return NamePlate( convertNotNull(src.name, "name"), convertNotNull(src.code, "code"), src.autoru_id, null )</ID>
+    <ID>ExpressionBodySyntax:Network.kt$Network$return Single.just(CountModel(0))</ID>
+    <ID>ExpressionBodySyntax:Network.kt$Network$return client.phones(category, canonicalId) .map { phonesResponse -&gt; phonesResponse.phones }</ID>
+    <ID>ExpressionBodySyntax:NetworkExt.kt$return object : X509TrustManager { @Throws(CertificateException::class) override fun checkClientTrusted(chain: Array&lt;X509Certificate&gt;, authType: String) { } @Throws(CertificateException::class) override fun checkServerTrusted(chain: Array&lt;X509Certificate&gt;, authType: String) { } override fun getAcceptedIssuers(): Array&lt;X509Certificate&gt; { return arrayOf() } }</ID>
+    <ID>ExpressionBodySyntax:NetworkUtils.kt$return object : SimpleImageLoadingListener() { override fun onLoadingFailed(imageUri: String?, view: View?, failReason: FailReason?) { super.onLoadingFailed(imageUri, view, failReason) val type = when { view == null -&gt; "loading failed, view is null" imageUri == null -&gt; "loading failed, uri is null" else -&gt; "loading failed, fail type = ${failReason?.type}" } val connectivityManager = appContext().getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager val networkInfo = connectivityManager?.activeNetworkInfo L.e(TAG, UILException(getDevice(), networkInfo, type, imageUri.toString(), failReason?.cause)) AnalystManager.getInstance().logImageLoadFailed(failReason?.type?.toString()) } override fun onLoadingCancelled(imageUri: String?, view: View?) { super.onLoadingCancelled(imageUri, view) val type = when { view == null -&gt; "loading cancelled, view is null" imageUri == null -&gt; "loading cancelled, uri is null" else -&gt; "loading cancelled" } val connectivityManager = appContext().getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager val networkInfo = connectivityManager?.activeNetworkInfo L.e(TAG, UILException(getDevice(), networkInfo, type, imageUri.toString())) AnalystManager.getInstance().logImageLoadFailed("CANCEL") } }</ID>
+    <ID>ExpressionBodySyntax:NodeApiSearchParamsExtractor.kt$NodeApiSearchParamsExtractor$return params.filterNot { pair -&gt; pair.first == Consts.CATALOG_NEW_MARK_ID || pair.first == Consts.CATALOG_NEW_MODEL_ID || pair.first == Consts.CATALOG_NAMEPLATE || pair.first == Consts.CATALOG_NEW_GENERATION }</ID>
+    <ID>ExpressionBodySyntax:NodeApiSearchParamsExtractor.kt$NodeApiSearchParamsExtractor$return params.map(this::mapVendorIds)</ID>
+    <ID>ExpressionBodySyntax:NodeApiSearchParamsExtractor.kt$NodeApiSearchParamsExtractor$return removeNewMarksModels(params) .filterNot { pair -&gt; pair.first == Consts.FILTER_PARAM_MARK || pair.first == Consts.FILTER_PARAM_MODEL || pair.first == Consts.FILTER_PARAM_GENERATION_ID }</ID>
+    <ID>ExpressionBodySyntax:NodeApiSearchParamsExtractor.kt$NodeApiSearchParamsExtractor$return when (pair.first) { Consts.FILTER_PARAM_VENDOR_ID -&gt; SerializablePair.create(pair.first, pair.second.replace("VENDOR", "")) else -&gt; pair }</ID>
+    <ID>ExpressionBodySyntax:NonSwipeableViewPager.kt$NonSwipeableViewPager$return false</ID>
+    <ID>ExpressionBodySyntax:Note.kt$Note$return offerId.hashCode()</ID>
+    <ID>ExpressionBodySyntax:NoteActionsController.kt$NoteActionsController$return getNoteEditCompletable(note) .backgroundToUi() .doOnCompleted { logNoteEvent(note.isNotEmpty()) EventBus.getDefault().post(NoteChangedEvent(model.offerId, note)) } .andThen(getFavoriteCompletable(offer).backgroundToUi()) .retryWhen { errors -&gt; errors.zipWith(Observable.range(1, NOTE_RETRY_COUNT), { th, attempt -&gt; processNoteError(th, attempt) }).flatMap { it } } .doOnTerminate { setEnabledNoteState(note) } .subscribe({ val oldNote: String? = offer.note showFavoriteDialogIfNeeded(oldNote != null) }, { showSnackError(getNoteError(note, model.noteItem?.note.orEmpty())) })</ID>
+    <ID>ExpressionBodySyntax:NoteActionsController.kt$NoteActionsController$return if (model.noteItem?.note.isNullOrEmpty()) { favoriteInteractor.isFavorite(offer).flatMapCompletable { isFav -&gt; if (isFav) { Completable.complete() } else { AnalystManager.getInstance().logOfferAddToFavorite(offer) favoriteInteractor.addFavorite(offer) } } } else Completable.complete()</ID>
+    <ID>ExpressionBodySyntax:NoteConverter.kt$NoteConverter$return offer.note?.let { Note(category = convertNotNull(offer.category, "category"), offerId = convertNotNull(offer.id, "id"), note = it) }</ID>
+    <ID>ExpressionBodySyntax:NoteInteractor.kt$NoteInteractor$return if (isAuthorized) repository.updateNotes() else repository.clearNotes()</ID>
+    <ID>ExpressionBodySyntax:NoteInteractor.kt$NoteInteractor$return repository.getNotes().map { it[offerId] ?: throw NotFoundException() }</ID>
+    <ID>ExpressionBodySyntax:NoteRepository.kt$NoteRepository$return api.addNote(note.category, note.offerId, NoteConverter.toNetwork(note)) .doOnSuccess { changeNoteLocally(note) } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:NoteRepository.kt$NoteRepository$return api.deleteNote(note.category, note.offerId) .doOnSuccess { deleteNoteLocally(note) } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:NoteRepository.kt$NoteRepository$return api.editNote(note.category, note.offerId, NoteConverter.toNetwork(note)) .doOnSuccess { changeNoteLocally(note) } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:NoteRepository.kt$NoteRepository$return api.getNotes() .map { it.offers?.mapNotNull { NoteConverter.fromNetwork(it) } ?.map { it.offerId to it } ?.toMap() ?: emptyMap() } .doOnSuccess { L.d("NoteRepo. notes refreshed") notesSubject.onNext(it) } .toObservable() .share()</ID>
+    <ID>ExpressionBodySyntax:NotesPlugin.kt$NotesPlugin$return userService.isAuthorized .flatMapCompletable { L.d("Notes auth event: $it") if (isAuth.get() == it) return@flatMapCompletable Completable.complete() L.d("Notes auth event starts updating: $it") isAuth.set(it) noteInteractor.updateNotes(it) } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:NotificationsFragment.kt$NotificationsFragment$return super.getItemDecorations() + HorizontalDividerItemDecoration.Builder(context) .colorResId(R.color.divider_gray) .sizeResId(R.dimen.divider_height) .build()</ID>
+    <ID>ExpressionBodySyntax:NotificationsRepository.kt$NotificationsRepository$return api.getSubscriptions() .map { it.subscriptions?.map(SubscriptionConverter::fromNetwork) ?: throw IllegalStateException("There is no subscriptions. At all.") } .map { listOf(SAVED_FILTERS) + it }</ID>
+    <ID>ExpressionBodySyntax:NumberUtils.kt$NumberUtils$return !isEmpty(str) &amp;&amp; str.matches("^(?:(?:-)?\\d+(?:\\.\\d+)?)$".toRegex())</ID>
+    <ID>ExpressionBodySyntax:NumberUtils.kt$NumberUtils$return (0xFF shl 24) or // alpha 255 (((color shr 16 and 0xFF) + delta).limit(0, 255) shl 16) or // red (((color shr 8 and 0xFF) + delta).limit(0, 255) shl 8) or // green (((color and 0xFF) + delta).limit(0, 255))</ID>
+    <ID>ExpressionBodySyntax:NumberUtils.kt$NumberUtils$return if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.LOLLIPOP) { PhoneNumberUtils.formatNumber(String.format("+%s", phone), Locale.getDefault().isO3Country) } else { @Suppress("deprecation") PhoneNumberUtils.formatNumber(String.format("+%s", phone)) }</ID>
+    <ID>ExpressionBodySyntax:NumberUtils.kt$return buildString { for ((index, character) in this@splitEveryNCharacter.reversed().withIndex()) { if (index != 0 &amp;&amp; index % n == 0) { append("\u00A0") } append(character) } }.reversed()</ID>
+    <ID>ExpressionBodySyntax:OddPartsAdapter.kt$OddPartsAdapter$return R.layout.view_parts_odd</ID>
+    <ID>ExpressionBodySyntax:OddPartsAdapter.kt$OddPartsAdapter$return super.isForViewType(items, position) &amp;&amp; position % 2 == 1 &amp;&amp; position &lt; items.size - 1</ID>
+    <ID>ExpressionBodySyntax:Offer.kt$Offer$return carInfo?.equipment ?: motoInfo?.equipment ?: truckInfo?.equipment</ID>
+    <ID>ExpressionBodySyntax:Offer.kt$Offer$return carInfo?.techParam?.transmission?.toEntity() ?: motoInfo?.transmission ?: truckInfo?.transmission</ID>
+    <ID>ExpressionBodySyntax:Offer.kt$Offer$return certInfo?.status?.let { status -&gt; status == CertStatus.ACTIVE } == true</ID>
+    <ID>ExpressionBodySyntax:Offer.kt$Offer$return listOf(getMarkInfo()?.name, getModelInfo()?.name, getGenerationInfo()?.name, carInfo?.techParam?.rawName) .filterNot { it.isNullOrBlank() } .joinToString(separator = " ")</ID>
+    <ID>ExpressionBodySyntax:OfferActionsController.kt$OfferActionsController$return let2(error.paidReason, error.activationPrice) { (reason, price) -&gt; val activationPrice = offer.servicePrices.firstOrNull { it.serviceId == VAS_ALIAS_ALL_SALE_ACTIVE } ServicePrice( paidReason = reason, price = price.price, serviceId = VAS_ALIAS_ALL_SALE_ACTIVE, name = strings[R.string.vas_activation_title], days = activationPrice?.days ) }</ID>
+    <ID>ExpressionBodySyntax:OfferAdapter.kt$OfferAdapter$return items[position] is OfferViewModel</ID>
+    <ID>ExpressionBodySyntax:OfferConvertRepository.kt$OfferConvertRepository$return Single.just(offer) .flatMap { it.category?.let { dictionaryRepository.getDictionariesForCategory(it) } ?: throw IllegalStateException("cannot convert NWOffer to Offer") } .map { OfferConverter(dictionaries = it).fromNetwork(offer) }</ID>
+    <ID>ExpressionBodySyntax:OfferConverter.kt$OfferConverter$return NWOffer( id = src.id, status = src.status, user_ref = src.userId, search_position = src.searchPos, badges = src.badges, price_info = convertNullable(src.priceInfo, PriceInfoConverter::toNetwork), car_info = convertNullable(src.carInfo, CarInfoConverter()::toNetwork), moto_info = convertNullable(src.motoInfo, MotoInfoConverter()::toNetwork), truck_info = convertNullable(src.truckInfo, TruckInfoConverter()::toNetwork), state = convertNullable(src.state, StateConverter(dictionaries)::toNetwork), counters = convertNullable(src.counters, CountersConverter::toNetwork), cert_info = convertNullable(src.certInfo, CertInfoConverter::toNetwork), section = src.section, old_category_id = src.oldCategoryId.toIntOrNull(), additional_info = convertNullable(src.additional, AdditionalInfoConverter::toNetwork), documents = convertNullable(src.documents, DocumentsConverter::toNetwork), autocode_info = convertNullable(src.autoCodeInfo, AutoCodeInfoConverter::toNetwork), description = src.description, seller = convertNullable(src.seller, SellerConverter::toNetwork), salon = convertNullable(src.salon, SalonConverter::toNetwork), is_favorite = src.isFavorite, color_hex = src.color?.id, services = convertNullable(src.services, ActiveServiceConverter::toNetwork), service_prices = null, // do we really need this url = src.fallbackUrl, note = src.note, seller_type = convertNotNull(src.sellerType, SellerTypeConverter::toNetwork, "seller_type"), mobile_url = src.mobileUrl )</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsErrorFactory.kt$OfferDetailsErrorFactory$return getErrorString(throwable) ?: super.createSnackError(throwable, defaultMessage)</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsErrorFactory.kt$OfferDetailsErrorFactory$return getErrorString(throwable)?.let { knownErrorString -&gt; FullScreenError(throwable, null, knownErrorString) } ?: super.createFullScreenError(throwable)</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsFragment.kt$OfferDetailsFragment$return DamagesAdapter.Builder(context, presenter::onDamagesBound) .applyHorizontalPadding(R.dimen.small_margin, R.dimen.large_vertical_margin) .add(TextDamageAdapter(presenter::onDamageDetailsClicked)) .add(LastTextDamageAdapter(presenter::onDamageDetailsClicked)) .applyDecoration(galleryDecoration) .build()</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsFragment.kt$OfferDetailsFragment$return listOf(OfferDetailDecoration())</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsInteractor.kt$OfferDetailsInteractor$return if (isUserOffer) { offersRepository.getUserOffer(category, offerId) .map { UserOffersInteractor.enrichWithDetails(userHasCards, it) } } else offersRepository.getOffer(category, offerId)</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModel.kt$OfferDetailsModel$return let6( offer.getCategory(), offer.getMarkInfo()?.code, offer.getModelInfo()?.code, offer.getGenerationInfo()?.id, offer.carInfo?.configurationId, offer.carInfo?.techParamId ) { (category, mark, model, gen, conf, techParam) -&gt; TechCharsInfo(category, mark, model, gen, conf, techParam, offer.carInfo?.complectationId) }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModel.kt$OfferDetailsModel$return when (number) { 0 -&gt; string(R.string.owners_no) 1, 2 -&gt; number.toString() 3 -&gt; string(R.string.owners_alot) else -&gt; null }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModel.kt$OfferDetailsModel$return when { offer.state?.isNotBeaten == false -&gt; { val label = string(R.string.state_bad) WarningTechInfo(string(R.string.state), Entity(label, label)) } offer.section == NEW -&gt; { val label = string(R.string.state_new) TechInfo(string(R.string.state), Entity(label, label)) } else -&gt; { val label = string(R.string.state_excellent) TechInfo(string(R.string.state), Entity(label, label)) } }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModel.kt$OfferDetailsModel$return year?.let { year -&gt; month?.let { month -&gt; Date(year - 1900, month - 1, day ?: 1) } }</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule$return AutoServicesInteractor(AutoServicesRepository(api))</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule$return CardInteractor(videosRepository)</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule$return CreditAdInteractor(CreditAdRepository(nativeAdsFactory, CreditAdConverter(gson, stringsProvider)))</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule$return NavigatorHolder()</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule$return OfferActionsController( navigator, interactor, AndroidStringProvider(), UserErrorFactory(AndroidStringProvider()), ServicePriceToVasInfoConverter(), vasController )</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule$return OfferDetailsViewState()</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule$return RelatedOffersInteractor(RelatedOffersRepository(api, dictionaryRepository), geoRepo)</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule$return SpecialOffersInteractor(SpecialOffersRepository(api, dictionaryRepository), geoRepo)</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsModule.kt$OfferDetailsModule$return navigator</ID>
+    <ID>ExpressionBodySyntax:OfferDetailsPresenter.kt$OfferDetailsPresenter$return if (offer == null) { view.setLoadingState() false } else { setupOfferLoaded(offer, isInit, false) true }</ID>
+    <ID>ExpressionBodySyntax:OfferExt.kt$return EngineDetailsBuilder(this) .addVolumeCubic(true, Separator.NONE) .addEnginePower(true, Separator.COMMA) .build()</ID>
+    <ID>ExpressionBodySyntax:OfferExt.kt$return if (this.isMotoOffer()) getMotoEngineDetails() else getAutoEngineDetails()</ID>
+    <ID>ExpressionBodySyntax:OfferExt.kt$return listOf(getShortTitle(), documents?.year?.toString()) .filterNotNull() .joinToString(separator = ", ")</ID>
+    <ID>ExpressionBodySyntax:OfferExt.kt$return listOfNotNull(this.getShortTitle(), documents?.year).joinToString(separator = ", ")</ID>
+    <ID>ExpressionBodySyntax:OfferExt.kt$return seller?.location?.let { location -&gt; location.metro?.let { MetroTextFactory.prepareMetros(it.subList(0, 1), textSizePixels) } ?: location.regionInfo?.name } ?: ""</ID>
+    <ID>ExpressionBodySyntax:OfferPhoneListenerProvider.kt$OfferPhoneListenerProvider.Companion$return OfferPhoneListenerProvider(hashCode, onPhoneClick as Serializable)</ID>
+    <ID>ExpressionBodySyntax:OfferToFilterMapper.kt$OfferToFilterMapper$return RangeState().apply { fieldName = Consts.FILTER_PARAM_PRICE min = this@getPriceState.from.toDouble() minLabel = min.toString() max = this@getPriceState.to.toDouble() - if (isInclusive) 0 else 1 maxLabel = max.toString() }</ID>
+    <ID>ExpressionBodySyntax:OfferToFilterMapper.kt$OfferToFilterMapper$return SimpleState().apply { fieldName = Consts.FILTER_PARAM_SECTION_ID value = USED }</ID>
+    <ID>ExpressionBodySyntax:OfferToFilterMapper.kt$OfferToFilterMapper$return SimpleState().apply { fieldName = Consts.FILTER_PARAM_SELLER value = "1" }</ID>
+    <ID>ExpressionBodySyntax:OfferUpdateFieldsStrategy.kt$OfferUpdateFieldsStrategy$return originalLink?.let { val youTubeVideoId = StringUtils.extractYouTubeVideoId(it) AsyncDataLogic.getYouTubeVideoInfo(youTubeVideoId) .backgroundToUi() .subscribe({ videoInfo -&gt; screen.bindVideoField(originalLink, videoInfo) }, { L.e(javaClass.simpleName, it.message, it) }) }</ID>
+    <ID>ExpressionBodySyntax:OfferViewHolder.kt$OfferViewHolder$return images?.let { if (it.isNotEmpty()) it[0].thumb else "" } ?: ""</ID>
+    <ID>ExpressionBodySyntax:OffersByDateProvider.kt$OffersByDateProvider$return prepareProvider(request) .loadPage(page) .toSingle() .map { offers -&gt; PagerResponse(list = offers) }</ID>
+    <ID>ExpressionBodySyntax:OffersRepository.kt$OffersRepository$return Single.just(ActivationError(response.error?.toString() ?: "", response.detailed_error ?: "", response.price_info?.let { PriceInfoConverter.fromNetwork(it) }, response.paid_reason?.let { PaidReasonConverter.fromNetwork(it) }, response.similar_offer?.let { createOffer(it).toBlocking().value() }))</ID>
+    <ID>ExpressionBodySyntax:OffersRepository.kt$OffersRepository$return Single.just(offer) .flatMap { it?.category?.let { dictionaryRepository.getDictionariesForCategory(it) } ?: throw NullPointerException("category is null!") } .map { OfferConverter(it).fromNetwork(offer, additionalInfo) }</ID>
+    <ID>ExpressionBodySyntax:OffersRepository.kt$OffersRepository$return api.activateOffer(category, offerId) .map { if (it.status == NWScalaStatus.SUCCESS) true else throw formActivationError(it).toBlocking().value() } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:OffersRepository.kt$OffersRepository$return api.deleteOffer(category, offerId) .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:OffersRepository.kt$OffersRepository$return api.getOffer(category, offerId).flatMap { offerResponse -&gt; offerResponse.offer?.let { createOffer(it, offerResponse.additional_info ?: NWGetOfferAdditionalInfo()) } }</ID>
+    <ID>ExpressionBodySyntax:OffersRepository.kt$OffersRepository$return api.getUserOffer(category, offerId).flatMap { it.offer?.let { createOffer(it) } }</ID>
+    <ID>ExpressionBodySyntax:OkAuthViewController.kt$OkAuthViewController$return e?.let { if (e == PARAM_AUTH_WAS_CANCELLED_BY_USER) { SocialAuthCancelledByUserException(socialNet) } else { null } } ?: SocialAuthException(socialNet, e ?: "")</ID>
+    <ID>ExpressionBodySyntax:OkAuthViewController.kt$OkAuthViewController$return if (android.os.Build.VERSION.SDK_INT &lt; 21) { OkAuthType.WEBVIEW_OAUTH //due to https://st.yandex-team.ru/AUTORUAPPS-4780 } else OkAuthType.ANY</ID>
+    <ID>ExpressionBodySyntax:OptionFragment.kt$OptionFragment$return DiffAdapter.Builder() .add(OptionsAdapter({ listener.onOptionChosen(it) router.finish() })) .build()</ID>
+    <ID>ExpressionBodySyntax:OptionalConverter.kt$OptionalConverter$return convertNullable(item, converter) ?: throw createConvertException(fieldName)</ID>
+    <ID>ExpressionBodySyntax:OptionalConverter.kt$OptionalConverter$return convertNullable(items, converter) ?: throw createConvertException(fieldName)</ID>
+    <ID>ExpressionBodySyntax:OptionalConverter.kt$OptionalConverter$return item ?: throw createConvertException(fieldName)</ID>
+    <ID>ExpressionBodySyntax:OptionalConverter.kt$OptionalConverter$return items?.mapNotNull { convertNullable(it, converter) }</ID>
+    <ID>ExpressionBodySyntax:OwnersStepViewModel.kt$OwnersStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:PartsAdapter.kt$PartsAdapter$return items[position] is PartsItem</ID>
+    <ID>ExpressionBodySyntax:PartsItem.kt$PartsItem$return parts.title</ID>
+    <ID>ExpressionBodySyntax:PartsItem.kt$PartsItem$return this</ID>
+    <ID>ExpressionBodySyntax:PartsSuggestRepository.kt$PartsSuggestRepository$return if (text.isNotBlank()) { api.getPartsSuggest(CAR, text, rid) .map { PartsSuggestResponseConverter.fromNetwork(it, partsSuggestConverter(rid)).suggests } .map { it.map { PartsSuggestItem.from(it) } } } else { Single.just(emptyList()) }</ID>
+    <ID>ExpressionBodySyntax:PartsUrlBuildFactory.kt$PartsUrlBuildFactory$return URI(base).apply { rid?.let { copyWithQueryParameter(RGID_KEY, rid.toString()) } copyWithQueryParameter(FROM_KEY, FROM_VALUE) }.toString()</ID>
+    <ID>ExpressionBodySyntax:PasswordAuthFragment.kt$PasswordAuthFragment.Companion$return ScreenBuilderFactory.fullScreen() .asFirstLevel() .addToBackStack() .withFragment(PasswordAuthFragment::class.java) .create()</ID>
+    <ID>ExpressionBodySyntax:PhoneFormatter.kt$PhoneFormatter$return formattedPhone?.let { var phone: String = formattedPhone.toString() phone = phone.replace(regex, "") return phone } ?: return ""</ID>
+    <ID>ExpressionBodySyntax:PhoneInfo.kt$PhoneInfo$return 0</ID>
+    <ID>ExpressionBodySyntax:PhoneInfo.kt$PhoneInfo.CREATOR$return arrayOfNulls(size)</ID>
+    <ID>ExpressionBodySyntax:PhoneInteractor.kt$PhoneInteractor$return repository.getPhones(category, offerId)</ID>
+    <ID>ExpressionBodySyntax:PhoneRepository.kt$PhoneRepository$return get(category to offerId) ?: api.getPhones(category, offerId) .map { it.phones?.let { convertPhones(it).apply { save(this, category to offerId) } } ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:PhoneRepository.kt$PhoneRepository$return phones.mapNotNull { PersistentPhoneConverter.fromNetwork(it) }</ID>
+    <ID>ExpressionBodySyntax:PhonesRepository.kt$PhonesRepository$return Network.offerPhones(getCategory(category), offerId).toSingle().map { it.map { it.phone } }</ID>
+    <ID>ExpressionBodySyntax:PhotoModule.kt$PhotoModule$return NavigatorHolder()</ID>
+    <ID>ExpressionBodySyntax:PhotoUploadRepository.kt$PhotoUploadRepository$return api.deletePhoto(offerId, photoId, category).toCompletable()</ID>
+    <ID>ExpressionBodySyntax:PhotoVideoField.kt$PhotoVideoField$return super.getValue() ?: defaultValue</ID>
+    <ID>ExpressionBodySyntax:PhotoVideoViewController.kt$PhotoVideoViewController$return if (photos.isEmpty()) throw IllegalStateException("Photos list empty!") else mutableListOf&lt;IComparableItem&gt;().apply { addAll(photos) add(1, video) }</ID>
+    <ID>ExpressionBodySyntax:PhotosPart.kt$PhotosPart$return copy( photos = ArrayList(photos.map { SelectedImage().apply { // manual copy cause java =( url = it.url thumbUrl = it.thumbUrl path = it.path id = it.id progress = it.progress showDelete = it.showDelete failed = it.failed } }) )</ID>
+    <ID>ExpressionBodySyntax:PlusMinusController.kt$PlusMinusController$return when (side) { FeatureSide.PLUS -&gt; features.positive FeatureSide.MINUS -&gt; features.negative FeatureSide.CONTROVERSY -&gt; features.controversy }</ID>
+    <ID>ExpressionBodySyntax:PlusMinusController.kt$PlusMinusController$return when { shouldShowAll -&gt; featuresToShow else -&gt; featuresToShow.take(FEATURES_TO_SHOW_COUNT) }</ID>
+    <ID>ExpressionBodySyntax:PresetToSearchMapper.kt$PresetToSearchMapper$return categoryId?.let { FilterTagFactory.fromCategory(categoryId) }</ID>
+    <ID>ExpressionBodySyntax:PresetToSearchMapper.kt$PresetToSearchMapper$return getCategoryId() .let { categoryId -&gt; getFilterTag(categoryId) .let { filterTag -&gt; convertToFormState(categoryId) .let { formstate -&gt; Search(formstate, filterTag) } } }</ID>
+    <ID>ExpressionBodySyntax:PresetToSearchMapper.kt$PresetToSearchMapper$return preset?.convertToSearch()</ID>
+    <ID>ExpressionBodySyntax:PresetsProvider.kt$PresetsProvider$return presetService.obtainPresets(presetGroup).toSingle()</ID>
+    <ID>ExpressionBodySyntax:PriceFormatter.kt$PriceFormatter$return getRURFormatted(NumberHelper.digit(priceRUR))</ID>
+    <ID>ExpressionBodySyntax:PriceInfoConverter.kt$PriceInfoConverter$return NWPriceInfo( rur_price = src.priceRUR, price = src.price, currency = CurrencyConverter.toNetwork(src.currency) )</ID>
+    <ID>ExpressionBodySyntax:PriceInfoConverter.kt$PriceInfoConverter$return PriceInfo( price = src.price ?: 0, priceRUR = src.rur_price, priceUSD = src.usd_price, priceEUR = src.eur_price, currency = Currency.valueOf(src.currency?.name ?: Currency.RUR.name), creationDate = src.create_timestamp?.toLongOrNull()?.let { Date(it) } )</ID>
+    <ID>ExpressionBodySyntax:PriceStepViewModel.kt$PriceStepViewModel$return listOf(ProgressInputItem(PRICE_ID, strings[R.string.wiz_price_label], price), AveragePriceItem(averagePrice, inProgress), SwitchItem(EXCHANGE_ID, exchange, strings[R.string.wiz_exchange]))</ID>
+    <ID>ExpressionBodySyntax:ProlongInteractor.kt$ProlongInteractor$return billingRepository.addProlongation(vasName, offerId, category) .updateOffers(offerId, category = category)</ID>
+    <ID>ExpressionBodySyntax:ProlongInteractor.kt$ProlongInteractor$return billingRepository.removeProlongation(vasName, offerId, category) .updateOffers(offerId, category = category)</ID>
+    <ID>ExpressionBodySyntax:ProlongationFragment.kt$ProlongationFragment.Companion$return ScreenBuilderFactory .fullScreen(ProlongationFragment::class.java) .factoryArgs(prolongationDetails) .withCustomActivity(MultiSelectActivity::class.java) .create() as ScreenBuilder.SimpleScreen</ID>
+    <ID>ExpressionBodySyntax:ProlongationPM.kt$ProlongationPM.Companion$return ProlongationModel( description, false, buttonBg = if (active) R.drawable.vas_button_bg_active else R.drawable.vas_button_bg_passive, buttonTextColor = if (active) R.color.white else R.color.common_red, buttonText = if (active) R.string.turn_on_prolong else R.string.turn_off_prolong )</ID>
+    <ID>ExpressionBodySyntax:ProlongationTextsFactory.kt$ProlongationTextsFactory$return buildTitle(vasName, days, Money(price.toLong(), Currency.RUR))</ID>
+    <ID>ExpressionBodySyntax:PromoVASFragment.kt$PromoVASFragment$return super.getItemDecorations() + vasDecoration</ID>
+    <ID>ExpressionBodySyntax:PromoVASModule.kt$PromoVASModule$return NavigatorHolder()</ID>
+    <ID>ExpressionBodySyntax:PromoVASModule.kt$PromoVASModule$return navigator</ID>
+    <ID>ExpressionBodySyntax:PtsStepViewModel.kt$PtsStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:PublicApiErrorHandler.kt$PublicApiErrorHandler$return when (errorCode) { HAVE_SIMILAR_OFFER -&gt; PaidReason.SAME_SALE PAYMENT_NEEDED -&gt; nwPaidReason?.let { PaidReasonConverter.fromNetwork(it) } else -&gt; null }</ID>
+    <ID>ExpressionBodySyntax:PurchaseButtonAdapter.kt$PurchaseButtonAdapter$return try { FORMAT.format(FORMAT.parse(price)) } catch (e: ParseException) { L.e(TAG, e) price }</ID>
+    <ID>ExpressionBodySyntax:RadiusEvent.kt$RadiusEvent$return 0</ID>
+    <ID>ExpressionBodySyntax:RadiusEvent.kt$RadiusEvent.CREATOR$return RadiusEvent(parcel)</ID>
+    <ID>ExpressionBodySyntax:RadiusEvent.kt$RadiusEvent.CREATOR$return arrayOfNulls(size)</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar$return a.getColor(R.styleable.RangeSeekBar_rsb_trackColor, defaultValue)</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar$return a.getColor(R.styleable.RangeSeekBar_rsb_trackSelectedColor, defaultValue)</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar$return a.getDimensionPixelSize(R.styleable.RangeSeekBar_rsb_touchRadius, defaultValue)</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar$return a.getDimensionPixelSize(R.styleable.RangeSeekBar_rsb_trackSelectedThickness, defaultValue)</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar$return a.getDimensionPixelSize(R.styleable.RangeSeekBar_rsb_trackThickness, defaultValue)</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar$return a.getInteger(R.styleable.RangeSeekBar_rsb_max, 100)</ID>
+    <ID>ExpressionBodySyntax:RangeSeekBar.kt$RangeSeekBar$return a.getInteger(R.styleable.RangeSeekBar_rsb_minRange, 1)</ID>
+    <ID>ExpressionBodySyntax:RelatedOffersActionsController.kt$RelatedOffersActionsController$return GalleryImageModel( id = id, imageUrl = getThumbUrl(), imageRes = R.drawable.placehold, title = SpannableString(getRelatedOfferTitle()), subtitle = SpannableString(getRelatedOfferSubTitle()), topLeftIcon = if (isCheckedByAutoRu()) R.drawable.provereno else null, payload = this )</ID>
+    <ID>ExpressionBodySyntax:RelatedOffersInteractor.kt$RelatedOffersInteractor$return flatZip( geoRepository.getSelectedRegions() .map { geoItems -&gt; geoItems.map { it.id.toIntOrNull() } }, geoRepository.getRadius().onErrorReturn { null }) { rids, radius -&gt; repository.getRelatedOffers(category, offerId, COUNT, rids.filterNotNull(), radius) }</ID>
+    <ID>ExpressionBodySyntax:RelatedOffersRepository.kt$RelatedOffersRepository$return get(category to offerId) ?: api.getRelatedOffers(category, offerId, count, rids, radius) .convertOffers() .doOnSuccess { save(it, category to offerId) }</ID>
+    <ID>ExpressionBodySyntax:RemoteConfigRepository.kt$RemoteConfigRepository$return if (isDevOrDebug) IS_ADFOX_ENABLED.not() else firebaseRemoteConfig.getBoolean(SEARCH_DIRECT_ENABLED)</ID>
+    <ID>ExpressionBodySyntax:RequestCallInteractor.kt$RequestCallInteractor.RequestApiHelper$return Network.requestCall(callRequest)</ID>
+    <ID>ExpressionBodySyntax:ReviewCommentsAdapter.kt$ReviewCommentsAdapter$return items[position] is ReviewComment</ID>
+    <ID>ExpressionBodySyntax:ReviewCommentsFragment.kt$ReviewCommentsFragment.Companion$return Bundle(1).apply { putSerializable(ARGS_CONTEXT, ReviewCommentsContext( subject = subject, reviewId = reviewId)) }</ID>
+    <ID>ExpressionBodySyntax:ReviewCommentsFragment.kt$ReviewCommentsFragment.Companion$return ScreenBuilderFactory.fullScreen(ReviewCommentsFragment::class.java) .withCustomActivity(SimpleRedFragmentActivity::class.java) .withArgs(createArgs(subject, reviewId)) .asFirstLevel() .create()</ID>
+    <ID>ExpressionBodySyntax:ReviewErrorFactory.kt$ReviewErrorFactory$return when (throwable) { is ApiException -&gt; throwable.detailedError ?: defaultMessage else -&gt; super.createSnackError(throwable, defaultMessage) }</ID>
+    <ID>ExpressionBodySyntax:ReviewFeedAdapter.kt$ReviewFeedAdapter$return items[position] is Review</ID>
+    <ID>ExpressionBodySyntax:ReviewSnippetFragment.kt$ReviewSnippetFragment$return vpItems.getChildAt(vpItems.currentItem) as RecyclerView?</ID>
+    <ID>ExpressionBodySyntax:ReviewSnippetPagerAdapter.kt$ReviewSnippetPagerAdapter$return when (position) { 0 -&gt; strings.get(R.string.all_snippets, items.allCount) 1 -&gt; strings.get(R.string.pluses_snippets, items.plusesCount) 2 -&gt; strings.get(R.string.minuses_snippets, items.minusesCount) else -&gt; "" }</ID>
+    <ID>ExpressionBodySyntax:ReviewsRepository.kt$ReviewsRepository$return api.getCategoriesReviewCount().map { response -&gt; ArrayList&lt;Pair&lt;String, Int&gt;&gt;().apply { response.run { cars_summary?.category_count?.let { count -&gt; add(Pair(AUTO_ID, count)) } moto_summary?.mapToPairs()?.let { addAll(it) } trucks_summary?.mapToPairs()?.let { addAll(it) } } }.map { summaryConverter.fromNetwork(it) } }</ID>
+    <ID>ExpressionBodySyntax:ReviewsRepository.kt$ReviewsRepository$return api.getReviewDetails(id).map { ReviewConverter.fromNetwork(it?.review ?: NWReview()) }</ID>
+    <ID>ExpressionBodySyntax:ReviewsRepository.kt$ReviewsRepository$return api.getReviewRatings(category, mark, model, superGen).map { response -&gt; response.ratings?.let { ReviewRateConverter.convert(it) } }</ID>
+    <ID>ExpressionBodySyntax:RvScreenPresenter.kt$RvScreenPresenter$return super.attachView(environment, controllerFactory, parent).apply { (this as RecyclerView).layoutManager = object : LinearLayoutManager(context) { override fun requestChildRectangleOnScreen( p: RecyclerView?, c: View?, r: Rect?, i: Boolean) = false override fun requestChildRectangleOnScreen( p: RecyclerView?, c: View?, r: Rect?, i: Boolean, f: Boolean) = false } }</ID>
+    <ID>ExpressionBodySyntax:RxExt.kt$return Single.zip(first, second, zipFunction).flatMap { it }</ID>
+    <ID>ExpressionBodySyntax:RxExt.kt$return subscribe({ action() }, { L.e(tag, it) })</ID>
+    <ID>ExpressionBodySyntax:RxExt.kt$return subscribe({ action(it) }, { L.e(tag, it) })</ID>
+    <ID>ExpressionBodySyntax:RxExt.kt$return this?.let { !it.isUnsubscribed } ?: false</ID>
+    <ID>ExpressionBodySyntax:SavedFeedModule.kt$SavedFeedModule$return FeedErrorFactory(stringsProvider)</ID>
+    <ID>ExpressionBodySyntax:SavedFeedModule.kt$SavedFeedModule$return FeedInteractor(false, true, offersRepository, NativeAdsFactory(context, configRepo), videosRepository, stringsProvider, AnalystManager.getInstance(), listingMixFactory = FeedInteractor.ListingMixStrategyFactory(stringsProvider, configRepo))</ID>
+    <ID>ExpressionBodySyntax:SavedFeedModule.kt$SavedFeedModule$return FilterRepository(filterScreenFactory, screenToFilterMapper, formStateMapper, geoStateProvider)</ID>
+    <ID>ExpressionBodySyntax:SavedFeedModule.kt$SavedFeedModule$return MiniFilterInteractor(filterScreenFactory, filterChangedListener, screenSerializer, geoStateProvider)</ID>
+    <ID>ExpressionBodySyntax:SavedFeedModule.kt$SavedFeedModule$return PhoneDelegatePresenter( view = viewState, router = router, errorFactory = errorFactory, allowOrientation = false, statEventSource = StatEventSource.SEARCH_LISTING, phoneInteractor = phoneInteractor, strings = stringsProvider, analyst = AnalystManager.getInstance(), getListenerProvider = { action: IOpenPhoneAppListener.(String) -&gt; Unit -&gt; SavedFeedPhoneListenerProvider.create(context, action) }, onOpenPhone = {} )</ID>
+    <ID>ExpressionBodySyntax:SavedFeedPresenter.kt$SavedFeedPresenter$return super.offersRequest().map { it.copy(savedSearchId = getFilterContext().savedSearchId) }</ID>
+    <ID>ExpressionBodySyntax:SavedFiltersModule.kt$SavedFiltersModule$return NavigatorHolder()</ID>
+    <ID>ExpressionBodySyntax:SavedSearchInteractor.kt$SavedSearchInteractor$return savedSearchRepo.updateLastViewed(searchId = searchId, lastViewedAt = lastViewedAt ?: Date(), newOffersCount = 0)</ID>
+    <ID>ExpressionBodySyntax:SavedSearchMessageReceiver.kt$SavedSearchMessageReceiver$return FilterService.getInstance().filtersForPush .filter { filters -&gt; !Utils.isEmpty(filters) } .switchMap { FilterService.getInstance().observe(it) } .flatMap { filter -&gt; checkFilterAndExtractInfo(filter, message).map { processFilter(filter, it, message.pushName) } } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:SavedSearchMessageReceiver.kt$SavedSearchMessageReceiver$return filter.apply { NotificationUtils.showFilterNotification(id, createNotification(AppHelper.appContext(), filter, getNotificationId(filter), pushName)) LauncherBadgeInteractor().showTotal() }</ID>
+    <ID>ExpressionBodySyntax:SavedSearchMessageReceiver.kt$SavedSearchMessageReceiver$return remoteMessage.data.containsKey(SUBSCRIPTION_ID)</ID>
+    <ID>ExpressionBodySyntax:ScreenVisibilityRepository.kt$ScreenVisibilityRepository$return screensMap[id] ?: SyncBehaviorSubject.create&lt;ScreenVisibility&gt;() .apply { screensMap.put(id, this) this.onNext(ScreenVisibility.GONE) }</ID>
+    <ID>ExpressionBodySyntax:SearchAdvertDeeplinkParser.kt$SearchAdvertDeeplinkParser$return Consts.CITY_MOSCOW == alias || Consts.CITY_SPB == alias</ID>
+    <ID>ExpressionBodySyntax:SearchFeedPresenter.kt$SearchFeedPresenter.SearchFeedEvent$return 0</ID>
+    <ID>ExpressionBodySyntax:SearchFeedPresenter.kt$SearchFeedPresenter.SearchFeedEvent.CREATOR$return SearchFeedEvent(parcel)</ID>
+    <ID>ExpressionBodySyntax:SearchFeedPresenter.kt$SearchFeedPresenter.SearchFeedEvent.CREATOR$return arrayOfNulls(size)</ID>
+    <ID>ExpressionBodySyntax:SearchFragment.kt$SearchFragment.Companion$return ScreenBuilderFactory.fullScreen(SearchFragment::class.java) .withCustomActivity(SearchActivity::class.java) .withArgs(Bundle().apply { putString(MAIN_TAB_ARG, tab.toString()) }) .create()</ID>
+    <ID>ExpressionBodySyntax:SegmentDynamicField.kt$SegmentDynamicField$return getOptions().filter { it.key == value }.firstOrNull()?.key</ID>
+    <ID>ExpressionBodySyntax:SelectColorViewController.kt$SelectColorViewController$return title</ID>
+    <ID>ExpressionBodySyntax:SelectFragment.kt$SelectFragment.Companion$return options.map { option -&gt; val selected = value == option.key SelectItem( id = option.key ?: "", label = option.value, parentId = option.parentKey, childIds = option.groupKeys ?: setOf(), selectCount = if (selected) 1 else 0) }</ID>
+    <ID>ExpressionBodySyntax:SelectReasonDialog.kt$SelectReasonDialog$return inflater.inflate(R.layout.dialog_select_simple, container, false)</ID>
+    <ID>ExpressionBodySyntax:SelectReasonDialog.kt$SelectReasonDialog.ReasonAdapter$return position.toLong()</ID>
+    <ID>ExpressionBodySyntax:SelectReasonDialog.kt$SelectReasonDialog.ReasonAdapter$return reasons.size</ID>
+    <ID>ExpressionBodySyntax:ServicesInteractor.kt$ServicesInteractor$return servicesRepository.getServices(configRepository.isEvakEnabled())</ID>
+    <ID>ExpressionBodySyntax:ServicesRepository.kt$ServicesRepository$return Single.just(listOf&lt;IServiceModel&gt;()) .map { it.plus(assetStorage.readJsonAsset&lt;List&lt;NWPagerService&gt;&gt;(SERVICES_PATH) .map { PagerServiceConverter.fromNetwork(it) }) .plus(getListItems(evakEnabled).map { ListItemServiceConverter.fromNetwork(it) }) .plus(callBlockItems.map { CallBlockServiceConverter.fromNetwork(it) }) .plus(promoItems.map { PromoServiceConverter.fromNetwork(it) }) }</ID>
+    <ID>ExpressionBodySyntax:ShadowLayout.kt$ShadowLayout$return context.obtainStyledAttributes(attributeSet, attr, 0, 0)</ID>
+    <ID>ExpressionBodySyntax:ShowGalleryCommand.kt$ShowGalleryCommand$return ScreenBuilderFactory .fullScreen(FullScreenPhotoFragment::class.java) .withTag(FullscreenImagesActivity.FRAGMENT_TAG) .withCustomActivity(FullscreenImagesActivity::class.java) .create()</ID>
+    <ID>ExpressionBodySyntax:ShowLocationCommand.kt$ShowLocationCommand$return "ll=" + longitude + "," + latitude + "&amp;z=" + MAP_DEFAULT_ZOOM + "&amp;l=map&amp;" + "pt=" + longitude + "," + latitude + if (Utils.isEmpty(text)) ",pm2rdl" else "," + text</ID>
+    <ID>ExpressionBodySyntax:ShowLocationCommand.kt$ShowLocationCommand$return try { val result = Base64.decode(key, Base64.DEFAULT) val factory = KeyFactory.getInstance("RSA") val keySpec = PKCS8EncodedKeySpec(result) val signature = Signature.getInstance("SHA256withRSA") signature.initSign(factory.generatePrivate(keySpec)) signature.update(data.toByteArray()) val encrypted = signature.sign() Base64.encodeToString(encrypted, Base64.NO_WRAP) } catch (e: Exception) { L.e(TAG(), SecurityException("Error calculating cipher data while making intent to Yandex.Navi", e)) null }</ID>
+    <ID>ExpressionBodySyntax:ShowMarkModelStrategy.kt$ShowMarkModelStrategy$return buildPopular(items, converter, popularFilter).buildAllModels(items, converter)</ID>
+    <ID>ExpressionBodySyntax:ShowMultiGenerationsCommand.kt$ShowMultiGenerationsCommand$return MultiGenerationFragment.screen(MultiGenerationContext(mark, listener, multiMarkValue, searchParams, filterContext), isFromMiniFilter)</ID>
+    <ID>ExpressionBodySyntax:ShowMultiMarksCommand.kt$ShowMultiMarksCommand$return MultiMarkFragment.miniFilterScreen(MultiMarkContext( mark = mark, category = categoryId, listenerProvider = listener, isFromFilter = false, shouldOpenFeedOnShowResultsClick = shouldOpenFeedOnShowResultsClick, shouldUseSuggest = false, multiMarkValue = multiMarkValue, searchParams = searchParams, filterContext = filterContext ))</ID>
+    <ID>ExpressionBodySyntax:ShowMultiMarksFilterCommand.kt$ShowMultiMarksFilterCommand$return MultiMarkFilterFragment.filterScreen(MultiMarkContext( mark = mark, category = categoryId, listenerProvider = listener, isFromFilter = true, shouldOpenFeedOnShowResultsClick = false, shouldUseSuggest = false, multiMarkValue = multiMarkValue, searchParams = searchParams, filterContext = filterContext ))</ID>
+    <ID>ExpressionBodySyntax:ShowOkAuthCommand.kt$ShowOkAuthCommand$return "https://connect.ok.ru/dk?st.cmd=OAuth2Login&amp;st.redirect=%252Fdk%253Fst.cmd%253DOAuth2Permissions%2526amp%253Bst.response_type%253Dcode%2526amp%253Bst.show_permissions%253Doff%2526amp%253Bst.redirect_uri%253Dhttps%25253A%25252F%25252Fauth.auto.ru%25252Fsocial%25252Fcallback%25252Fok%25252F%2526amp%253Bst.state%253Doi0gZUvowj%2526amp%253Bst.client_id%253D1090386944&amp;st.client_id=1090386944"</ID>
+    <ID>ExpressionBodySyntax:ShowSavedFeedCommand.kt$ShowSavedFeedCommand$return SavedFeedFragment.screen( SavedFeedContext( filter, savedSearchId, unsupportedFieldsCount, hasUnsupportedSearchTags, lastViewedAt, isSimpleFeed ) )</ID>
+    <ID>ExpressionBodySyntax:SliderAdapter.kt$SliderAdapter$return R.layout.item_services_pager</ID>
+    <ID>ExpressionBodySyntax:SliderAdapter.kt$SliderAdapter$return items[position] is PagerViewModel</ID>
+    <ID>ExpressionBodySyntax:SnackbarBuilder.kt$SnackbarBuilder$return padding(padding, padding, padding, padding)</ID>
+    <ID>ExpressionBodySyntax:SocialAuthInteractor.kt$SocialAuthInteractor$return socialAuthRequestProvider.flatMap { socialAuthRequest -&gt; authRepository.postAuthSocialLogin(socialAuthRequest) .flatMap { authCompatibilityIteractor.onUserLoggedIn(it.user, it.session?.id) } }</ID>
+    <ID>ExpressionBodySyntax:SpecialOffersInteractor.kt$SpecialOffersInteractor$return flatZip( geoRepository.getSelectedRegions() .map { geoItems -&gt; geoItems.map { it.id.toIntOrNull() } }, geoRepository.getRadius().onErrorReturn { null }) { rids, radius -&gt; repository.getSpecialOffers(category, offerId, COUNT, rids.filterNotNull(), radius) }</ID>
+    <ID>ExpressionBodySyntax:SpecialOffersRepository.kt$SpecialOffersRepository$return get(category to offerId) ?: api.getSpecialOffers(category, offerId, count, rids, radius) .convertOffers() .doOnSuccess { save(it, category to offerId) }</ID>
+    <ID>ExpressionBodySyntax:StatRepository.kt$StatRepository$return NWPredictModel( tech_param_id = offer.carInfo?.techParamId?.toIntOrNull(), rid = offer.seller?.location?.geobaseId?.toIntOrNull(), km_age = offer.state?.mileage, dealer_org_type = 4, color = offer.color?.id, owning_time = countOwningTime(offer.documents?.purchaseDate), owners_count = offer.documents?.ownersNumber, year = offer.documents?.year, equipment = offer.getEquipment()?.entries?.filter { it.value }?.map { it.key.id } )</ID>
+    <ID>ExpressionBodySyntax:StepFactory.kt$StepFactory$return when (step) { is MarkStep -&gt; MarkStepViewModel(strings, items as List&lt;MarkCatalogItem&gt;, offer) is ModelStep -&gt; ModelStepViewModel(strings, items as List&lt;ModelCatalogItem&gt;, offer) is YearStep -&gt; YearStepViewModel(items as List&lt;Int&gt;, offer) is BodyTypeStep -&gt; BodyTypeStepViewModel(items as List&lt;BodyType&gt;, offer) is GenerationStep -&gt; GenerationStepViewModel(items as List&lt;GenerationCatalogItem&gt;, offer) is EngineStep -&gt; EngineStepViewModel(items as List&lt;EngineType&gt;, offer) is GearStep -&gt; GearStepViewModel(items as List&lt;GearType&gt;, offer) is TransmissionStep -&gt; TransmissionStepViewModel(items as List&lt;Transmission&gt;, offer) is ModificationStep -&gt; ModificationStepViewModel(items as List&lt;TechParam&gt;, offer) is ColorStep -&gt; ColorStepViewModel(items as List&lt;SelectColor.ColorItem&gt;, offer) is PhoneStep -&gt; PhoneStepViewModel(strings, items as MutableList&lt;Phone&gt;, offer) is MileageStep -&gt; MileageStepViewModel(strings, offer) is OwnersStep -&gt; OwnersStepViewModel(items as List&lt;Select.Option&gt;, offer) is PtsStep -&gt; PtsStepViewModel(items as List&lt;Select.Option&gt;, offer) is ContactsStep -&gt; ContactsStepViewModel(strings, offer) is PriceStep -&gt; PriceStepViewModel(strings, offer) is VinStep -&gt; VinStepViewModel(strings, offer = offer) is PreviewStep -&gt; PreviewStepViewModel(strings, items as List&lt;Pair&lt;Offer, List&lt;HistGroup&gt;&gt;&gt;, offer) is FinalStep -&gt; FinalStepViewModel(strings, offer) is PhotosStep -&gt; getPhotoViewModel() is DescriptionStep -&gt; DescriptionStepViewModel(strings, offer) }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return Single.fromCallable { colors["color_public"] }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return Single.fromCallable { options["owners"] }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return Single.fromCallable { options["pts"] }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return getSuggest(step).map { it.bodyTypes?.sortedBy { it.label } ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return getSuggest(step).map { it.engineTypes?.sortedBy { it.label } ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return getSuggest(step).map { it.gearTypes?.sortedBy { it.label } ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return getSuggest(step).map { it.superGenerations?.sortedBy { it.name } ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return getSuggest(step).map { it.techParams?.sortedBy { it.name } ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return getSuggest(step).map { it.transmissionTypes?.sortedBy { it.label } ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return getSuggest(step).map { it.years?.sortedDescending() ?: emptyList() }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return step.offer?.carInfo?.markCode?.let { markCode -&gt; catalogRepository.getModelCatalogItems(rootCategory, markCode) } ?: throw IllegalStateException("$TAG: No mark code selected")</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return step.offer?.let { Single.zip( saveDraft(it), getPriceHistogram(it), { offer, histGroup -&gt; offer to histGroup } ).map { listOf(it) } } ?: getEmpty()</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return step.offer?.let { offer -&gt; val params = offerToCatalogParams(offer) suggestRepository.getSuggest(params) } ?: throw IllegalStateException("$TAG: Not enough params for suggest, payload: ${step.offer}")</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return userRepository.getUser().map { it.phoneNumbers.map { Phone(it) }.toMutableList() } .onErrorReturn { if (it is NoAuthException) mutableListOf() else throw it }</ID>
+    <ID>ExpressionBodySyntax:StepRepository.kt$StepRepository$return when (step) { is MarkStep -&gt; catalogRepository.getMarkCatalogItems(rootCategory) is ModelStep -&gt; getModel(step) is YearStep -&gt; getYears(step) is GenerationStep -&gt; getGenerations(step) is BodyTypeStep -&gt; getBodyType(step) is EngineStep -&gt; getEngine(step) is GearStep -&gt; getGear(step) is TransmissionStep -&gt; getTransmission(step) is ModificationStep -&gt; getModification(step) is ColorStep -&gt; getColors() is PhoneStep -&gt; getPhones() is OwnersStep -&gt; getOwners() is PtsStep -&gt; getPts() is MileageStep -&gt; getEmpty() is ContactsStep -&gt; getEmpty() is PriceStep -&gt; getEmpty() is PreviewStep -&gt; getOfferPreview(step) is FinalStep -&gt; getEmpty() is VinStep -&gt; getEmpty() is PhotosStep -&gt; getPhotoItems(step) is DescriptionStep -&gt; getEmpty() }</ID>
+    <ID>ExpressionBodySyntax:StringExt.kt$return link.matches(DRIVE_2_PATTERN.toRegex())</ID>
+    <ID>ExpressionBodySyntax:SuggestCatalogRepository.kt$SuggestCatalogRepository$return generationsCache.withCache(rootCategoryId + mark + model) { suggestRepository.getSuggest(mapOf(PARAM_MARK to mark, PARAM_MODEL to model)) .map { it.superGenerations } }</ID>
+    <ID>ExpressionBodySyntax:SuggestCatalogRepository.kt$SuggestCatalogRepository$return marksCache.withCache(rootCategoryId) { suggestRepository.getSuggest(emptyMap()).map { it.marks } }</ID>
+    <ID>ExpressionBodySyntax:SuggestCatalogRepository.kt$SuggestCatalogRepository$return modelsCache.withCache(rootCategoryId + mark) { suggestRepository.getSuggest(mapOf(PARAM_MARK to mark)).map { it.models } }</ID>
+    <ID>ExpressionBodySyntax:SuggestConverter.kt$SuggestConverter$return Suggest( params = convertNotNull(src.params, ParamsConverter::fromNetwork, "params"), marks = convertNotNull(src.marks, MarkConverter::fromNetwork, "marks"), models = convertNullable(src.models, ModelConverter::fromNetwork), superGenerations = convertNullable(src.super_generations, GenerationConverter::fromNetwork), complectations = convertNullable(src.complectations, ComplectationConverter(strategy)::fromNetwork), techParams = convertNullable(src.tech_params, TechParamConverter::fromNetwork), years = src.years, bodyTypes = convertNullable(src.body_types, BodyTypeConverter::fromNetwork), engineTypes = convertNullable(src.engine_types, EngineConverter::fromNetwork), gearTypes = convertEnum(src.gear_types), transmissionTypes = convertEnum(src.transmission_types) )</ID>
+    <ID>ExpressionBodySyntax:SuggestItem.kt$SuggestItem$return value.hashCode()</ID>
+    <ID>ExpressionBodySyntax:TextSearchLoggerInterceptor.kt$TextSearchLoggerInterceptor$return isOnSearchFeedFromTextSearch</ID>
+    <ID>ExpressionBodySyntax:ThreadLocalDateFormat.kt$ThreadLocalDateFormat$return SimpleDateFormat(format, Locale.getDefault())</ID>
+    <ID>ExpressionBodySyntax:TransmissionStepViewModel.kt$TransmissionStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:TransmissionStepViewModel.kt$TransmissionStepViewModel$return transmissions.map { item -&gt; CommonListItem( id = item.name, title = item.label, iconResId = transmissionIcons[item], payload = item, isChecked = item.name == offer.carInfo?.transmission?.id ) }</ID>
+    <ID>ExpressionBodySyntax:TransportPresenter.kt$TransportPresenter$return { autoPresets: GalleryViewModel, motoPresets: GalleryViewModel, commercialPresets: GalleryViewModel, bodyTypePresets: GalleryViewModel -&gt; ArrayList&lt;IComparableItem&gt;().apply { add(HeaderViewModel(stringsProvider.get(R.string.category_event_auto))) add(autoPresets) add(bodyTypePresets) add(HeaderViewModel(stringsProvider.get(R.string.preset_commercial))) add(commercialPresets) add(HeaderViewModel(stringsProvider.get(R.string.preset_moto))) add(motoPresets) add(DividerViewModel(R.color.white, height = R.dimen.big_margin)) } }</ID>
+    <ID>ExpressionBodySyntax:TrustAllSslDownloader.kt$TrustAllSslDownloader$return super.createConnection(url, extra)</ID>
+    <ID>ExpressionBodySyntax:TurboVASHeaderAdapter.kt$TurboVASHeaderAdapter$return items[position] is TurboVASHeader</ID>
+    <ID>ExpressionBodySyntax:UidInterceptor.kt$UidInterceptor$return isHelloRequested || kotlin.run { val path = request.url().encodedPath() val currentUid = request.header(HEADER_UID).orEmpty() IGNORE_UID_METHODS.find { path.endsWith(it) } == null &amp;&amp; currentUid.isEmpty() &amp;&amp; uid.isEmpty() }</ID>
+    <ID>ExpressionBodySyntax:UnknownMessageReceiver.kt$UnknownMessageReceiver$return true</ID>
+    <ID>ExpressionBodySyntax:UpdateHelper.kt$UpdateHelper$return Observable.fromCallable&lt;ServiceStartResponse&gt;({ DataLogic.getStartupInfo() }) .subscribeOn(AutoSchedulers.network()) .observeOn(AutoSchedulers.main())</ID>
+    <ID>ExpressionBodySyntax:UserConverter.kt$UserConverter$return fromNetwork(user).run { copy(tiedCards = convertNullable(cards, TiedCardConverter::fromNetwork) ?: emptyList(), balance = balance ?: 0) }</ID>
+    <ID>ExpressionBodySyntax:UserOffersFragment.kt$UserOffersFragment$return inflater.inflate(R.layout.fragment_user_offers, container, false) as ViewGroup</ID>
+    <ID>ExpressionBodySyntax:UserOffersFragment.kt$UserOffersFragment$return navigator</ID>
+    <ID>ExpressionBodySyntax:UserOffersFragment.kt$UserOffersFragment$return presenter</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor$return networkState.isNetworkAvailable() .subscribeOn(Schedulers.io()) .toObservable() .flatMap { userRepo.loadOffers(CATEGORY, page) } .flatMapIterable { it } .map { it.enrichWithDetails() } .doOnNext { vasRepository.put(it.id, it.servicePrices, it.services) } .toList() .toSingle()</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor$return offersRepo.activateOffer(category, offerId) .subscribeOn(Schedulers.io())</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor$return offersRepo.activateOffer(offer.getCategory(), offer.id) .doOnError { e -&gt; if (e is ActivationError) { e.similarOffer?.let { userRepo.putSimilarOffer(offer.id, it) } } } .subscribeOn(Schedulers.io())</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor$return offersRepo.archiveOffer(category, offerId, reason)</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor$return offersRepo.deleteOffer(category, offerId)</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor$return offersRepo.getUserOffer(category, offerId) .map { it.enrichWithDetails() } .subscribeOn(Schedulers.io())</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor$return userRepo.observeOffers().map { offers -&gt; offers.map { it.enrichWithDetails() } }</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor$return userRepo.observeTopOffer().map { it?.enrichWithDetails() }</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor$return userRepo.updateOffers(CATEGORY) .flatMapIterable { it } .map { offer -&gt; offer.enrichWithDetails() } .doOnNext { offer -&gt; vasRepository.put(offer.id, offer.servicePrices, offer.services) } .toList()</ID>
+    <ID>ExpressionBodySyntax:UserOffersInteractor.kt$UserOffersInteractor.Companion$return offer.copy( servicePrices = offer.servicePrices.map { price -&gt; val canShowProlongation = price.prolongationAllowed &amp;&amp; price.autoProlongPrice != null &amp;&amp; userHasCards() price.copy(prolongationAllowed = canShowProlongation) } )</ID>
+    <ID>ExpressionBodySyntax:UserOffersParser.kt$UserOffersParser$return uri?.run { host == HOST_USERS &amp;&amp; path.startsWith(PATH_OFFERS) || path.startsWith(FULL_PATH_OFFERS) } ?: false</ID>
+    <ID>ExpressionBodySyntax:UserOffersPresenter.kt$UserOffersPresenter$return updateUser().andThen(offersInteractor.observeOffers()) .doOnNext { offers.clear() offers.addAll(it) canLoadMore = !offers.isEmpty() } .map { convertOffers(it) }</ID>
+    <ID>ExpressionBodySyntax:UserOffersPresenter.kt$UserOffersPresenter$return userManager.getUser() .observeOn(AutoSchedulers.main()) .map { user -&gt; user.balance?.let { balance -&gt; viewState.setBalance(balance.toLong()) } areCardsTied = areCardsTiedInfo() } .toCompletable()</ID>
+    <ID>ExpressionBodySyntax:UserPhoneInteractor.kt$UserPhoneInteractor$return codeTimerRepository.observeCodeTimerSec(phone)</ID>
+    <ID>ExpressionBodySyntax:UserPhoneInteractor.kt$UserPhoneInteractor$return if (TEST_PHONE_BANNED) Single.error(ApiException(PHONE_IS_BANNED)) else codeTimerRepository.observeCodeTimerSec(phone, requestCode) .take(1) .toSingle() .flatMap { if (it == 0) { if(isRestartTimer) { Completable.fromCallable { codeTimerRepository.restart(phone, requestCode) } .andThen(repo.addPhone(phone)) } else { repo.addPhone(phone) } } else Single.just(AddPhoneResponse(true, CODE_LENGTH)) }</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper$return Observable.from(offers).flatMapSingle { offersRepository.createOffer(it) }.toList().toSingle()</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper$return Single.defer { Single.just(allUserOffers.get()) }</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper$return UserService.getInstance().isAuthorized</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper$return api.getUserOffers(category, page, 10) .flatMap({ it.offers?.let { convertOffers(it) } ?: Single.just(emptyList()) }) .doOnError { if (it is ApiException) handleApiException(it) } .toObservable() .doOnNext { allUserOffers.set(allUserOffers.get() + it) }</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper$return getUser().map { it.balance ?: throw IllegalStateException("User balance is unknown") }</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper$return latestOffer</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper$return loadOffers(category, INITIAL_PAGE) .doOnNext { allUserOffers.set(it) offers.onNext(it) } .doOnNext({ if (it.isNotEmpty()) latestOffer.onNext(it[0]) else latestOffer.onNext(null) })</ID>
+    <ID>ExpressionBodySyntax:UserServiceWrapper.kt$UserServiceWrapper$return offers</ID>
+    <ID>ExpressionBodySyntax:VASListActivity.kt$VASListActivity$return (0..availableVas.size - 1).firstOrNull { availableVas[it].serviceId == selected } ?: 0</ID>
+    <ID>ExpressionBodySyntax:VASListActivity.kt$VASListActivity.VasAdapter$return vasList.size</ID>
+    <ID>ExpressionBodySyntax:VASListActivity.kt$VASListActivity.VasAdapter$return view == `object`</ID>
+    <ID>ExpressionBodySyntax:VASRepository.kt$VASRepository$return activeVASMap[offerId] ?: emptyList()</ID>
+    <ID>ExpressionBodySyntax:VASRepository.kt$VASRepository$return offersVASMap[offerId] ?: emptyList()</ID>
+    <ID>ExpressionBodySyntax:ValidateFieldsStrategy.kt$ValidateFieldsStrategy$return NAME_TO_FIELD[fieldName] ?: tryToParseFieldName(fieldName)</ID>
+    <ID>ExpressionBodySyntax:ValidateFieldsStrategy.kt$ValidateFieldsStrategy$return screen?.fields?.firstOrNull { field -&gt; field is GroupField &amp;&amp; field !is DraftTitleField &amp;&amp; field.hasChild(id) } as? GroupField</ID>
+    <ID>ExpressionBodySyntax:VasSearchUpAdapter.kt$VasSearchUpAdapter$return VasSearchUpViewHolder( itemView = inflate(R.layout.item_search_up, parent), vasAutoUpClick = vasAutoUpClick, vasClicks = vasClicks, screen = AutoUpContext.Screen.DETAIL_OFFER)</ID>
+    <ID>ExpressionBodySyntax:VasSearchUpViewHolder.kt$VasSearchUpViewHolder$return if (autoUpSchedule != null) { context.getString(R.string.vas_search_auto_up_enabled, autoUpSchedule.hour) } else { context.getString(R.string.vas_search_auto_up, price) }</ID>
+    <ID>ExpressionBodySyntax:VehicleParamsRepository.kt$VehicleParamsRepository$return api.getAutoParams(searchText) .map(TextSearchConverter::fromNetwork) .map { it.filters }</ID>
+    <ID>ExpressionBodySyntax:VehicleSearchToFormStateConverter.kt$VehicleSearchToFormStateConverter$return listOfNotNull( MultiSelectState().apply { type = Field.TYPES.multiselect_certification fieldName = Filters.CERTIFICATION_FIELD val separatedSearchTags = searchTags?.map{ it.split(",") }?.flatten() value = separatedSearchTags?.filter { it in CERTIFICATIONS }?.toSet().orEmpty() }, convertCheckbox( checked = searchTags, predicate = { list -&gt; list.any { it == Filters.VIDEO_TAG } }, field = Filters.VIDEO_FIELD ) )</ID>
+    <ID>ExpressionBodySyntax:VehicleSearchToFormStateConverter.kt$VehicleSearchToFormStateConverter$return when (seller) { SellerType.COMMERCIAL -&gt; "2" SellerType.PRIVATE -&gt; "1" SellerType.ANY_SELLER -&gt; "3" }</ID>
+    <ID>ExpressionBodySyntax:Video.kt$Video$return 0</ID>
+    <ID>ExpressionBodySyntax:Video.kt$Video.Companion.&lt;no name provided&gt;$return Video(`in`)</ID>
+    <ID>ExpressionBodySyntax:Video.kt$Video.Companion.&lt;no name provided&gt;$return arrayOfNulls(size)</ID>
+    <ID>ExpressionBodySyntax:VideoListFragment.kt$VideoListFragment$return listOf(HorizontalDividerItemDecoration.Builder(context) .colorResId(R.color.app_background) .sizeResId(R.dimen.half_margin) .build())</ID>
+    <ID>ExpressionBodySyntax:VideoUrlModule.kt$VideoUrlModule$return NavigatorHolder()</ID>
+    <ID>ExpressionBodySyntax:VideoUrlModule.kt$VideoUrlModule$return navigator</ID>
+    <ID>ExpressionBodySyntax:ViewExt.kt$return LayoutInflater.from(context).inflate(layoutId, this, attachToRoot)</ID>
+    <ID>ExpressionBodySyntax:ViewExt.kt$return if (measuredWidth &gt; 0) { block.invoke() null } else { val layoutChangeListener = object : View.OnLayoutChangeListener { override fun onLayoutChange(v: View?, left: Int, top: Int, right: Int, bottom: Int, oldLeft: Int, oldTop: Int, oldRight: Int, oldBottom: Int) { removeOnLayoutChangeListener(this) block.invoke() } } addOnLayoutChangeListener(layoutChangeListener) layoutChangeListener }</ID>
+    <ID>ExpressionBodySyntax:ViewExt.kt$return viewTreeObserver?.let { viewTreeObserver -&gt; ViewTreeObserver.OnGlobalLayoutListener { action.invoke() }.apply { viewTreeObserver.addOnGlobalLayoutListener(this) } }</ID>
+    <ID>ExpressionBodySyntax:ViewModelFragment.kt$ViewModelFragment$return FragmentArgsLoader(pmBuilder)</ID>
+    <ID>ExpressionBodySyntax:ViewModelFragment.kt$ViewModelFragment.Companion$return withArgs(Bundle().apply { putParcelable(ARGS_VIEW_MODEL_FACTORY, args) })</ID>
+    <ID>ExpressionBodySyntax:ViewModelFragment.kt$ViewModelFragment.FragmentArgsLoader$return result ?: thisRef .arguments.getParcelable&lt;ARG&gt;(ARGS_VIEW_MODEL_FACTORY) .let(pmBuilder) .apply { result = this }</ID>
+    <ID>ExpressionBodySyntax:VkAuthRepository.kt$VkAuthRepository$return SocialAuthRequest( socialNet = socialAuthRequest.socialNet, mobileToken = MobileTokenAndUser( socialAuthRequest.token ?: socialAuthRequest.mobileToken?.token, VkSocialUserSourceConverter.fromNetwork(vkApiUserFull) ))</ID>
+    <ID>ExpressionBodySyntax:VkAuthViewController.kt$VkAuthViewController$return e?.let { if (e.errorCode == VKError.VK_CANCELED) { SocialAuthCancelledByUserException(socialNet) } else if (e.errorCode == VKError.VK_REQUEST_HTTP_FAILED) { NetworkConnectionException(e.httpError) } else { null } } ?: SocialAuthException(socialNet, "")</ID>
+    <ID>ExpressionBodySyntax:VkAuthViewController.kt$VkAuthViewController$return vkAuthRepository.getVkUserData(vkAccessToken) .map { toSocialAuthRequest(vkAccessToken, it) }</ID>
+    <ID>ExpressionBodySyntax:WheelField.kt$WheelField$return listOf(SerializablePair&lt;String, String&gt;(id, if(value) WheelMapper.Wheel.RIGHT else WheelMapper.Wheel.LEFT))</ID>
+    <ID>ExpressionBodySyntax:WizardFragment.kt$WizardFragment$return titles?.get(steps[position].javaClass) ?: ""</ID>
+    <ID>ExpressionBodySyntax:WizardFragment.kt$WizardFragment$return true</ID>
+    <ID>ExpressionBodySyntax:WizardFragment.kt$WizardFragment.Companion$return ScreenBuilderFactory.fullScreen(WizardFragment::class.java) .withCustomActivity(FragmentActivity::class.java) .withArgs(Bundle().apply { putSerializable(WIZARD_LISTENER, listenerProvider) }) .asFirstLevel() .create()</ID>
+    <ID>ExpressionBodySyntax:WizardOfferFactory.kt$WizardOfferFactory$return offer?.copy( carInfo = CarInfo(markCode = mark, steeringWheel = SteeringWheel.LEFT.toEntity()), documents = offer.documents?.copy(year = null) ?: Documents(), seller = offer.seller?.copy(arePhonesRedirected = true) ?: Seller(phones = emptyList(), arePhonesRedirected = true) )</ID>
+    <ID>ExpressionBodySyntax:WizardPagerAdapter.kt$WizardPagerAdapter$return object : GridLayoutManager.SpanSizeLookup() { override fun getSpanSize(position: Int): Int { val gridDelegate = getAdapters(step).find { it is IGridDelegate } as? IGridDelegate return gridDelegate?.getSpan() ?: max } }</ID>
+    <ID>ExpressionBodySyntax:WizardPagerAdapter.kt$WizardPagerAdapter$return steps.size</ID>
+    <ID>ExpressionBodySyntax:WizardPagerAdapter.kt$WizardPagerAdapter$return view == obj</ID>
+    <ID>ExpressionBodySyntax:WizardPagerAdapter.kt$WizardPagerAdapter$return when (steps[step]) { PhotosStep -&gt; getGridLayoutManager(context, adapter) else -&gt; getDynamicGridLayoutManager(step) }</ID>
+    <ID>ExpressionBodySyntax:WizardPresenterCache.kt$WizardPresenterCache$return phoneStepModel?.let { step -&gt; val phone = step.phones.firstOrNull() return if (step.phones.size == 1 &amp;&amp; phone != null) phone else null }</ID>
+    <ID>ExpressionBodySyntax:XivaSocketService.kt$XivaSocketService$return params.connectUrl</ID>
+    <ID>ExpressionBodySyntax:YearStepViewModel.kt$YearStepViewModel$return copy(offer = offer)</ID>
+    <ID>ExpressionBodySyntax:YearStepViewModel.kt$YearStepViewModel$return years.map { CommonListItem(it.toString(), it.toString(), isSimple = true, payload = it, isChecked = it == offer.documents?.year) }</ID>
+    <ID>ForbiddenComment:AbstractDraftFactory.kt$AbstractDraftFactory$// todo: add field</ID>
+    <ID>ForbiddenComment:AbstractDraftFactory.kt$AbstractDraftFactory$// todo: check that this is the way to send equipment with custom params</ID>
+    <ID>ForbiddenComment:ComDraftFactory.kt$ComDraftFactory$// todo: what is this?</ID>
+    <ID>ForbiddenComment:DateField.kt$DateField$// fixme: crutch: we need to fetch min and max if we had them (can't just move margins here, because DateValue is Parcelable)</ID>
+    <ID>ForbiddenComment:GeoSelectSuggestsPresenter.kt$GeoSelectSuggestsPresenter$// TODO: prompt user to get permission</ID>
+    <ID>ForbiddenComment:IUserOffersRepository.kt$IUserOffersRepository$// TODO: Think how to simplify this. Currently there are too many handles to use.</ID>
+    <ID>ForbiddenComment:KeyboardViewController.kt$KeyboardViewController$// todo: side effects?</ID>
+    <ID>ForbiddenComment:LoginEvent.kt$LoginEvent$// TODO: is this needed?</ID>
+    <ID>ForbiddenComment:RequestRefundPresenter.kt$RequestRefundPresenter$// todo: Get emails from public api to support users without email login</ID>
+    <ID>ForbiddenComment:SegmentViewController.kt$SegmentViewController$//todo: doesn't work. For some reason, disabled field is enabled in onClick</ID>
+    <ID>ForbiddenComment:SelectViewController.kt$SelectViewController$// todo: may be create DynamicSelectViewController?</ID>
+    <ID>ForbiddenComment:Suggest.kt$Suggest$// TODO: make follow properties instance List&lt;Entity&gt;?</ID>
+    <ID>ForbiddenComment:TechParam.kt$TechParam$//todo: think about non-null params</ID>
+    <ID>ForbiddenComment:UserOffersPresenter.kt$UserOffersPresenter$// TODO: Bug: if user scrolls down several times, pages can mess up</ID>
+    <ID>ForbiddenComment:ValidateFieldsStrategy.kt$ValidateFieldsStrategy.Companion$// todo: in NWOffer availability is set by default, but server doesn't see it</ID>
+    <ID>FunctionOnlyReturningConstant:RangeFragment.kt$RangeFragment.Listener$ @StringRes fun validate(chosen: String?, chosen2: String?): Int?</ID>
+    <ID>FunctionOnlyReturningConstant:ShowOkAuthCommand.kt$ShowOkAuthCommand$private fun makeUrl(): String</ID>
+    <ID>LongParameterList:ApiModule.kt$ApiModule$(@Named(DiName.PUBLIC_API) config: ServerConfigInterface, @Named(DiName.PUBLIC_API) httpLoggingInterceptor : HttpLoggingInterceptor, uidInterceptor: UidInterceptor, saveSidInterceptor: SaveSidInterceptor, timeZoneInterceptor: TimeZoneInterceptor, networkInfoInterceptor: NetworkInfoInterceptor, cookieJar: AcceptAllCookieJar, logOutInterceptor: LogOutInterceptor)</ID>
+    <ID>LongParameterList:FullDraftFilterScreen.kt$FullDraftFilterScreen.Companion$( strings: StringsProvider = AndroidStringProvider(), options: OptionsProvider&lt;Select.Option&gt;, colors: OptionsProvider&lt;SelectColor.ColorItem&gt;, damages: OptionsProvider&lt;Entity&gt;, catalogOptions: CatalogOptionsProvider, complectationsProvider: ChosenComplectationProvider, uiFieldsManager: IUiFieldsManager, damagesUpdater: IDamagesUpdater?, isEditMode: Boolean )</ID>
+    <ID>LongParameterList:LoadableBaseFragment.kt$LoadableBaseFragment$(view: View, textView: TextView?, titleView: TextView?, actionView: TextView?, imageView: ImageView?, text: String, title: String, actionText: String, imageRes: Int?)</ID>
+    <ID>MagicNumber:AutoRuWebChromeClient.kt$AutoRuWebChromeClient$21</ID>
+    <ID>MagicNumber:CacheInterceptor.kt$CacheInterceptor$60</ID>
+    <ID>MagicNumber:CreditPaymentStrategy.kt$CreditPaymentStrategy$100.0</ID>
+    <ID>MagicNumber:CreditPaymentStrategy.kt$CreditPaymentStrategy$1200</ID>
+    <ID>MagicNumber:DateField.kt$DateField$4</ID>
+    <ID>MagicNumber:DraftModule.kt$DraftModule$1000L</ID>
+    <ID>MagicNumber:EngineDetailsBuilder.kt$EngineDetailsBuilder$100</ID>
+    <ID>MagicNumber:EngineNemaFactory.kt$EngineNameFactory$10</ID>
+    <ID>MagicNumber:EngineNemaFactory.kt$EngineNameFactory$100f</ID>
+    <ID>MagicNumber:EvaluateModule.kt$EvaluateModule$1000L</ID>
+    <ID>MagicNumber:EvaluatePresenter.kt$EvaluatePresenter$300</ID>
+    <ID>MagicNumber:ExpandArrowAnimatorBuilder.kt$ExpandArrowAnimatorBuilder$0.25f</ID>
+    <ID>MagicNumber:ExpandArrowAnimatorBuilder.kt$ExpandArrowAnimatorBuilder$180f</ID>
+    <ID>MagicNumber:ExpandArrowAnimatorBuilder.kt$ExpandArrowAnimatorBuilder$90f</ID>
+    <ID>MagicNumber:FlagView.kt$FlagView$100</ID>
+    <ID>MagicNumber:FlagView.kt$FlagView$255</ID>
+    <ID>MagicNumber:FlagView.kt$FlagView$35</ID>
+    <ID>MagicNumber:HistogramAdapter.kt$HistogramAdapter$0.2f</ID>
+    <ID>MagicNumber:HistogramAdapter.kt$HistogramAdapter$100f</ID>
+    <ID>MagicNumber:HistogramAdapter.kt$HistogramAdapter$4</ID>
+    <ID>MagicNumber:HistogramAdapter.kt$HistogramAdapter$700</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$1000</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$12</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$24</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$4</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$60</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$60f</ID>
+    <ID>MagicNumber:MessagesListPresenter.kt$MessagesListPresenter$8</ID>
+    <ID>MagicNumber:Network.kt$Network.ServerUtils$10</ID>
+    <ID>MagicNumber:Network.kt$Network.ServerUtils$1024</ID>
+    <ID>MagicNumber:NoteAdapter.kt$NoteAdapter$100L</ID>
+    <ID>MagicNumber:OfferActionsController.kt$OfferActionsController$10</ID>
+    <ID>MagicNumber:OfferDetailsModel.kt$OfferDetailsModel$1900</ID>
+    <ID>MagicNumber:OfferDetailsModel.kt$OfferDetailsModel$3</ID>
+    <ID>MagicNumber:OfferToFilterMapper.kt$OfferToFilterMapper$1000f</ID>
+    <ID>MagicNumber:OfferToFilterMapper.kt$OfferToFilterMapper$10f</ID>
+    <ID>MagicNumber:OffersByDateProvider.kt$OffersByDateProvider$1000</ID>
+    <ID>MagicNumber:OkAuthViewController.kt$OkAuthViewController$21</ID>
+    <ID>MagicNumber:OptionFactory.kt$3</ID>
+    <ID>MagicNumber:PhoneAuthActivity.kt$PhoneAuthActivity$16</ID>
+    <ID>MagicNumber:PhoneAuthPresenter.kt$PhoneAuthPresenter$200</ID>
+    <ID>MagicNumber:PhoneAuthPresenter.kt$PhoneAuthPresenter$3</ID>
+    <ID>MagicNumber:PriceChangePushReceiver.kt$PriceChangePushReceiver$31</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$100_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$100_000_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$15_899_999</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$15_900_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$1_000_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$200_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$300_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$3_999_999</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$4_000_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$500_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$5_999_999</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$6_000_000</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$99_999</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$9_899_999</ID>
+    <ID>MagicNumber:PriceRangeStrategy.kt$PriceRangeStrategy$9_900_000</ID>
+    <ID>MagicNumber:PricesLineChart.kt$PricesLineChart$105</ID>
+    <ID>MagicNumber:RecyclerViewExt.kt$500</ID>
+    <ID>MagicNumber:ScalaApi.kt$ScalaApi$3</ID>
+    <ID>MagicNumber:ShowDeeplinkCommand.kt$ShowDeeplinkCommand$16</ID>
+    <ID>MagicNumber:StatRepository.kt$StatRepository$12</ID>
+    <ID>MagicNumber:TurboVASHeaderAdapter.kt$TurboVASHeaderAdapter.&lt;no name provided&gt;$60</ID>
+    <ID>MagicNumber:UserServiceWrapper.kt$UserServiceWrapper$10</ID>
+    <ID>MagicNumber:VASListActivity.kt$VASListActivity.ChangeCloseColor$0.5f</ID>
+    <ID>MagicNumber:VasDetailsView.kt$VasDetailsView$0.5f</ID>
+    <ID>MagicNumber:VasState.kt$VasState.Express$5</ID>
+    <ID>MagicNumber:VasState.kt$VasState.Turbo$20</ID>
+    <ID>MagicNumber:VideoAdapter.kt$VideoAdapter$1000</ID>
+    <ID>MagicNumber:VideoGalleryItemAdapter.kt$VideoGalleryItemAdapter$1000</ID>
+    <ID>MagicNumber:VideoItemsRules.kt$VideoItemsRules$4</ID>
+    <ID>MagicNumber:ViewExt.kt$0.5f</ID>
+    <ID>MatchingDeclarationName:EngineNemaFactory.kt$ru.auto.data.utils.EngineNemaFactory.kt</ID>
+    <ID>MatchingDeclarationName:StatEventFactory.kt$ru.auto.ara.utils.statistics.event.StatEventFactory.kt</ID>
+    <ID>MatchingDeclarationName:TiedCardConterter.kt$ru.auto.data.model.network.scala.converter.TiedCardConterter.kt</ID>
+    <ID>MaxLineLength:AbstractDraftFactory.kt$ru.auto.ara.draft.factory.offer.AbstractDraftFactory.kt</ID>
+    <ID>MaxLineLength:AddPhoneModule.kt$ru.auto.ara.di.module.main.AddPhoneModule.kt</ID>
+    <ID>MaxLineLength:AuthButtonAdapter.kt$ru.auto.ara.ui.adapter.auth.AuthButtonAdapter.kt</ID>
+    <ID>MaxLineLength:AuthErrorFactory.kt$ru.auto.ara.util.error.auth.AuthErrorFactory.kt</ID>
+    <ID>MaxLineLength:AuthMetricsLogger.kt$ru.auto.ara.util.stat.AuthMetricsLogger.kt</ID>
+    <ID>MaxLineLength:AuthModule.kt$ru.auto.ara.di.module.main.auth.AuthModule.kt</ID>
+    <ID>MaxLineLength:AuthViewController.kt$ru.auto.ara.ui.auth.controller.AuthViewController.kt</ID>
+    <ID>MaxLineLength:AutoNotificationChannels.kt$ru.auto.ara.firebase.notification.AutoNotificationChannels.kt</ID>
+    <ID>MaxLineLength:AutoPublishComplectationScreen.kt$ru.auto.ara.draft.complectation.AutoPublishComplectationScreen.kt</ID>
+    <ID>MaxLineLength:AutoRuWebChromeClient.kt$ru.auto.ara.web.AutoRuWebChromeClient.kt</ID>
+    <ID>MaxLineLength:AutocodeDamageBlockAdapter.kt$ru.auto.ara.ui.adapter.autocode.AutocodeDamageBlockAdapter.kt</ID>
+    <ID>MaxLineLength:BasePhoneAuthPresenter.kt$ru.auto.ara.presentation.presenter.auth.BasePhoneAuthPresenter.kt</ID>
+    <ID>MaxLineLength:BaseSegmentField.kt$ru.auto.ara.filter.fields.BaseSegmentField.kt</ID>
+    <ID>MaxLineLength:BuildUtils.kt$ru.auto.ara.util.BuildUtils.kt</ID>
+    <ID>MaxLineLength:ChatMessageReciever.kt$ru.auto.ara.firebase.receiver.ChatMessageReciever.kt</ID>
+    <ID>MaxLineLength:CodeEmailPresenter.kt$ru.auto.ara.presentation.presenter.auth.code.CodeEmailPresenter.kt</ID>
+    <ID>MaxLineLength:CommonWebLinkParser.kt$ru.auto.ara.deeplink.parser.CommonWebLinkParser.kt</ID>
+    <ID>MaxLineLength:CopyMultiSelectValueRule.kt$ru.auto.ara.filter.screen.rule.CopyMultiSelectValueRule.kt</ID>
+    <ID>MaxLineLength:CreditAdConverter.kt$ru.auto.ara.ad.converter.CreditAdConverter.kt</ID>
+    <ID>MaxLineLength:DateExt.kt$ru.auto.ara.util.DateExt.kt</ID>
+    <ID>MaxLineLength:DeeplinkUtils.kt$ru.auto.ara.utils.DeeplinkUtils.kt</ID>
+    <ID>MaxLineLength:DeviceRepository.kt$ru.auto.data.repository.DeviceRepository.kt</ID>
+    <ID>MaxLineLength:Dictionary.kt$ru.auto.data.model.dictionary.Dictionary.kt</ID>
+    <ID>MaxLineLength:DictionaryRepository.kt$ru.auto.data.repository.DictionaryRepository.kt</ID>
+    <ID>MaxLineLength:DraftOfferFactory.kt$ru.auto.ara.draft.factory.offer.DraftOfferFactory.kt</ID>
+    <ID>MaxLineLength:DraftPresenter.kt$ru.auto.ara.presentation.presenter.draft.DraftPresenter.kt</ID>
+    <ID>MaxLineLength:EvaluatePresenter.kt$ru.auto.ara.presentation.presenter.evaluate.EvaluatePresenter.kt</ID>
+    <ID>MaxLineLength:EvaluateResultCardAdapter.kt$ru.auto.ara.ui.adapter.evaluate.EvaluateResultCardAdapter.kt</ID>
+    <ID>MaxLineLength:EvaluateResultFragment.kt$ru.auto.ara.ui.fragment.evaluate.EvaluateResultFragment.kt</ID>
+    <ID>MaxLineLength:EvaluateScreen.kt$ru.auto.ara.ui.screen.EvaluateScreen.kt</ID>
+    <ID>MaxLineLength:ExtraScreen.kt$ru.auto.ara.filter.screen.ExtraScreen.kt</ID>
+    <ID>MaxLineLength:ExtrasMapper.kt$ru.auto.ara.network.ExtrasMapper.kt</ID>
+    <ID>MaxLineLength:FacebookAuthViewController.kt$ru.auto.ara.ui.auth.controller.FacebookAuthViewController.kt</ID>
+    <ID>MaxLineLength:FeedInteractor.kt$ru.auto.ara.search.FeedInteractor.kt</ID>
+    <ID>MaxLineLength:FiltersStep22.kt$ru.auto.ara.migration.FiltersStep22.kt</ID>
+    <ID>MaxLineLength:GenerationsCatalogFragment.kt$ru.auto.ara.ui.fragment.catalog.GenerationsCatalogFragment.kt</ID>
+    <ID>MaxLineLength:GenerationsCatalogPresenter.kt$ru.auto.ara.presentation.presenter.catalog.GenerationsCatalogPresenter.kt</ID>
+    <ID>MaxLineLength:GeoSelectAdapter.kt$ru.auto.ara.ui.adapter.geoselect.GeoSelectAdapter.kt</ID>
+    <ID>MaxLineLength:HeaderWithLinkDelegateAdapter.kt$ru.auto.ara.ui.adapter.transport.HeaderWithLinkDelegateAdapter.kt</ID>
+    <ID>MaxLineLength:HelloInteractor.kt$ru.auto.data.interactor.HelloInteractor.kt</ID>
+    <ID>MaxLineLength:InlineMultiSelectFieldMapper.kt$ru.auto.ara.screens.mapper.field.InlineMultiSelectFieldMapper.kt</ID>
+    <ID>MaxLineLength:InlineSelectFieldMapper.kt$ru.auto.ara.screens.mapper.field.InlineSelectFieldMapper.kt</ID>
+    <ID>MaxLineLength:InlineSelectViewController.kt$ru.auto.ara.filter.viewcontrollers.InlineSelectViewController.kt</ID>
+    <ID>MaxLineLength:MarksViewModel.kt$ru.auto.ara.viewmodel.catalog.MarksViewModel.kt</ID>
+    <ID>MaxLineLength:MessagesListPresenter.kt$ru.auto.ara.presentation.presenter.chat.MessagesListPresenter.kt</ID>
+    <ID>MaxLineLength:MessagesListViewModel.kt$ru.auto.ara.viewmodel.chat.MessagesListViewModel.kt</ID>
+    <ID>MaxLineLength:MultiSelectItemAdapter.kt$ru.auto.ara.ui.adapter.select.MultiSelectItemAdapter.kt</ID>
+    <ID>MaxLineLength:MultiSelectTransformer.kt$ru.auto.ara.migration.filters.MultiSelectTransformer.kt</ID>
+    <ID>MaxLineLength:Network.kt$ru.auto.ara.network.api.Network.kt</ID>
+    <ID>MaxLineLength:NewFiltersExtrasStep.kt$ru.auto.ara.migration.NewFiltersExtrasStep.kt</ID>
+    <ID>MaxLineLength:NewFiltersStep.kt$ru.auto.ara.migration.NewFiltersStep.kt</ID>
+    <ID>MaxLineLength:NewServerApi.kt$ru.auto.ara.network.api.NewServerApi.kt</ID>
+    <ID>MaxLineLength:NotificationModel.kt$ru.auto.ara.firebase.notification.NotificationModel.kt</ID>
+    <ID>MaxLineLength:OfferActionsController.kt$ru.auto.ara.presentation.presenter.user.OfferActionsController.kt</ID>
+    <ID>MaxLineLength:OfferDetailsFragment.kt$ru.auto.ara.ui.fragment.offer.OfferDetailsFragment.kt</ID>
+    <ID>MaxLineLength:OfferDetailsModel.kt$ru.auto.ara.presentation.presenter.offer.OfferDetailsModel.kt</ID>
+    <ID>MaxLineLength:OfferDetailsModule.kt$ru.auto.ara.di.module.main.OfferDetailsModule.kt</ID>
+    <ID>MaxLineLength:OfferDetailsPresenter.kt$ru.auto.ara.presentation.presenter.offer.OfferDetailsPresenter.kt</ID>
+    <ID>MaxLineLength:OkAuthViewController.kt$ru.auto.ara.ui.auth.controller.OkAuthViewController.kt</ID>
+    <ID>MaxLineLength:OnInfinitePageChangeListenerDecorator.kt$ru.auto.ara.util.ui.OnInfinitePageChangeListenerDecorator.kt</ID>
+    <ID>MaxLineLength:PartsFragment.kt$ru.auto.ara.ui.fragment.parts.PartsFragment.kt</ID>
+    <ID>MaxLineLength:PasswordAuthPresenter.kt$ru.auto.ara.presentation.presenter.auth.PasswordAuthPresenter.kt</ID>
+    <ID>MaxLineLength:PhoneAuthPresenter.kt$ru.auto.ara.presentation.presenter.auth.PhoneAuthPresenter.kt</ID>
+    <ID>MaxLineLength:PhoneRepository.kt$ru.auto.data.repository.PhoneRepository.kt</ID>
+    <ID>MaxLineLength:PriceChangeInteractor.kt$ru.auto.data.interactor.PriceChangeInteractor.kt</ID>
+    <ID>MaxLineLength:PriceChangePushReceiver.kt$ru.auto.ara.firebase.receiver.PriceChangePushReceiver.kt</ID>
+    <ID>MaxLineLength:PromoVASFragment.kt$ru.auto.ara.ui.fragment.vas.PromoVASFragment.kt</ID>
+    <ID>MaxLineLength:PromoVASPresenter.kt$ru.auto.ara.presentation.presenter.vas.PromoVASPresenter.kt</ID>
+    <ID>MaxLineLength:PublicApiErrorHandler.kt$ru.auto.ara.network.api.error.PublicApiErrorHandler.kt</ID>
+    <ID>MaxLineLength:PushTokenInteractor.kt$ru.auto.data.interactor.PushTokenInteractor.kt</ID>
+    <ID>MaxLineLength:RadioBtnFieldMapper.kt$ru.auto.ara.screens.mapper.field.RadioBtnFieldMapper.kt</ID>
+    <ID>MaxLineLength:RequestPermissionDialogCommand.kt$ru.auto.ara.router.command.RequestPermissionDialogCommand.kt</ID>
+    <ID>MaxLineLength:RequestRefundException.kt$ru.auto.ara.network.RequestRefundException.kt</ID>
+    <ID>MaxLineLength:RequestRefundPresenter.kt$ru.auto.ara.presentation.presenter.billing.RequestRefundPresenter.kt</ID>
+    <ID>MaxLineLength:RestrictableFrameLayout.kt$ru.auto.ara.ui.widget.view.RestrictableFrameLayout.kt</ID>
+    <ID>MaxLineLength:SavedSearchMessageReceiver.kt$ru.auto.ara.firebase.receiver.SavedSearchMessageReceiver.kt</ID>
+    <ID>MaxLineLength:ScalaClientFactory.kt$ru.auto.data.network.scala.ScalaClientFactory.kt</ID>
+    <ID>MaxLineLength:ScreenVisibilityRepository.kt$ru.auto.ara.util.repository.ScreenVisibilityRepository.kt</ID>
+    <ID>MaxLineLength:SelectFragment.kt$ru.auto.ara.ui.fragment.select.SelectFragment.kt</ID>
+    <ID>MaxLineLength:ServicePriceConverter.kt$ru.auto.data.model.network.scala.offer.converter.ServicePriceConverter.kt</ID>
+    <ID>MaxLineLength:ServicesPresenter.kt$ru.auto.ara.presentation.presenter.services.ServicesPresenter.kt</ID>
+    <ID>MaxLineLength:ServicesRepository.kt$ru.auto.data.repository.ServicesRepository.kt</ID>
+    <ID>MaxLineLength:ShowAlertDialogCommand.kt$ru.auto.ara.router.command.ShowAlertDialogCommand.kt</ID>
+    <ID>MaxLineLength:ShowCatalogCommand.kt$ru.auto.ara.router.command.ShowCatalogCommand.kt</ID>
+    <ID>MaxLineLength:ShowDeeplinkCommand.kt$ru.auto.ara.router.command.ShowDeeplinkCommand.kt</ID>
+    <ID>MaxLineLength:ShowEvaluateResultCommand.kt$ru.auto.ara.router.command.ShowEvaluateResultCommand.kt</ID>
+    <ID>MaxLineLength:ShowLocationCommand.kt$ru.auto.ara.router.command.ShowLocationCommand.kt</ID>
+    <ID>MaxLineLength:ShowOkAuthCommand.kt$ru.auto.ara.router.command.ShowOkAuthCommand.kt</ID>
+    <ID>MaxLineLength:ShowWebViewCommand.kt$ru.auto.ara.router.command.ShowWebViewCommand.kt</ID>
+    <ID>MaxLineLength:SliderAdapter.kt$ru.auto.ara.ui.adapter.services.SliderAdapter.kt</ID>
+    <ID>MaxLineLength:SocialAuthViewControllerProvider.kt$ru.auto.ara.ui.auth.controller.factory.SocialAuthViewControllerProvider.kt</ID>
+    <ID>MaxLineLength:StatEvent.kt$ru.auto.ara.utils.statistics.StatEvent.kt</ID>
+    <ID>MaxLineLength:SubcategoryBuilder.kt$ru.auto.ara.draft.screen.SubcategoryBuilder.kt</ID>
+    <ID>MaxLineLength:TrustAllSslDownloader.kt$ru.auto.ara.plugin.TrustAllSslDownloader.kt</ID>
+    <ID>MaxLineLength:UpdateMultiSelectCheckboxValueRule.kt$ru.auto.ara.filter.screen.rule.UpdateMultiSelectCheckboxValueRule.kt</ID>
+    <ID>MaxLineLength:UpdateSelectRadioBtnValueRule.kt$ru.auto.ara.filter.screen.rule.UpdateSelectRadioBtnValueRule.kt</ID>
+    <ID>MaxLineLength:UserOffersParser.kt$ru.auto.ara.deeplink.parser.UserOffersParser.kt</ID>
+    <ID>MaxLineLength:VasStatEventFactory.kt$ru.auto.ara.utils.statistics.event.VasStatEventFactory.kt</ID>
+    <ID>MaxLineLength:VideoGalleryItemAdapter.kt$ru.auto.ara.ui.adapter.video.VideoGalleryItemAdapter.kt</ID>
+    <ID>MaxLineLength:VideoGalleryViewModel.kt$ru.auto.ara.viewmodel.feed.VideoGalleryViewModel.kt</ID>
+    <ID>MaxLineLength:VideoListException.kt$ru.auto.data.exception.VideoListException.kt</ID>
+    <ID>MaxLineLength:VideoListFragment.kt$ru.auto.ara.ui.fragment.video.VideoListFragment.kt</ID>
+    <ID>MaxLineLength:VideoModule.kt$ru.auto.ara.di.module.main.VideoModule.kt</ID>
+    <ID>MaxLineLength:VkAuthViewController.kt$ru.auto.ara.ui.auth.controller.VkAuthViewController.kt</ID>
+    <ID>MaxLineLength:YaAuthViewController.kt$ru.auto.ara.ui.auth.controller.YaAuthViewController.kt</ID>
+    <ID>MemberNameEqualsClassName:CodeTimerRepository.kt$CodeTimerRepository.Timer$private val timer: BehaviorSubject&lt;Int&gt; = BehaviorSubject.create(0)</ID>
+    <ID>MethodOverloading:MainComponent.kt$MainComponent</ID>
+    <ID>MethodOverloading:OptionFactory.kt$ru.auto.ara.draft.options.OptionFactory.kt</ID>
+    <ID>ModifierOrder:AutocodeSummaryStatusView.kt$AutocodeSummaryStatusView$private @DrawableRes</ID>
+    <ID>ModifierOrder:DateField.kt$DateField$open protected</ID>
+    <ID>ModifierOrder:GeoSelectSuggestDialog.kt$GeoSelectSuggestDialog$@Inject lateinit internal</ID>
+    <ID>ModifierOrder:GeoSelectSuggestDialog.kt$GeoSelectSuggestDialog$lateinit private</ID>
+    <ID>ModifierOrder:SuggestFragment.kt$SuggestFragment$override abstract</ID>
+    <ID>NestedBlockDepth:AutoUpdateFieldsStrategy.kt$AutoUpdateFieldsStrategy$private fun updateWithSuggest(screen: FilterScreen, offer: Offer, suggest: Suggest?)</ID>
+    <ID>NestedBlockDepth:ComplectationField.kt$ComplectationField$private fun List&lt;EquipmentField&gt;.toFieldStates(): Map&lt;Pair&lt;String, String&gt;, FieldState&gt;</ID>
+    <ID>NestedBlockDepth:EvaluateFieldsStrategy.kt$EvaluateFieldsStrategy$private fun updateWithSuggest(screen: FilterScreen, offer: Offer, suggest: Suggest?)</ID>
+    <ID>NestedBlockDepth:MainFragment.kt$MainFragment$override fun deliverActivityResult(activityResult: ActivityResultModel)</ID>
+    <ID>NestedBlockDepth:MessagesListPresenter.kt$MessagesListPresenter$private fun onSendMessage(type: MessageType)</ID>
+    <ID>NestedBlockDepth:TrustAllSslDownloader.kt$TrustAllSslDownloader$private fun addHeaders(extra: Any, http: HttpURLConnection)</ID>
+    <ID>NotImplementedDeclaration:BuildUtils.kt$throw NotImplementedError(reason)</ID>
+    <ID>NotImplementedDeclaration:ComplectationField.kt$ComplectationField$throw NotImplementedError("it's for draft, which doesn't depend on SerializablePair")</ID>
+    <ID>NotImplementedDeclaration:DraftScreenFactory.kt$DraftScreenFactory$TODO("not implemented yet, category == $category")</ID>
+    <ID>NotImplementedDeclaration:EvaluateModule.kt$EvaluateModule$TODO("not implemented yet")</ID>
+    <ID>NotImplementedDeclaration:EvaluateModule.kt$EvaluateModule$TODO("not implemented")</ID>
+    <ID>NotImplementedDeclaration:EvaluateScreenFactory.kt$EvaluateScreenFactory$TODO("not implemented yet")</ID>
+    <ID>NotImplementedDeclaration:EvaluateScreenFactory.kt$EvaluateScreenFactory$TODO("not implemented")</ID>
+    <ID>NotImplementedDeclaration:PublicApiErrorHandler.kt$PublicApiErrorHandler$TODO("not implemented")</ID>
+    <ID>OptionalWhenBraces:AbstractDraftFactory.kt$AbstractDraftFactory$Filters.CHANGE_WISH_FIELD -&gt; { materials.exchange = value.safeCastToBoolean() }</ID>
+    <ID>OptionalWhenBraces:AbstractDraftFactory.kt$AbstractDraftFactory$Filters.RUN_FIELD -&gt; { materials.mileage = (value as String?).tryParseToInt() }</ID>
+    <ID>OptionalWhenBraces:ComDraftFactory.kt$ComDraftFactory$Filters.POWER_FIELD -&gt; { materials.power = (value as String).tryParseToInt() }</ID>
+    <ID>OptionalWhenBraces:ComDraftFactory.kt$ComDraftFactory$Filters.VOLUME_FIELD -&gt; { materials.displacement = (value as String).tryParseToInt() }</ID>
+    <ID>OptionalWhenBraces:ComDraftFactory.kt$ComDraftFactory$Filters.WHEEL_FIELD -&gt; { materials.wheel = if (value == DEFAULT_WHEEL_ID) SteeringWheel.LEFT else SteeringWheel.RIGHT }</ID>
+    <ID>OptionalWhenBraces:DraftOfferFactory.kt$DraftOfferFactory$Filters.BODY_TYPE_FIELD -&gt; { materials.bodyType = suggest?.bodyTypes?.find { it.name == (value as Select.Option).key } }</ID>
+    <ID>OptionalWhenBraces:DraftOfferFactory.kt$DraftOfferFactory$Filters.GEARBOX_FIELD -&gt; { materials.drive = suggest?.gearTypes?.find { it.name == (value as Select.Option).key } }</ID>
+    <ID>OptionalWhenBraces:DraftOfferFactory.kt$DraftOfferFactory$Filters.TRANSMISSION_FULL_FIELD -&gt; { materials.transmission = suggest?.transmissionTypes?.find { it.name == (value as Select.Option).key } }</ID>
+    <ID>OptionalWhenBraces:DraftOfferFactory.kt$DraftOfferFactory$Filters.YEAR_FIELD -&gt; { materials.year = (value as Select.Option).value.toIntOrNull() }</ID>
+    <ID>OptionalWhenBraces:ExtraScreen.kt$ExtraScreen.Builder$Filters.EQUIPMENT_MULTISELECT_FIELD -&gt; { options?.map { it.id }?.let { childIds -&gt; listOf(getShowMultiSelectFieldsRule(screen, parentId, childIds)) .plus(getCopyValueRule(screen, parentId, childIds)) .plus(getUpdateMultiSelectCheckboxValueRules(screen, parentId, childIds)) }?.forEach { screen.addRule(it) } }</ID>
+    <ID>OptionalWhenBraces:ExtraScreen.kt$ExtraScreen.Builder$Filters.EQUIPMENT_SELECT_FIELD -&gt; { options?.map { it.id }?.let { childIds -&gt; listOf(getShowSelectFieldsRule(screen, parentId, childIds)) .plus(getUpdateSelectCheckboxValueRules(screen, parentId, childIds)) }?.forEach { screen.addRule(it) } }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.ATV_TYPE_FIELD -&gt; { materials.atvType = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.CYLINDERS_FIELD -&gt; { materials.cylinderAmount = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.CYLINDERS_TYPE_FIELD -&gt; { materials.cylinderType = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.DRIVE_KEY_FIELD -&gt; { materials.driveEntity = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.ENGINE_TYPE_FIELD -&gt; { materials.engineTypeEntity = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.MOTO_TYPE_FIELD -&gt; { materials.motoType = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:MotoDraftFactory.kt$MotoDraftFactory$Filters.SNOW_MOBILE_TYPE_FIELD -&gt; { materials.snowMobileType = value.selectToEntity() }</ID>
+    <ID>OptionalWhenBraces:PartsSearchInteractor.kt$PartsSearchInteractor$item.isHistory.not() &amp;&amp; defaultUrl != null -&gt; { PartsSuggestItem.from(PartsSuggest(item.value, defaultUrl, emptyList()), isPreset = true) }</ID>
+    <ID>OptionalWhenBraces:UserOffersFragment.kt$UserOffersFragment$Consts.REQUEST_CODE_EDIT -&gt; { showPromo(it, PromoVasScreenType.TURBO_AND_COMPOSITES_WITH_FRESH) }</ID>
+    <ID>OptionalWhenBraces:UserOffersFragment.kt$UserOffersFragment$Consts.REQUEST_CODE_OK -&gt; { showPromo(it, PromoVasScreenType.TURBO_AND_COMPOSITES) }</ID>
+    <ID>PackageNaming:ISocialAuthImageViewFactory.kt$package ru.auto.ara.ui.factory.social_auth</ID>
+    <ID>PackageNaming:SocialAuthImageViewFactory.kt$package ru.auto.ara.ui.factory.social_auth</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$AUTOMATIC</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$MECHANICAL</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$OPPOSITE</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$REFRIGERATOR</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$SEMI_AUTOMATIC</ID>
+    <ID>StringLiteralDuplication:MultiSelectStep.kt$MultiSelectStep$V_TYPE</ID>
+    <ID>StringLiteralDuplication:NativeAdRequestInfo.kt$NativeAdRequestInfo.Companion$adf_p1</ID>
+    <ID>ThrowingExceptionsWithoutMessageOrCause:MarksViewModel.kt$MarksViewModel$IllegalArgumentException()</ID>
+    <ID>ThrowingExceptionsWithoutMessageOrCause:MultiSelectViewModel.kt$MultiSelectViewModel$IllegalArgumentException()</ID>
+    <ID>TooGenericExceptionCaught:BaseSocketService.kt$BaseSocketService.RxWebSocketListener$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:BreadcrumbsConverter.kt$BreadcrumbsConverter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ComplaintReasonConverter.kt$ComplaintReasonConverter$e: Throwable</ID>
+    <ID>TooGenericExceptionCaught:DateConverter.kt$DateConverter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ImageAttachmentConverter.kt$ImageAttachmentConverter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MainFragment.kt$MainFragment$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:PhoneTextWatcher.kt$PhoneTextWatcher$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SelectReasonDialog.kt$SelectReasonDialog.ReasonAdapter$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ShowDeeplinkCommand.kt$ShowDeeplinkCommand$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TrustAllSslDownloader.kt$TrustAllSslDownloader.Companion$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:VkAuthRepository.kt$VkAuthRepository.&lt;no name provided&gt;$e: Exception</ID>
+    <ID>TooGenericExceptionThrown:SocialAuthImageViewFactory.kt$SocialAuthImageViewFactory$throw RuntimeException("No drawable res for socialNet $socialNet")</ID>
+    <ID>TopLevelPropertyNaming:DraftScreenExt.kt$val STS_REGEX_MATCHER = "[А-Яа-яA-Za-z0-9 ]+".toRegex()</ID>
+    <ID>TopLevelPropertyNaming:DraftScreenExt.kt$val VIN_REGEX_MATCHER = "[A-Za-z0-9]+".toRegex()</ID>
+    <ID>TopLevelPropertyNaming:TextExt.kt$private val YOUTUBE_ID_LENTGH = 11</ID>
+    <ID>TopLevelPropertyNaming:TextExt.kt$private val YOUTUBE_PATTERN = "(?&lt;=watch\\?v=|/videos/|embed\\/)[^#\\&amp;\\?]*"</ID>
+    <ID>UnconditionalJumpStatementInLoop:MainFragment.kt$MainFragment$for (fragment: Fragment? in fragments) { fragment?.onActivityResult( activityResult.requestCode, //TODO send it only to target fragment activityResult.resultCode, activityResult.data) break }</ID>
+    <ID>UnsafeCallOnNullableType:CodeTimerRepository.kt$CodeTimerRepository$phoneTimers[key]!!</ID>
+    <ID>UnsafeCallOnNullableType:DraftFieldsParams.kt$DraftFieldsParams$value!!</ID>
+    <ID>UnsafeCallOnNullableType:Network.kt$Network.ServerUtils$api!!</ID>
+    <ID>UnsafeCallOnNullableType:TrustAllSslDownloader.kt$TrustAllSslDownloader$url!!</ID>
+    <ID>UnsafeCallOnNullableType:TrustAllSslDownloader.kt$TrustAllSslDownloader.Companion$TrustAllSslDownloader::class.java.name!!</ID>
+    <ID>UnsafeCallOnNullableType:WarrantyDateViewController.kt$WarrantyDateViewController$value!!</ID>
+    <ID>UntilInsteadOfRangeTo:QueryValue.kt$QueryValue$1 .. getValues().size - 1</ID>
+    <ID>UntilInsteadOfRangeTo:VASListActivity.kt$VASListActivity$0..availableVas.size - 1</ID>
+    <ID>UnusedImports:ActionViewCommand.kt$import ru.auto.ara.router.MainDrawerRouter</ID>
+    <ID>UnusedImports:ActionViewCommand.kt$import ru.auto.ara.router.ScreenBuilderFactory</ID>
+    <ID>UnusedImports:ActionViewCommand.kt$import ru.auto.ara.ui.fragment.user.UserOffersFragment</ID>
+    <ID>UnusedImports:ActivityResultModel.kt$import android.support.v4.app.Fragment</ID>
+    <ID>UnusedImports:AddAdvertPresenter.kt$import ru.auto.ara.network.session.SessionPreferences</ID>
+    <ID>UnusedImports:AddAdvertPresenter.kt$import ru.auto.ara.router.command.ShowPhoneAuthCommand</ID>
+    <ID>UnusedImports:AddPhotosRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:AdvertDescriptionComponent.kt$import ru.auto.ara.di.scope.main.DraftScope</ID>
+    <ID>UnusedImports:AutoUpView.kt$import ru.auto.ara.viewmodel.picker.RangeValuesModel</ID>
+    <ID>UnusedImports:AutoruUserProfileConverter.kt$import ru.auto.data.model.User</ID>
+    <ID>UnusedImports:BaseClientFactory.kt$import okhttp3.logging.HttpLoggingInterceptor.Level</ID>
+    <ID>UnusedImports:CacheInterceptor.kt$import java.util.concurrent.TimeUnit</ID>
+    <ID>UnusedImports:CacheInterceptor.kt$import okhttp3.CacheControl</ID>
+    <ID>UnusedImports:ColorOptionsProvider.kt$import ru.auto.ara.data.entities.form.Select</ID>
+    <ID>UnusedImports:ColorOptionsProvider.kt$import rx.Single</ID>
+    <ID>UnusedImports:CopyMultiSelectValueRule.kt$import rx.functions.Func1</ID>
+    <ID>UnusedImports:CopyMultiSelectValueRule.kt$import rx.functions.Func2</ID>
+    <ID>UnusedImports:CreateRoomRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:DealerDetailsAdapter.kt$import ru.auto.data.model.dealer.DealerMark</ID>
+    <ID>UnusedImports:EvaluateFieldsStrategy.kt$import ru.auto.ara.draft.options.toWheelOption</ID>
+    <ID>UnusedImports:EvaluateFormInteractor.kt$import rx.Single</ID>
+    <ID>UnusedImports:ExtraScreen.kt$import rx.functions.Func2</ID>
+    <ID>UnusedImports:ExtrasMapper.kt$import java.util.HashMap</ID>
+    <ID>UnusedImports:ExtrasMapper.kt$import ru.auto.ara.R.string.companion</ID>
+    <ID>UnusedImports:ExtrasMapper.kt$import ru.auto.ara.filter.fields.MultiSelectField</ID>
+    <ID>UnusedImports:FeedViewState.kt$import ru.auto.ara.viewmodel.feed.FilterFeedViewModel</ID>
+    <ID>UnusedImports:GeoItemViewHolder.kt$import butterknife.BindView</ID>
+    <ID>UnusedImports:GeoItemViewHolder.kt$import butterknife.ButterKnife</ID>
+    <ID>UnusedImports:GeoItemViewHolder.kt$import ru.auto.ara.R</ID>
+    <ID>UnusedImports:IAuthCompatibilityInteractor.kt$import ru.auto.data.model.Session</ID>
+    <ID>UnusedImports:IImagePicker.kt$import java.io.File</ID>
+    <ID>UnusedImports:ILogoutInteractor.kt$import ru.auto.data.repository.ILogoutRepository</ID>
+    <ID>UnusedImports:IMessageReceiver.kt$import ru.auto.ara.firebase.receiver.FirebaseMessageReceiver</ID>
+    <ID>UnusedImports:IOffersProvider.kt$import ru.auto.ara.utils.SerializablePair</ID>
+    <ID>UnusedImports:IServicesRepository.kt$import ru.auto.data.model.services.Service</ID>
+    <ID>UnusedImports:ISocialAuthInteractor.kt$import ru.auto.data.model.SocialNet</ID>
+    <ID>UnusedImports:ImagePickerActivity.kt$import android.os.Environment</ID>
+    <ID>UnusedImports:ImagePickerActivity.kt$import android.support.v4.content.FileProvider</ID>
+    <ID>UnusedImports:ImagePickerActivity.kt$import android.widget.Toast</ID>
+    <ID>UnusedImports:ImagePickerActivity.kt$import java.text.SimpleDateFormat</ID>
+    <ID>UnusedImports:ImagePickerActivity.kt$import ru.auto.ara.BuildConfig</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.network.scala.NWImageUrl</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.network.scala.NWInlineModel</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.network.scala.NWUser</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.network.scala.NWUserProfile</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.network.scala.response.NWSocialLoginResponse</ID>
+    <ID>UnusedImports:ImageSizeConverter.kt$import ru.auto.data.model.response.SocialLoginResponse</ID>
+    <ID>UnusedImports:InlineMultiSelectField.kt$import ru.auto.ara.screens.QueryField</ID>
+    <ID>UnusedImports:InlineMultiSelectField.kt$import ru.auto.ara.utils.SerializablePair</ID>
+    <ID>UnusedImports:KeyboardDescriptionField.kt$import ru.auto.ara.router.ScreenBuilderFactory</ID>
+    <ID>UnusedImports:MarksCatalogComponent.kt$import ru.auto.ara.ui.fragment.catalog.SuggestFragment</ID>
+    <ID>UnusedImports:ModelInfoConverter.kt$import ru.auto.data.model.search.Model</ID>
+    <ID>UnusedImports:MotoDraftBuilder.kt$import ru.auto.ara.draft.field.ComplectationField</ID>
+    <ID>UnusedImports:MotoDraftBuilder.kt$import ru.auto.ara.draft.field.KeyboardField</ID>
+    <ID>UnusedImports:MotoDraftBuilder.kt$import ru.auto.ara.filter.fields.MarkField</ID>
+    <ID>UnusedImports:MotoDraftBuilder.kt$import ru.auto.ara.filter.fields.ModelField</ID>
+    <ID>UnusedImports:NWAnswer.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWAttachment.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWAutoParams.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWAutoruUserProfile.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWChatOffer.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWComplectation.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWComplectationGroup.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWConfiguration.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWConfirmRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWCustomsState.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWDate.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWDealerItem.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWDealerMark.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWDraft.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWEngineType.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWEquipment.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWFilter.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWGeneration.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWGeo.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWImage.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWImageId.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWImageUrl.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWLocation.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWLoginOrRegisterRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWMark.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWMessagePayload.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWMimeType.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWMobileTokenAndUser.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWModel.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWModelNameplate.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWOrder.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWPaidService.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWPhone.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWPriceInfo.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWPushToken.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWQuestion.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWScalaStatus.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSession.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSize.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocialLoginRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocialUser.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocialUserSource.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocketChat.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocketChatMessage.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocketMessage.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocketMessageSent.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSocketOperation.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSort.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWState.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSuperGenEntity.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWSuperGeneration.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWTechParam.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWTextSearch.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWTextSearchFilters.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserEmail.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserEssentials.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserLightProfile.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserPhone.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserProfile.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserProfileLight.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:NWUserSocialProfile.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:OffersProvider.kt$import ru.auto.ara.utils.SerializablePair</ID>
+    <ID>UnusedImports:PriceFormatter.kt$import ru.auto.ara.utils.Consts</ID>
+    <ID>UnusedImports:PricesLineChart.kt$import android.support.annotation.FloatRange</ID>
+    <ID>UnusedImports:RequestCallInteractor.kt$import ru.auto.ara.network.ServerClientException.OFFLINE_MESSAGE</ID>
+    <ID>UnusedImports:RequestRefundPresenter.kt$import ru.auto.ara.router.command.GoBackCommand</ID>
+    <ID>UnusedImports:ScooterDraftBuilder.kt$import ru.auto.ara.filter.fields.MarkField</ID>
+    <ID>UnusedImports:ScooterDraftBuilder.kt$import ru.auto.ara.filter.fields.ModelField</ID>
+    <ID>UnusedImports:SearchViewState.kt$import ru.auto.ara.viewmodel.search.SuggestUiItem</ID>
+    <ID>UnusedImports:SendMessageRequest.kt$import com.google.gson.annotations.SerializedName</ID>
+    <ID>UnusedImports:ShowAddPhoneListCommand.kt$import android.os.Parcelable</ID>
+    <ID>UnusedImports:ShowOldOfferCommand.kt$import ru.auto.ara.data.provider.NewApiTechGroupProvider</ID>
+    <ID>UnusedImports:ShowWalletCommand.kt$import ru.auto.ara.billing.vas.VASPurchasePresenter</ID>
+    <ID>UnusedImports:SnowMobileDraftBuilder.kt$import ru.auto.ara.filter.fields.MarkField</ID>
+    <ID>UnusedImports:SnowMobileDraftBuilder.kt$import ru.auto.ara.filter.fields.ModelField</ID>
+    <ID>UnusedImports:StatRepository.kt$import ru.auto.data.util.let3</ID>
+    <ID>UnusedImports:UpdateComplectationRule.kt$import ru.auto.ara.draft.field.ComplectationField</ID>
+    <ID>UnusedImports:UserOffersView.kt$import ru.auto.data.model.data.offer.Offer</ID>
+    <ID>UnusedImports:UserProfileConverter.kt$import ru.auto.data.model.AutoruUserProfile</ID>
+    <ID>UnusedImports:UserProfileConverter.kt$import ru.auto.data.model.User</ID>
+    <ID>UnusedImports:UserProfileConverter.kt$import ru.auto.data.model.network.scala.NWUser</ID>
+    <ID>UnusedImports:UserProfileConverter.kt$import ru.auto.data.model.network.scala.response.NWSocialLoginResponse</ID>
+    <ID>UnusedImports:UserProfileConverter.kt$import ru.auto.data.model.response.SocialLoginResponse</ID>
+    <ID>UnusedImports:VideoListFragment.kt$import com.yandex.mobile.verticalcore.utils.AppHelper</ID>
+    <ID>UtilityClassWithPublicConstructor:DisableAndClearRule.kt$DisableAndClearRule&lt;T&gt; : BaseRule</ID>
+    <ID>UtilityClassWithPublicConstructor:DisableFieldRule.kt$DisableFieldRule&lt;T&gt; : BaseRule</ID>
+    <ID>UtilityClassWithPublicConstructor:InteractorException.kt$InteractorException : RuntimeException</ID>
+    <ID>UtilityClassWithPublicConstructor:ModelItemAdapter.kt$ModelItemAdapter</ID>
+    <ID>UtilityClassWithPublicConstructor:NetworkConnectionException.kt$NetworkConnectionException : Exception</ID>
+    <ID>UtilityClassWithPublicConstructor:SetMinYearRule.kt$SetMinYearRule&lt;T&gt; : BaseRule</ID>
+    <ID>VariableNaming:AuthInterceptor.kt$AuthInterceptor$private val ANDROID = "android/"</ID>
+    <ID>VariableNaming:AuthInterceptor.kt$AuthInterceptor$private val TAG = AuthInterceptor::class.java.simpleName</ID>
+    <ID>VariableNaming:AuthInterceptor.kt$AuthInterceptor$private val VERTIS = "Vertis "</ID>
+    <ID>VariableNaming:AuthInterceptor.kt$AuthInterceptor$private val X_AUTH = "X-Authorization"</ID>
+    <ID>VariableNaming:AuthInterceptor.kt$AuthInterceptor$private val X_DEVICE_UID = "X-Device-Uid"</ID>
+    <ID>VariableNaming:AuthInterceptor.kt$AuthInterceptor$private val X_SESSION = ScalaApiConst.SCALA_X_SESSION</ID>
+    <ID>VariableNaming:AuthInterceptor.kt$AuthInterceptor$private val X_VERTIS_PLATFORM = "X-Vertis-Platform"</ID>
+    <ID>VariableNaming:AutoRuWebChromeClient.kt$AutoRuWebChromeClient$var max_photos = if(allowMultiple) MAX_PHOTOS else ONE_PHOTO</ID>
+    <ID>VariableNaming:CommonWebLinkParser.kt$CommonWebLinkParser$private val ONLY_CONTENT = "only-content=true"</ID>
+    <ID>VariableNaming:CommonWebLinkParser.kt$CommonWebLinkParser$private val PARAM_DELIM = "&amp;"</ID>
+    <ID>VariableNaming:CommonWebLinkParser.kt$CommonWebLinkParser$private val PARAM_PREFIX = "/?"</ID>
+    <ID>VariableNaming:CommonWebLinkParser.kt$CommonWebLinkParser$private val PREFIX_MOBILE = SCHEME_HTTPS + getMobilePrefix()</ID>
+    <ID>VariableNaming:CommonWebLinkParser.kt$CommonWebLinkParser$private val PREFIX_WEB = "web"</ID>
+    <ID>VariableNaming:CommonWebLinkParser.kt$CommonWebLinkParser$private val SCHEME_AUTORU = "autoru"</ID>
+    <ID>VariableNaming:CommonWebLinkParser.kt$CommonWebLinkParser$private val SCHEME_HTTPS = "https://"</ID>
+    <ID>VariableNaming:DialogsRepository.kt$DialogsRepository$private val TAG = DialogsRepository::class.java.simpleName</ID>
+    <ID>VariableNaming:DynamicSegmentViewController.kt$DynamicSegmentViewController$private val TAG = DynamicSegmentViewController::class.java.simpleName</ID>
+    <ID>VariableNaming:LocationInterceptor.kt$LocationInterceptor$private val TAG = LocationInterceptor::class.java.simpleName</ID>
+    <ID>VariableNaming:LocationInterceptor.kt$LocationInterceptor$private val X_USER_LOCATION = "X-User-Location"</ID>
+    <ID>VariableNaming:LogObserver.kt$LogObserver$private val TAG = "LogObserver"</ID>
+    <ID>VariableNaming:MessagesListPresenter.kt$MessagesListPresenter$private val TAG = MessagesListPresenter::class.java.simpleName</ID>
+    <ID>VariableNaming:MessagesRepository.kt$MessagesRepository$private val TAG = "MessagesRepo"</ID>
+    <ID>VariableNaming:NetworkInfoRepository.kt$NetworkInfoRepository$private val TAG = NetworkInfoRepository::class.java.simpleName</ID>
+    <ID>VariableNaming:OfferActionsController.kt$OfferActionsController$private val TAG = OfferActionsController::class.java.simpleName</ID>
+    <ID>VariableNaming:SuggestRepository.kt$SuggestRepository$private val TAG = SuggestRepository::class.java.simpleName</ID>
+    <ID>VariableNaming:SyncPlugin.kt$SyncPlugin$private val TAG = SyncPlugin::class.java.simpleName</ID>
+    <ID>VariableNaming:UserCertDeeplinkParser.kt$UserCertDeeplinkParser$private val KEY_ONLY_CONTENT = "only-content"</ID>
+    <ID>VariableNaming:UserCertDeeplinkParser.kt$UserCertDeeplinkParser$private val PATH_PREFIX = "/proverim-vash-avto"</ID>
+    <ID>VariableNaming:UserCertDeeplinkParser.kt$UserCertDeeplinkParser$private val VALUE_ONLY_CONTENT = "true"</ID>
+    <ID>VariableNaming:UserOffersParser.kt$UserOffersParser$private val FULL_PATH_OFFERS = "/$HOST_USERS/$PATH_OFFERS" // if it comes with autoru://app users.auto.ru become part of full path instead host</ID>
+    <ID>VariableNaming:UserOffersParser.kt$UserOffersParser$private val HOST_USERS = "users.auto.ru"</ID>
+    <ID>VariableNaming:UserOffersParser.kt$UserOffersParser$private val PATH_OFFERS = "sales"</ID>
+    <ID>VariableNaming:UserOffersPresenter.kt$UserOffersPresenter$private val CREATE_OFFER_ID = "CreateOfferHeader"</ID>
+    <ID>VariableNaming:UserOffersPresenter.kt$UserOffersPresenter$private val TAG = UserOffersPresenter::class.java.simpleName</ID>
+  </Whitelist>
+</SmellBaseline>
