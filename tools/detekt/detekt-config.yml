@@ -366,5 +366,5 @@ style:
 
 detekt-custom-rules:
   active: true
-  NoInternalImportRule:
+  NoInternalImport:
     active: true
